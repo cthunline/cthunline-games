@@ -1,0 +1,16 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "target": "esnext",
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "src/index.ts"
+    ]
+}
