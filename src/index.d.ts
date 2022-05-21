@@ -4,7 +4,7 @@
 
 import { JSONSchema7 } from 'json-schema';
 
-declare module 'cthunline-games' {
+declare module '@cthunline/games' {
     interface Schemas {
         callOfCthulhu: JSONSchema7;
         dnd5: JSONSchema7;

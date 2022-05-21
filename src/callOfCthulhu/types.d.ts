@@ -1,4 +1,4 @@
-declare module 'cthunline-games' {
+declare module '@cthunline/games' {
 
     interface CoCCharacter {
         portrait: string;
