@@ -1,111 +1,115 @@
-export interface CoCCharacter {
-    portrait: string;
-    biography: CoCBiography;
-    characteristics: CoCCharacteristics;
-    points: CoCPoints;
-    luck: CoCLuck;
-    sanity: CoCSanity;
-    status: CoCStatus;
-    skills: CoCSkill[];
-    combat: CoCCombat;
-    weapons: CoCWeapon[];
-    story: CoCStory;
-}
+declare module 'cthunline-games' {
 
-export interface CoCBiography {
-    name: string;
-    birthPlace: string;
-    occupation: string;
-    residence: string;
-    age: number;
-}
+    interface CoCCharacter {
+        portrait: string;
+        biography: CoCBiography;
+        characteristics: CoCCharacteristics;
+        points: CoCPoints;
+        luck: CoCLuck;
+        sanity: CoCSanity;
+        status: CoCStatus;
+        skills: CoCSkill[];
+        combat: CoCCombat;
+        weapons: CoCWeapon[];
+        story: CoCStory;
+    }
 
-export interface CoCCharacteristic {
-    regular: number;
-    half: number;
-    fifth: number;
-}
+    interface CoCBiography {
+        name: string;
+        birthPlace: string;
+        occupation: string;
+        residence: string;
+        age: number;
+    }
 
-export interface CoCPoints {
-    hitPoints: CoCPoint;
-    magicPoints: CoCPoint;
-}
+    interface CoCCharacteristic {
+        regular: number;
+        half: number;
+        fifth: number;
+    }
 
-export interface CoCPoint {
-    maximum: number;
-    current: number;
-}
+    interface CoCPoints {
+        hitPoints: CoCPoint;
+        magicPoints: CoCPoint;
+    }
 
-export interface CoCLuck {
-    starting: number;
-    current: number;
-}
+    interface CoCPoint {
+        maximum: number;
+        current: number;
+    }
 
-export interface CoCSanity {
-    starting: number;
-    maximum: number;
-    current: number;
-}
+    interface CoCLuck {
+        starting: number;
+        current: number;
+    }
 
-export interface CoCCharacteristics {
-    strength: CoCCharacteristic;
-    constitution: CoCCharacteristic;
-    size: CoCCharacteristic;
-    dexterity: CoCCharacteristic;
-    appearance: CoCCharacteristic;
-    intelligence: CoCCharacteristic;
-    power: CoCCharacteristic;
-    education: CoCCharacteristic;
-}
+    interface CoCSanity {
+        starting: number;
+        maximum: number;
+        current: number;
+    }
 
-export interface CoCStatus {
-    temporaryInsanity: boolean;
-    indefiniteInsanity: boolean;
-    majorWound: boolean;
-    unconscious: boolean;
-    dying: boolean;
-}
+    interface CoCCharacteristics {
+        strength: CoCCharacteristic;
+        constitution: CoCCharacteristic;
+        size: CoCCharacteristic;
+        dexterity: CoCCharacteristic;
+        appearance: CoCCharacteristic;
+        intelligence: CoCCharacteristic;
+        power: CoCCharacteristic;
+        education: CoCCharacteristic;
+    }
 
-export interface CoCSkill {
-    name: string;
-    base: string;
-    development: boolean;
-    developed: boolean;
-    regular: number;
-    half: number;
-    fifth: number;
-}
+    interface CoCStatus {
+        temporaryInsanity: boolean;
+        indefiniteInsanity: boolean;
+        majorWound: boolean;
+        unconscious: boolean;
+        dying: boolean;
+    }
 
-export interface CoCCombat {
-    move: number;
-    build: string;
-    damageBonus: string;
-}
+    interface CoCSkill {
+        name: string;
+        base: string;
+        development: boolean;
+        developed: boolean;
+        regular: number;
+        half: number;
+        fifth: number;
+    }
 
-export interface CoCWeapon {
-    name: string;
-    damage: string;
-    attacks: string;
-    range: string;
-    ammo: string;
-    malfunction: string;
-}
+    interface CoCCombat {
+        move: number;
+        build: string;
+        damageBonus: string;
+    }
 
-export interface CoCStory {
-    story: string;
-    personalDescription: string;
-    ideologyAndBeliefs: string;
-    significantPeople: string;
-    meaningfulLocations: string;
-    treasuredPossessions: string;
-    traits: string;
-    injuriesAndScars: string;
-    phobiasAndManias: string;
-    arcaneTomesAndSpells: string;
-    encountersWithStrangeEntities: string;
-    gearAndPossessions: string;
-    fellowInvestigators: string;
-    spendingLevel: string;
-    cash: string;
-    assets: string;
+    interface CoCWeapon {
+        name: string;
+        damage: string;
+        attacks: string;
+        range: string;
+        ammo: string;
+        malfunction: string;
+    }
+
+    interface CoCStory {
+        story: string;
+        personalDescription: string;
+        ideologyAndBeliefs: string;
+        significantPeople: string;
+        meaningfulLocations: string;
+        treasuredPossessions: string;
+        traits: string;
+        injuriesAndScars: string;
+        phobiasAndManias: string;
+        arcaneTomesAndSpells: string;
+        encountersWithStrangeEntities: string;
+        gearAndPossessions: string;
+        fellowInvestigators: string;
+        spendingLevel: string;
+        cash: string;
+        assets: string;
+    }
+
 }
