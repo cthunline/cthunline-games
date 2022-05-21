@@ -21,16 +21,18 @@ declare module 'cthunline-games' {
         description: string;
     }
 
-    interface SWD6Attributes {
-        dexterity: SWD6Attribute;
-        knowledge: SWD6Attribute;
-        mechanical: SWD6Attribute;
-        perception: SWD6Attribute;
-        strength: SWD6Attribute;
-        technical: SWD6Attribute;
+    export interface SWD6Attributes {
+        dexterity: SWD6AttributeData;
+        knowledge: SWD6AttributeData;
+        mechanical: SWD6AttributeData;
+        perception: SWD6AttributeData;
+        strength: SWD6AttributeData;
+        technical: SWD6AttributeData;
     }
 
-    interface SWD6Attribute {
+    export type SWD6AttributeKey = keyof SWD6Attributes;
+
+    export interface SWD6AttributeData {
         value: string;
         skills: SWD6Skill[];
     }
@@ -55,6 +57,8 @@ declare module 'cthunline-games' {
         incapacitated: boolean;
         mortallyWounded: boolean;
     }
+
+    type SWD6WoundStatusKey = keyof SWD6WoundStatus;
 
     interface SWD6Story {
         equipment: string;
