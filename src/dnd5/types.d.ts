@@ -21,11 +21,14 @@ declare module '@cthunline/games' {
         race: string;
         alignment: string;
         description: string;
+    }
+
+    interface DnD5Story {
+        backstory: string;
         personalityTraits: string;
         ideals: string;
         bonds: string;
         flaws: string;
-        backstory: string;
         alliesAndOrganizations: string;
     }
 

@@ -62,16 +62,7 @@
                 "alignment": {
                     "type": "string"
                 },
-                "alliesAndOrganizations": {
-                    "type": "string"
-                },
                 "background": {
-                    "type": "string"
-                },
-                "backstory": {
-                    "type": "string"
-                },
-                "bonds": {
                     "type": "string"
                 },
                 "class": {
@@ -80,19 +71,10 @@
                 "description": {
                     "type": "string"
                 },
-                "flaws": {
-                    "type": "string"
-                },
-                "ideals": {
-                    "type": "string"
-                },
                 "level": {
                     "type": "number"
                 },
                 "name": {
-                    "type": "string"
-                },
-                "personalityTraits": {
                     "type": "string"
                 },
                 "race": {
