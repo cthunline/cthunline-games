@@ -5,13 +5,18 @@
 import { JSONSchema7 } from 'json-schema';
 
 declare module '@cthunline/games' {
-    interface Schemas {
-        callOfCthulhu: JSONSchema7;
-        dnd5: JSONSchema7;
-        starWarsD6: JSONSchema7;
-    }
+    export const callOfCthulhu: {
+        schema: JSONSchema7;
+        default: CoCCharacter;
+    };
 
-    const schemas: Schemas;
+    export const dnd5: {
+        schema: JSONSchema7;
+        default: DnD5Character;
+    };
 
-    export = schemas;
+    export const starWarsD6: {
+        schema: JSONSchema7;
+        default: SWD6Character;
+    };
 }
