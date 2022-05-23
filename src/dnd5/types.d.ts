@@ -12,6 +12,7 @@ declare module '@cthunline/games' {
         attacks: DnD5Attack[];
         features: DnD5Feature[];
         spellcasting: DnD5Spellcasting;
+        equipment: DnD5Equipment;
     }
 
     interface DnD5Biography {

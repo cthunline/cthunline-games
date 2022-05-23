@@ -125,6 +125,21 @@
             },
             "type": "object"
         },
+        "DnD5Equipment": {
+            "additionalProperties": false,
+            "properties": {
+                "items": {
+                    "type": "string"
+                },
+                "money": {
+                    "$ref": "#/definitions/DnD5Money"
+                },
+                "treasure": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
         "DnD5Feature": {
             "additionalProperties": false,
             "properties": {
@@ -133,6 +148,27 @@
                 },
                 "name": {
                     "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "DnD5Money": {
+            "additionalProperties": false,
+            "properties": {
+                "copper": {
+                    "type": "number"
+                },
+                "electrum": {
+                    "type": "number"
+                },
+                "gold": {
+                    "type": "number"
+                },
+                "platinum": {
+                    "type": "number"
+                },
+                "silver": {
+                    "type": "number"
                 }
             },
             "type": "object"
@@ -354,6 +390,9 @@
         },
         "combat": {
             "$ref": "#/definitions/DnD5Combat"
+        },
+        "equipment": {
+            "$ref": "#/definitions/DnD5Equipment"
         },
         "features": {
             "items": {
