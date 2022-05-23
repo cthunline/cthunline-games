@@ -313,6 +313,30 @@
                 }
             },
             "type": "object"
+        },
+        "DnD5Story": {
+            "additionalProperties": false,
+            "properties": {
+                "alliesAndOrganizations": {
+                    "type": "string"
+                },
+                "backstory": {
+                    "type": "string"
+                },
+                "bonds": {
+                    "type": "string"
+                },
+                "flaws": {
+                    "type": "string"
+                },
+                "ideals": {
+                    "type": "string"
+                },
+                "personalityTraits": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
         }
     },
     "properties": {
@@ -351,6 +375,9 @@
         },
         "statistics": {
             "$ref": "#/definitions/DnD5Statistics"
+        },
+        "story": {
+            "$ref": "#/definitions/DnD5Story"
         }
     },
     "type": "object"
