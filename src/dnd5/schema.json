@@ -89,25 +89,19 @@
                 "armorClass": {
                     "type": "number"
                 },
-                "currentHitPoints": {
-                    "type": "number"
-                },
                 "deathSaves": {
                     "$ref": "#/definitions/DnD5DeathSaves"
                 },
                 "hitDice": {
                     "type": "string"
                 },
+                "hitPoints": {
+                    "$ref": "#/definitions/DnD5HitPoints"
+                },
                 "initiative": {
                     "type": "number"
                 },
-                "maxHitPoints": {
-                    "type": "number"
-                },
                 "speed": {
-                    "type": "number"
-                },
-                "temporaryHitPoints": {
                     "type": "number"
                 }
             },
@@ -148,6 +142,21 @@
                 },
                 "name": {
                     "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "DnD5HitPoints": {
+            "additionalProperties": false,
+            "properties": {
+                "current": {
+                    "type": "number"
+                },
+                "maximum": {
+                    "type": "number"
+                },
+                "temporary": {
+                    "type": "number"
                 }
             },
             "type": "object"

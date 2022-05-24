@@ -83,6 +83,12 @@ declare module '@cthunline/games' {
         survival: DnD5Skill;
     }
 
+    interface DnD5HitPoints {
+        maximum: number;
+        current: number;
+        temporary: number;
+    }
+
     interface DnD5DeathSaves {
         successes: number;
         failures: number;
@@ -92,9 +98,7 @@ declare module '@cthunline/games' {
         armorClass: number;
         initiative: number;
         speed: number;
-        maxHitPoints: number;
-        currentHitPoints: number;
-        temporaryHitPoints: number;
+        hitPoints: DnD5HitPoints;
         hitDice: string;
         deathSaves: DnD5DeathSaves;
     }

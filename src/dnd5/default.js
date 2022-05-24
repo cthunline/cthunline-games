@@ -73,9 +73,11 @@ module.exports = {
         armorClass: 0,
         initiative: 0,
         speed: 0,
-        maxHitPoints: 0,
-        currentHitPoints: 0,
-        temporaryHitPoints: 0,
+        hitPoints: {
+            maximum: 0,
+            current: 0,
+            temporary: 0
+        },
         hitDice: '',
         deathSaves: {
             successes: 0,
