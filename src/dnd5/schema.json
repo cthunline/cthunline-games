@@ -134,13 +134,13 @@
             },
             "type": "object"
         },
-        "DnD5Feature": {
+        "DnD5Features": {
             "additionalProperties": false,
             "properties": {
-                "description": {
+                "featuresAndTraits": {
                     "type": "string"
                 },
-                "name": {
+                "proficienciesAndLanguages": {
                     "type": "string"
                 }
             },
@@ -335,7 +335,7 @@
                 "spellAttackBonus": {
                     "type": "number"
                 },
-                "spellSave": {
+                "spellSaveDC": {
                     "type": "number"
                 }
             },
@@ -404,10 +404,7 @@
             "$ref": "#/definitions/DnD5Equipment"
         },
         "features": {
-            "items": {
-                "$ref": "#/definitions/DnD5Feature"
-            },
-            "type": "array"
+            "$ref": "#/definitions/DnD5Features"
         },
         "portrait": {
             "type": "string"
