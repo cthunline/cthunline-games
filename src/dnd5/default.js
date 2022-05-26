@@ -96,7 +96,10 @@ module.exports = {
         items: '',
         treasure: ''
     },
-    features: [],
+    features: {
+        featuresAndTraits: '',
+        proficienciesAndLanguages: ''
+    },
     spellcasting: {
         class: '',
         spellAbility: '',

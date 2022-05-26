@@ -10,7 +10,7 @@ declare module '@cthunline/games' {
         skills: DnD5Skills;
         combat: DnD5Combat;
         attacks: DnD5Attack[];
-        features: DnD5Feature[];
+        features: DnD5Features;
         spellcasting: DnD5Spellcasting;
         equipment: DnD5Equipment;
     }
@@ -110,6 +110,11 @@ declare module '@cthunline/games' {
         type: string;
     }
 
+    interface DnD5Features {
+        featuresAndTraits: string;
+        proficienciesAndLanguages: string;
+    }
+
     interface DnD5Money {
         copper: number;
         silver: number;
@@ -122,11 +127,6 @@ declare module '@cthunline/games' {
         money: DnD5Money;
         items: string;
         treasure: string;
-    }
-
-    interface DnD5Feature {
-        name: string;
-        description: string;
     }
 
     interface DnD5Spell {
