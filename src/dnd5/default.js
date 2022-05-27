@@ -102,7 +102,7 @@ module.exports = {
     },
     spellcasting: {
         class: '',
-        spellAbility: '',
+        spellAbility: 0,
         spellSaveDC: 0,
         spellAttackBonus: 0,
         cantrips: [],

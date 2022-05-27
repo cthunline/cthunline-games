@@ -143,7 +143,7 @@ declare module '@cthunline/games' {
 
     interface DnD5Spellcasting {
         class: string;
-        spellAbility: string;
+        spellAbility: number;
         spellSaveDC: number;
         spellAttackBonus: number;
         cantrips: string[];

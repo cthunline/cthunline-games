@@ -330,7 +330,7 @@
                     "type": "array"
                 },
                 "spellAbility": {
-                    "type": "string"
+                    "type": "number"
                 },
                 "spellAttackBonus": {
                     "type": "number"
