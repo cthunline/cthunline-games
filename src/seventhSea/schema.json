@@ -1,0 +1,205 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "definitions": {
+        "SeventhSeaAdvantage": {
+            "additionalProperties": false,
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "SeventhSeaArcana": {
+            "additionalProperties": false,
+            "properties": {
+                "hubris": {
+                    "type": "string"
+                },
+                "virtue": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "SeventhSeaBackground": {
+            "additionalProperties": false,
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "quirk": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "SeventhSeaBiography": {
+            "additionalProperties": false,
+            "properties": {
+                "concept": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "nation": {
+                    "type": "string"
+                },
+                "religion": {
+                    "type": "string"
+                },
+                "reputations": {
+                    "type": "string"
+                },
+                "wealth": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "SeventhSeaSkills": {
+            "additionalProperties": false,
+            "properties": {
+                "aim": {
+                    "type": "number"
+                },
+                "athletics": {
+                    "type": "number"
+                },
+                "brawl": {
+                    "type": "number"
+                },
+                "convince": {
+                    "type": "number"
+                },
+                "empathy": {
+                    "type": "number"
+                },
+                "hide": {
+                    "type": "number"
+                },
+                "intimidate": {
+                    "type": "number"
+                },
+                "notice": {
+                    "type": "number"
+                },
+                "perform": {
+                    "type": "number"
+                },
+                "ride": {
+                    "type": "number"
+                },
+                "sailing": {
+                    "type": "number"
+                },
+                "scholarship": {
+                    "type": "number"
+                },
+                "tempt": {
+                    "type": "number"
+                },
+                "theft": {
+                    "type": "number"
+                },
+                "warfare": {
+                    "type": "number"
+                },
+                "weaponry": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "SeventhSeaStory": {
+            "additionalProperties": false,
+            "properties": {
+                "goal": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "reward": {
+                    "type": "string"
+                },
+                "steps": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "SeventhSeaTraits": {
+            "additionalProperties": false,
+            "properties": {
+                "brawn": {
+                    "type": "number"
+                },
+                "finesse": {
+                    "type": "number"
+                },
+                "panache": {
+                    "type": "number"
+                },
+                "resolve": {
+                    "type": "number"
+                },
+                "wits": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "properties": {
+        "advantages": {
+            "items": {
+                "$ref": "#/definitions/SeventhSeaAdvantage"
+            },
+            "type": "array"
+        },
+        "arcana": {
+            "$ref": "#/definitions/SeventhSeaArcana"
+        },
+        "backgrounds": {
+            "items": {
+                "$ref": "#/definitions/SeventhSeaBackground"
+            },
+            "type": "array"
+        },
+        "biography": {
+            "$ref": "#/definitions/SeventhSeaBiography"
+        },
+        "deathSpiral": {
+            "type": "number"
+        },
+        "portrait": {
+            "type": "string"
+        },
+        "skills": {
+            "$ref": "#/definitions/SeventhSeaSkills"
+        },
+        "stories": {
+            "items": {
+                "$ref": "#/definitions/SeventhSeaStory"
+            },
+            "type": "array"
+        },
+        "traits": {
+            "$ref": "#/definitions/SeventhSeaTraits"
+        }
+    },
+    "type": "object"
+}
+
