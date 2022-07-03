@@ -2,6 +2,8 @@ const cocSchema = require('./callOfCthulhu/schema.json');
 const cocDefault = require('./callOfCthulhu/default');
 const dnd5Schema = require('./dnd5/schema.json');
 const dnd5Default = require('./dnd5/default');
+const seventhSeaSchema = require('./seventhSea/schema.json');
+const seventhSeaDefault = require('./seventhSea/default');
 const swd6Schema = require('./starWarsD6/schema.json');
 const swd6Default = require('./starWarsD6/default');
 
@@ -13,6 +15,10 @@ module.exports = {
     dnd5: {
         schema: dnd5Schema,
         default: dnd5Default
+    },
+    seventhSea: {
+        schema: seventhSeaSchema,
+        default: seventhSeaDefault
     },
     starWarsD6: {
         schema: swd6Schema,
