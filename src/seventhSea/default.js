@@ -8,6 +8,11 @@ module.exports = {
         reputations: '',
         wealth: 0
     },
+    arcana: {
+        name: '',
+        virtue: '',
+        hubris: ''
+    },
     backgrounds: [],
     stories: [],
     traits: {
@@ -36,9 +41,5 @@ module.exports = {
         weaponry: 0
     },
     deathSpiral: 0,
-    advantages: [],
-    arcana: {
-        virtue: '',
-        hubris: ''
-    }
+    advantages: []
 };

@@ -20,6 +20,9 @@
                 "hubris": {
                     "type": "string"
                 },
+                "name": {
+                    "type": "string"
+                },
                 "virtue": {
                     "type": "string"
                 }

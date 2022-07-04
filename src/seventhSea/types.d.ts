@@ -22,6 +22,7 @@ declare module '@cthunline/games' {
     }
 
     interface SeventhSeaArcana {
+        name: string;
         virtue: string;
         hubris: string;
     }
