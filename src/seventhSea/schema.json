@@ -60,7 +60,7 @@
                     "type": "string"
                 },
                 "wealth": {
-                    "type": "string"
+                    "type": "number"
                 }
             },
             "type": "object"

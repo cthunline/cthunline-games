@@ -6,7 +6,7 @@ module.exports = {
         nation: '',
         religion: '',
         reputations: '',
-        wealth: ''
+        wealth: 0
     },
     backgrounds: [],
     stories: [],

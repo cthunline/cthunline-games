@@ -3,13 +3,13 @@ declare module '@cthunline/games' {
     interface SeventhSeaCharacter {
         portrait: string;
         biography: SeventhSeaBiography;
+        arcana: SeventhSeaArcana;
         backgrounds: SeventhSeaBackground[];
         stories: SeventhSeaStory[];
         traits: SeventhSeaTraits;
         skills: SeventhSeaSkills;
         deathSpiral: number;
         advantages: SeventhSeaAdvantage[];
-        arcana: SeventhSeaArcana;
     }
 
     interface SeventhSeaBiography {
@@ -18,7 +18,12 @@ declare module '@cthunline/games' {
         nation: string;
         religion: string;
         reputations: string;
-        wealth: string;
+        wealth: number;
+    }
+
+    interface SeventhSeaArcana {
+        virtue: string;
+        hubris: string;
     }
 
     interface SeventhSeaBackground {
@@ -64,11 +69,6 @@ declare module '@cthunline/games' {
     interface SeventhSeaAdvantage {
         name: string;
         description: string;
-    }
-
-    interface SeventhSeaArcana {
-        virtue: string;
-        hubris: string;
     }
 
 }
