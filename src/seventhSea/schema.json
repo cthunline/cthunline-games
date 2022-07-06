@@ -187,6 +187,12 @@
         "deathSpiral": {
             "type": "number"
         },
+        "items": {
+            "type": "string"
+        },
+        "notes": {
+            "type": "string"
+        },
         "portrait": {
             "type": "string"
         },

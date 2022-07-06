@@ -41,5 +41,7 @@ module.exports = {
         weaponry: 0
     },
     deathSpiral: 0,
-    advantages: []
+    advantages: [],
+    items: '',
+    notes: ''
 };

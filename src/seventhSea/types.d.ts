@@ -10,6 +10,8 @@ declare module '@cthunline/games' {
         skills: SeventhSeaSkills;
         deathSpiral: number;
         advantages: SeventhSeaAdvantage[];
+        items: string;
+        notes: string;
     }
 
     interface SeventhSeaBiography {
