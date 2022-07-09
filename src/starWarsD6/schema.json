@@ -1,7 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
     "definitions": {
-        "SWD6Attribute": {
+        "SWD6AttributeData": {
+            "additionalProperties": false,
             "properties": {
                 "skills": {
                     "items": {
@@ -16,29 +18,31 @@
             "type": "object"
         },
         "SWD6Attributes": {
+            "additionalProperties": false,
             "properties": {
                 "dexterity": {
-                    "$ref": "#/definitions/SWD6Attribute"
+                    "$ref": "#/definitions/SWD6AttributeData"
                 },
                 "knowledge": {
-                    "$ref": "#/definitions/SWD6Attribute"
+                    "$ref": "#/definitions/SWD6AttributeData"
                 },
                 "mechanical": {
-                    "$ref": "#/definitions/SWD6Attribute"
+                    "$ref": "#/definitions/SWD6AttributeData"
                 },
                 "perception": {
-                    "$ref": "#/definitions/SWD6Attribute"
+                    "$ref": "#/definitions/SWD6AttributeData"
                 },
                 "strength": {
-                    "$ref": "#/definitions/SWD6Attribute"
+                    "$ref": "#/definitions/SWD6AttributeData"
                 },
                 "technical": {
-                    "$ref": "#/definitions/SWD6Attribute"
+                    "$ref": "#/definitions/SWD6AttributeData"
                 }
             },
             "type": "object"
         },
         "SWD6Biography": {
+            "additionalProperties": false,
             "properties": {
                 "age": {
                     "type": "number"
@@ -65,6 +69,7 @@
             "type": "object"
         },
         "SWD6Skill": {
+            "additionalProperties": false,
             "properties": {
                 "name": {
                     "type": "string"
@@ -76,6 +81,7 @@
             "type": "object"
         },
         "SWD6Statistics": {
+            "additionalProperties": false,
             "properties": {
                 "characterPoints": {
                     "type": "number"
@@ -96,6 +102,7 @@
             "type": "object"
         },
         "SWD6Story": {
+            "additionalProperties": false,
             "properties": {
                 "background": {
                     "type": "string"
@@ -119,6 +126,7 @@
             "type": "object"
         },
         "SWD6Weapon": {
+            "additionalProperties": false,
             "properties": {
                 "ammo": {
                     "type": "string"
@@ -142,6 +150,7 @@
             "type": "object"
         },
         "SWD6WoundStatus": {
+            "additionalProperties": false,
             "properties": {
                 "doublyWounded": {
                     "type": "boolean"

@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "main": "src/index.js",
     "types": "src/index.d.ts",
     "devDependencies": {

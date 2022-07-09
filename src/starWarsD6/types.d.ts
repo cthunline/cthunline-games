@@ -30,7 +30,7 @@ declare module '@cthunline/games' {
         technical: SWD6AttributeData;
     }
 
-    export type SWD6AttributeKey = keyof SWD6Attributes;
+    export type SWD6Attribute = keyof SWD6Attributes;
 
     export interface SWD6AttributeData {
         value: string;
