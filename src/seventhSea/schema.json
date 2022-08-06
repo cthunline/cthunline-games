@@ -187,6 +187,9 @@
         "deathSpiral": {
             "type": "number"
         },
+        "heroPoints": {
+            "type": "number"
+        },
         "items": {
             "type": "string"
         },

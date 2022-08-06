@@ -8,6 +8,7 @@ module.exports = {
         reputations: '',
         wealth: 0
     },
+    heroPoints: 0,
     arcana: {
         name: '',
         virtue: '',
