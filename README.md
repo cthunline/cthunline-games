@@ -1,6 +1,6 @@
 # Cthunline games
 
-> Game types and schemas for Cthunline games
+> TS types and JSON schemas for Cthunline games
 
 ## Install
 
@@ -24,7 +24,7 @@ const character: CoCCharacter = {
 
 ## Generating schemas
 
-Character JSON schemas are automatically generated from TS types with [typescript-json-schema](https://github.com/YousefED/typescript-json-schema)
+Character JSON schemas are automatically generated from TS types using [typescript-json-schema](https://github.com/YousefED/typescript-json-schema)
 
 ```shell
 typescript-json-schema src/callOfCthulhu/types.d.ts CoCCharacter -o src/callOfCthulhu/schema.json --noExtraProps
