@@ -45,4 +45,4 @@ steps:
     username:
       from_secret: npm_user
     token:
-      from_secret: npm_user
+      from_secret: npm_token
