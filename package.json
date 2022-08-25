@@ -1,6 +1,8 @@
 {
     "name": "@cthunline/games",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://doc.cthunline.org/",
     "repository": {
         "type": "git",
         "url": "https://github.com/cthunline/cthunline-games.git"
