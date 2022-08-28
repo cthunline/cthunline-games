@@ -406,9 +406,6 @@
         "features": {
             "$ref": "#/definitions/DnD5Features"
         },
-        "portrait": {
-            "type": "string"
-        },
         "savingThrows": {
             "$ref": "#/definitions/DnD5SavingThrows"
         },

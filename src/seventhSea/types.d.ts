@@ -1,7 +1,6 @@
 declare module '@cthunline/games' {
 
     interface SeventhSeaCharacter {
-        portrait: string;
         biography: SeventhSeaBiography;
         heroPoints: number;
         arcana: SeventhSeaArcana;

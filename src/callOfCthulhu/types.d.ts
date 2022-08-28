@@ -1,7 +1,6 @@
 declare module '@cthunline/games' {
 
     interface CoCCharacter {
-        portrait: string;
         biography: CoCBiography;
         characteristics: CoCCharacteristics;
         points: CoCPoints;

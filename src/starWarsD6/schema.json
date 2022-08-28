@@ -184,9 +184,6 @@
         "biography": {
             "$ref": "#/definitions/SWD6Biography"
         },
-        "portrait": {
-            "type": "string"
-        },
         "statistics": {
             "$ref": "#/definitions/SWD6Statistics"
         },

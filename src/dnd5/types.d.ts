@@ -1,7 +1,6 @@
 declare module '@cthunline/games' {
 
     interface DnD5Character {
-        portrait: string;
         biography: DnD5Biography;
         story: DnD5Story;
         statistics: DnD5Statistics;

@@ -1,7 +1,6 @@
 declare module '@cthunline/games' {
 
     interface SWD6Character {
-        portrait: string;
         biography: SWD6Biography;
         attributes: SWD6Attributes;
         abilities: string[];
