@@ -5,7 +5,6 @@ const defaultCharacteristic = {
 };
 
 module.exports = {
-    portrait: '',
     biography: {
         name: '',
         birthPlace: '',

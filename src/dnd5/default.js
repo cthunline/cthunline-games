@@ -9,7 +9,6 @@ const defaultSkill = {
 };
 
 module.exports = {
-    portrait: '',
     biography: {
         name: '',
         class: '',

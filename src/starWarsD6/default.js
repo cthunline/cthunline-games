@@ -4,7 +4,6 @@ const defaultAttribute = {
 };
 
 module.exports = {
-    portrait: '',
     biography: {
         name: '',
         occupation: '',

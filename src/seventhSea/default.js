@@ -1,5 +1,4 @@
 module.exports = {
-    portrait: '',
     biography: {
         name: '',
         concept: '',
