@@ -1,5 +1,4 @@
 declare module '@cthunline/games' {
-
     interface SeventhSeaCharacter {
         biography: SeventhSeaBiography;
         heroPoints: number;
@@ -73,5 +72,4 @@ declare module '@cthunline/games' {
         name: string;
         description: string;
     }
-
 }

@@ -1,5 +1,4 @@
 declare module '@cthunline/games' {
-
     interface DnD5Character {
         biography: DnD5Biography;
         story: DnD5Story;
@@ -148,5 +147,4 @@ declare module '@cthunline/games' {
         cantrips: string[];
         levels: DnD5SpellLevel[];
     }
-
 }

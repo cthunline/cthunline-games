@@ -1,5 +1,4 @@
 declare module '@cthunline/games' {
-
     interface CoCCharacter {
         biography: CoCBiography;
         characteristics: CoCCharacteristics;
@@ -110,5 +109,4 @@ declare module '@cthunline/games' {
         cash: string;
         assets: string;
     }
-
 }

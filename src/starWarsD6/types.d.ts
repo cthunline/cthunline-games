@@ -1,5 +1,4 @@
 declare module '@cthunline/games' {
-
     interface SWD6Character {
         biography: SWD6Biography;
         attributes: SWD6Attributes;
@@ -76,5 +75,4 @@ declare module '@cthunline/games' {
         longRange: string;
         ammo: string;
     }
-
 }
