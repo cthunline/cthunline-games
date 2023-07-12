@@ -4,7 +4,7 @@ const defaultCharacteristic = {
     fifth: 0
 };
 
-module.exports = {
+export default {
     biography: {
         name: '',
         birthPlace: '',

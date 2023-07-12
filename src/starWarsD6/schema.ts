@@ -1,6 +1,6 @@
-const { Type } = require('@sinclair/typebox');
+import { Type } from '@sinclair/typebox';
 
-const swd6BiographySchema = Type.Object(
+export const swd6BiographySchema = Type.Object(
     {
         name: Type.String(),
         occupation: Type.String(),
@@ -15,7 +15,7 @@ const swd6BiographySchema = Type.Object(
     }
 );
 
-const swd6SkillSchema = Type.Object(
+export const swd6SkillSchema = Type.Object(
     {
         name: Type.String(),
         value: Type.String()
@@ -25,7 +25,7 @@ const swd6SkillSchema = Type.Object(
     }
 );
 
-const swd6AttributeDataSchema = Type.Object(
+export const swd6AttributeDataSchema = Type.Object(
     {
         value: Type.String(),
         skills: Type.Array(swd6SkillSchema)
@@ -35,7 +35,7 @@ const swd6AttributeDataSchema = Type.Object(
     }
 );
 
-const swd6AttributesSchema = Type.Object(
+export const swd6AttributesSchema = Type.Object(
     {
         dexterity: swd6AttributeDataSchema,
         knowledge: swd6AttributeDataSchema,
@@ -49,7 +49,7 @@ const swd6AttributesSchema = Type.Object(
     }
 );
 
-const swd6StatisticsSchema = Type.Object(
+export const swd6StatisticsSchema = Type.Object(
     {
         move: Type.Integer(),
         forceSensitive: Type.Boolean(),
@@ -62,7 +62,7 @@ const swd6StatisticsSchema = Type.Object(
     }
 );
 
-const swd6WoundStatusSchema = Type.Object(
+export const swd6WoundStatusSchema = Type.Object(
     {
         stunned: Type.Boolean(),
         wounded: Type.Boolean(),
@@ -75,7 +75,7 @@ const swd6WoundStatusSchema = Type.Object(
     }
 );
 
-const swd6StorySchema = Type.Object(
+export const swd6StorySchema = Type.Object(
     {
         equipment: Type.String(),
         background: Type.String(),
@@ -89,7 +89,7 @@ const swd6StorySchema = Type.Object(
     }
 );
 
-const swd6WeaponSchema = Type.Object(
+export const swd6WeaponSchema = Type.Object(
     {
         name: Type.String(),
         damage: Type.String(),
@@ -103,7 +103,7 @@ const swd6WeaponSchema = Type.Object(
     }
 );
 
-const swd6CharacterSchema = Type.Object(
+export const swd6CharacterSchema = Type.Object(
     {
         biography: swd6BiographySchema,
         attributes: swd6AttributesSchema,
@@ -117,15 +117,3 @@ const swd6CharacterSchema = Type.Object(
         additionalProperties: false
     }
 );
-
-module.exports = {
-    swd6BiographySchema,
-    swd6SkillSchema,
-    swd6AttributeDataSchema,
-    swd6AttributesSchema,
-    swd6StatisticsSchema,
-    swd6WoundStatusSchema,
-    swd6StorySchema,
-    swd6WeaponSchema,
-    swd6CharacterSchema
-};

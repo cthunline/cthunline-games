@@ -3,7 +3,7 @@ const defaultAttribute = {
     skills: []
 };
 
-module.exports = {
+export default {
     biography: {
         name: '',
         occupation: '',

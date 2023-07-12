@@ -1,6 +1,6 @@
-const { Type } = require('@sinclair/typebox');
+import { Type } from '@sinclair/typebox';
 
-const cocBiographySchema = Type.Object(
+export const cocBiographySchema = Type.Object(
     {
         name: Type.String(),
         birthPlace: Type.String(),
@@ -13,7 +13,7 @@ const cocBiographySchema = Type.Object(
     }
 );
 
-const cocCharacteristicSchema = Type.Object(
+export const cocCharacteristicSchema = Type.Object(
     {
         regular: Type.Integer(),
         half: Type.Integer(),
@@ -24,7 +24,7 @@ const cocCharacteristicSchema = Type.Object(
     }
 );
 
-const cocPointSchema = Type.Object(
+export const cocPointSchema = Type.Object(
     {
         maximum: Type.Integer(),
         current: Type.Integer()
@@ -34,7 +34,7 @@ const cocPointSchema = Type.Object(
     }
 );
 
-const cocPointsSchema = Type.Object(
+export const cocPointsSchema = Type.Object(
     {
         hitPoints: cocPointSchema,
         magicPoints: cocPointSchema
@@ -44,7 +44,7 @@ const cocPointsSchema = Type.Object(
     }
 );
 
-const cocLuckSchema = Type.Object(
+export const cocLuckSchema = Type.Object(
     {
         starting: Type.Integer(),
         current: Type.Integer()
@@ -54,7 +54,7 @@ const cocLuckSchema = Type.Object(
     }
 );
 
-const cocSanitySchema = Type.Object(
+export const cocSanitySchema = Type.Object(
     {
         starting: Type.Integer(),
         maximum: Type.Integer(),
@@ -65,7 +65,7 @@ const cocSanitySchema = Type.Object(
     }
 );
 
-const cocCharacteristicsSchema = Type.Object(
+export const cocCharacteristicsSchema = Type.Object(
     {
         strength: cocCharacteristicSchema,
         constitution: cocCharacteristicSchema,
@@ -81,7 +81,7 @@ const cocCharacteristicsSchema = Type.Object(
     }
 );
 
-const cocStatusSchema = Type.Object(
+export const cocStatusSchema = Type.Object(
     {
         temporaryInsanity: Type.Boolean(),
         indefiniteInsanity: Type.Boolean(),
@@ -94,7 +94,7 @@ const cocStatusSchema = Type.Object(
     }
 );
 
-const cocSkillSchema = Type.Object(
+export const cocSkillSchema = Type.Object(
     {
         name: Type.String(),
         base: Type.String(),
@@ -109,7 +109,7 @@ const cocSkillSchema = Type.Object(
     }
 );
 
-const cocCombatSchema = Type.Object(
+export const cocCombatSchema = Type.Object(
     {
         move: Type.Integer(),
         build: Type.String(),
@@ -120,7 +120,7 @@ const cocCombatSchema = Type.Object(
     }
 );
 
-const cocWeaponSchema = Type.Object(
+export const cocWeaponSchema = Type.Object(
     {
         name: Type.String(),
         damage: Type.String(),
@@ -134,7 +134,7 @@ const cocWeaponSchema = Type.Object(
     }
 );
 
-const cocStorySchema = Type.Object(
+export const cocStorySchema = Type.Object(
     {
         story: Type.String(),
         personalDescription: Type.String(),
@@ -158,7 +158,7 @@ const cocStorySchema = Type.Object(
     }
 );
 
-const cocCharacterSchema = Type.Object(
+export const cocCharacterSchema = Type.Object(
     {
         biography: cocBiographySchema,
         characteristics: cocCharacteristicsSchema,
@@ -175,19 +175,3 @@ const cocCharacterSchema = Type.Object(
         additionalProperties: false
     }
 );
-
-module.exports = {
-    cocBiographySchema,
-    cocCharacteristicSchema,
-    cocPointSchema,
-    cocPointsSchema,
-    cocLuckSchema,
-    cocSanitySchema,
-    cocCharacteristicsSchema,
-    cocStatusSchema,
-    cocSkillSchema,
-    cocCombatSchema,
-    cocWeaponSchema,
-    cocStorySchema,
-    cocCharacterSchema
-};

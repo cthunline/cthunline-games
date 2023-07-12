@@ -8,7 +8,7 @@ const defaultSkill = {
     proficient: false
 };
 
-module.exports = {
+export default {
     biography: {
         name: '',
         class: '',

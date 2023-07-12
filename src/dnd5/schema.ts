@@ -1,6 +1,6 @@
-const { Type } = require('@sinclair/typebox');
+import { Type } from '@sinclair/typebox';
 
-const dnd5BiographySchema = Type.Object(
+export const dnd5BiographySchema = Type.Object(
     {
         name: Type.String(),
         class: Type.String(),
@@ -15,7 +15,7 @@ const dnd5BiographySchema = Type.Object(
     }
 );
 
-const dnd5StorySchema = Type.Object(
+export const dnd5StorySchema = Type.Object(
     {
         backstory: Type.String(),
         personalityTraits: Type.String(),
@@ -29,7 +29,7 @@ const dnd5StorySchema = Type.Object(
     }
 );
 
-const dnd5StatisticsSchema = Type.Object(
+export const dnd5StatisticsSchema = Type.Object(
     {
         experiencePoints: Type.Integer(),
         inspiration: Type.Integer(),
@@ -41,7 +41,7 @@ const dnd5StatisticsSchema = Type.Object(
     }
 );
 
-const dnd5AbilitySchema = Type.Object(
+export const dnd5AbilitySchema = Type.Object(
     {
         modifier: Type.Integer(),
         score: Type.Integer()
@@ -51,7 +51,7 @@ const dnd5AbilitySchema = Type.Object(
     }
 );
 
-const dnd5AbilitiesSchema = Type.Object(
+export const dnd5AbilitiesSchema = Type.Object(
     {
         strength: dnd5AbilitySchema,
         dexterity: dnd5AbilitySchema,
@@ -65,7 +65,7 @@ const dnd5AbilitiesSchema = Type.Object(
     }
 );
 
-const dnd5SkillSchema = Type.Object(
+export const dnd5SkillSchema = Type.Object(
     {
         modifier: Type.Integer(),
         proficient: Type.Boolean()
@@ -75,7 +75,7 @@ const dnd5SkillSchema = Type.Object(
     }
 );
 
-const dnd5SavingThrowsSchema = Type.Record(
+export const dnd5SavingThrowsSchema = Type.Record(
     Type.KeyOf(dnd5AbilitiesSchema),
     dnd5SkillSchema,
     {
@@ -83,7 +83,7 @@ const dnd5SavingThrowsSchema = Type.Record(
     }
 );
 
-const dnd5SkillsSchema = Type.Object(
+export const dnd5SkillsSchema = Type.Object(
     {
         acrobatics: dnd5SkillSchema,
         animalHandling: dnd5SkillSchema,
@@ -109,7 +109,7 @@ const dnd5SkillsSchema = Type.Object(
     }
 );
 
-const dnd5HitPointsSchema = Type.Object(
+export const dnd5HitPointsSchema = Type.Object(
     {
         maximum: Type.Integer(),
         current: Type.Integer(),
@@ -120,7 +120,7 @@ const dnd5HitPointsSchema = Type.Object(
     }
 );
 
-const dnd5DeathSavesSchema = Type.Object(
+export const dnd5DeathSavesSchema = Type.Object(
     {
         successes: Type.Integer(),
         failures: Type.Integer()
@@ -130,7 +130,7 @@ const dnd5DeathSavesSchema = Type.Object(
     }
 );
 
-const dnd5CombatSchema = Type.Object(
+export const dnd5CombatSchema = Type.Object(
     {
         armorClass: Type.Integer(),
         initiative: Type.Integer(),
@@ -144,7 +144,7 @@ const dnd5CombatSchema = Type.Object(
     }
 );
 
-const dnd5AttackSchema = Type.Object(
+export const dnd5AttackSchema = Type.Object(
     {
         name: Type.String(),
         attackBonus: Type.Integer(),
@@ -156,7 +156,7 @@ const dnd5AttackSchema = Type.Object(
     }
 );
 
-const dnd5FeaturesSchema = Type.Object(
+export const dnd5FeaturesSchema = Type.Object(
     {
         featuresAndTraits: Type.String(),
         proficienciesAndLanguages: Type.String()
@@ -166,7 +166,7 @@ const dnd5FeaturesSchema = Type.Object(
     }
 );
 
-const dnd5MoneySchema = Type.Object(
+export const dnd5MoneySchema = Type.Object(
     {
         copper: Type.Integer(),
         silver: Type.Integer(),
@@ -179,7 +179,7 @@ const dnd5MoneySchema = Type.Object(
     }
 );
 
-const dnd5EquipmentSchema = Type.Object(
+export const dnd5EquipmentSchema = Type.Object(
     {
         money: dnd5MoneySchema,
         items: Type.String(),
@@ -190,7 +190,7 @@ const dnd5EquipmentSchema = Type.Object(
     }
 );
 
-const dnd5SpellSchema = Type.Object(
+export const dnd5SpellSchema = Type.Object(
     {
         prepared: Type.Boolean(),
         name: Type.String()
@@ -200,7 +200,7 @@ const dnd5SpellSchema = Type.Object(
     }
 );
 
-const dnd5SpellLevelSchema = Type.Object(
+export const dnd5SpellLevelSchema = Type.Object(
     {
         level: Type.Integer(),
         slotsTotal: Type.Integer(),
@@ -212,7 +212,7 @@ const dnd5SpellLevelSchema = Type.Object(
     }
 );
 
-const dnd5SpellcastingSchema = Type.Object(
+export const dnd5SpellcastingSchema = Type.Object(
     {
         class: Type.String(),
         spellAbility: Type.Integer(),
@@ -226,7 +226,7 @@ const dnd5SpellcastingSchema = Type.Object(
     }
 );
 
-const dnd5CharacterSchema = Type.Object(
+export const dnd5CharacterSchema = Type.Object(
     {
         biography: dnd5BiographySchema,
         story: dnd5StorySchema,
@@ -244,25 +244,3 @@ const dnd5CharacterSchema = Type.Object(
         additionalProperties: false
     }
 );
-
-module.exports = {
-    dnd5BiographySchema,
-    dnd5StorySchema,
-    dnd5StatisticsSchema,
-    dnd5AbilitySchema,
-    dnd5AbilitiesSchema,
-    dnd5SkillSchema,
-    dnd5SavingThrowsSchema,
-    dnd5SkillsSchema,
-    dnd5HitPointsSchema,
-    dnd5DeathSavesSchema,
-    dnd5CombatSchema,
-    dnd5AttackSchema,
-    dnd5FeaturesSchema,
-    dnd5MoneySchema,
-    dnd5EquipmentSchema,
-    dnd5SpellSchema,
-    dnd5SpellLevelSchema,
-    dnd5SpellcastingSchema,
-    dnd5CharacterSchema
-};

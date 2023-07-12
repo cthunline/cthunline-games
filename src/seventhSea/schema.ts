@@ -1,6 +1,6 @@
-const { Type } = require('@sinclair/typebox');
+import { Type } from '@sinclair/typebox';
 
-const seventhSeaBiographySchema = Type.Object(
+export const seventhSeaBiographySchema = Type.Object(
     {
         name: Type.String(),
         concept: Type.String(),
@@ -14,7 +14,7 @@ const seventhSeaBiographySchema = Type.Object(
     }
 );
 
-const seventhSeaArcanaSchema = Type.Object(
+export const seventhSeaArcanaSchema = Type.Object(
     {
         name: Type.String(),
         virtue: Type.String(),
@@ -25,7 +25,7 @@ const seventhSeaArcanaSchema = Type.Object(
     }
 );
 
-const seventhSeaBackgroundSchema = Type.Object(
+export const seventhSeaBackgroundSchema = Type.Object(
     {
         name: Type.String(),
         description: Type.String(),
@@ -36,7 +36,7 @@ const seventhSeaBackgroundSchema = Type.Object(
     }
 );
 
-const seventhSeaStorySchema = Type.Object(
+export const seventhSeaStorySchema = Type.Object(
     {
         name: Type.String(),
         goal: Type.String(),
@@ -48,7 +48,7 @@ const seventhSeaStorySchema = Type.Object(
     }
 );
 
-const seventhSeaTraitsSchema = Type.Object(
+export const seventhSeaTraitsSchema = Type.Object(
     {
         brawn: Type.Integer(),
         finesse: Type.Integer(),
@@ -61,7 +61,7 @@ const seventhSeaTraitsSchema = Type.Object(
     }
 );
 
-const seventhSeaSkillsSchema = Type.Object(
+export const seventhSeaSkillsSchema = Type.Object(
     {
         aim: Type.Integer(),
         athletics: Type.Integer(),
@@ -85,7 +85,7 @@ const seventhSeaSkillsSchema = Type.Object(
     }
 );
 
-const seventhSeaAdvantageSchema = Type.Object(
+export const seventhSeaAdvantageSchema = Type.Object(
     {
         name: Type.String(),
         description: Type.String()
@@ -95,7 +95,7 @@ const seventhSeaAdvantageSchema = Type.Object(
     }
 );
 
-const seventhSeaCharacterSchema = Type.Object(
+export const seventhSeaCharacterSchema = Type.Object(
     {
         biography: seventhSeaBiographySchema,
         heroPoints: Type.Integer(),
@@ -113,14 +113,3 @@ const seventhSeaCharacterSchema = Type.Object(
         additionalProperties: false
     }
 );
-
-module.exports = {
-    seventhSeaBiographySchema,
-    seventhSeaArcanaSchema,
-    seventhSeaBackgroundSchema,
-    seventhSeaStorySchema,
-    seventhSeaTraitsSchema,
-    seventhSeaSkillsSchema,
-    seventhSeaAdvantageSchema,
-    seventhSeaCharacterSchema
-};
