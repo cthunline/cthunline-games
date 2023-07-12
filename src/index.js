@@ -1,27 +1,30 @@
-const cocSchema = require('./callOfCthulhu/schema.json');
+const { cocCharacterSchema } = require('./callOfCthulhu/schema');
 const cocDefault = require('./callOfCthulhu/default');
-const dnd5Schema = require('./dnd5/schema.json');
+
+const { dnd5CharacterSchema } = require('./dnd5/schema');
 const dnd5Default = require('./dnd5/default');
-const seventhSeaSchema = require('./seventhSea/schema.json');
+
+const { seventhSeaCharacterSchema } = require('./seventhSea/schema');
 const seventhSeaDefault = require('./seventhSea/default');
-const swd6Schema = require('./starWarsD6/schema.json');
+
+const { swd6CharacterSchema } = require('./starWarsD6/schema');
 const swd6Default = require('./starWarsD6/default');
 
 module.exports = {
     callOfCthulhu: {
-        schema: cocSchema,
+        schema: cocCharacterSchema,
         default: cocDefault
     },
     dnd5: {
-        schema: dnd5Schema,
+        schema: dnd5CharacterSchema,
         default: dnd5Default
     },
     seventhSea: {
-        schema: seventhSeaSchema,
+        schema: seventhSeaCharacterSchema,
         default: seventhSeaDefault
     },
     starWarsD6: {
-        schema: swd6Schema,
+        schema: swd6CharacterSchema,
         default: swd6Default
     }
 };

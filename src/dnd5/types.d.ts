@@ -1,150 +1,44 @@
+import {
+    dnd5BiographySchema,
+    dnd5StorySchema,
+    dnd5StatisticsSchema,
+    dnd5AbilitySchema,
+    dnd5AbilitiesSchema,
+    dnd5SkillSchema,
+    dnd5SavingThrowsSchema,
+    dnd5SkillsSchema,
+    dnd5HitPointsSchema,
+    dnd5DeathSavesSchema,
+    dnd5CombatSchema,
+    dnd5AttackSchema,
+    dnd5FeaturesSchema,
+    dnd5MoneySchema,
+    dnd5EquipmentSchema,
+    dnd5SpellSchema,
+    dnd5SpellLevelSchema,
+    dnd5SpellcastingSchema,
+    dnd5CharacterSchema
+} from './schema';
+
 declare module '@cthunline/games' {
-    interface DnD5Character {
-        biography: DnD5Biography;
-        story: DnD5Story;
-        statistics: DnD5Statistics;
-        abilities: DnD5Abilities;
-        savingThrows: DnD5SavingThrows;
-        skills: DnD5Skills;
-        combat: DnD5Combat;
-        attacks: DnD5Attack[];
-        features: DnD5Features;
-        spellcasting: DnD5Spellcasting;
-        equipment: DnD5Equipment;
-    }
-
-    interface DnD5Biography {
-        name: string;
-        class: string;
-        level: number;
-        background: string;
-        race: string;
-        alignment: string;
-        description: string;
-    }
-
-    interface DnD5Story {
-        backstory: string;
-        personalityTraits: string;
-        ideals: string;
-        bonds: string;
-        flaws: string;
-        alliesAndOrganizations: string;
-    }
-
-    interface DnD5Statistics {
-        experiencePoints: number;
-        inspiration: number;
-        proficiencyBonus: number;
-        passiveWisdom: number;
-    }
-
-    interface DnD5Ability {
-        modifier: number;
-        score: number;
-    }
-
-    interface DnD5Abilities {
-        strength: DnD5Ability;
-        dexterity: DnD5Ability;
-        constitution: DnD5Ability;
-        intelligence: DnD5Ability;
-        wisdom: DnD5Ability;
-        charisma: DnD5Ability;
-    }
-
-    interface DnD5Skill {
-        modifier: number;
-        proficient: boolean;
-    }
-
-    type DnD5SavingThrows = Record<keyof DnD5Abilities, DnD5Skill>;
-
-    interface DnD5Skills {
-        acrobatics: DnD5Skill;
-        animalHandling: DnD5Skill;
-        arcana: DnD5Skill;
-        athletics: DnD5Skill;
-        deception: DnD5Skill;
-        history: DnD5Skill;
-        insight: DnD5Skill;
-        intimidation: DnD5Skill;
-        investigation: DnD5Skill;
-        medicine: DnD5Skill;
-        nature: DnD5Skill;
-        perception: DnD5Skill;
-        performance: DnD5Skill;
-        persuasion: DnD5Skill;
-        religion: DnD5Skill;
-        sleightOfHand: DnD5Skill;
-        stealth: DnD5Skill;
-        survival: DnD5Skill;
-    }
-
-    interface DnD5HitPoints {
-        maximum: number;
-        current: number;
-        temporary: number;
-    }
-
-    interface DnD5DeathSaves {
-        successes: number;
-        failures: number;
-    }
-
-    interface DnD5Combat {
-        armorClass: number;
-        initiative: number;
-        speed: number;
-        hitPoints: DnD5HitPoints;
-        hitDice: string;
-        deathSaves: DnD5DeathSaves;
-    }
-
-    interface DnD5Attack {
-        name: string;
-        attackBonus: number;
-        damage: string;
-        type: string;
-    }
-
-    interface DnD5Features {
-        featuresAndTraits: string;
-        proficienciesAndLanguages: string;
-    }
-
-    interface DnD5Money {
-        copper: number;
-        silver: number;
-        electrum: number;
-        gold: number;
-        platinum: number;
-    }
-
-    interface DnD5Equipment {
-        money: DnD5Money;
-        items: string;
-        treasure: string;
-    }
-
-    interface DnD5Spell {
-        prepared: boolean;
-        name: string;
-    }
-
-    interface DnD5SpellLevel {
-        level: number;
-        slotsTotal: number;
-        slotsExpended: number;
-        spells: DnD5Spell[];
-    }
-
-    interface DnD5Spellcasting {
-        class: string;
-        spellAbility: number;
-        spellSaveDC: number;
-        spellAttackBonus: number;
-        cantrips: string[];
-        levels: DnD5SpellLevel[];
-    }
+    type DnD5Biography = Static<typeof dnd5BiographySchema>;
+    type DnD5Story = Static<typeof dnd5StorySchema>;
+    type DnD5Statistics = Static<typeof dnd5StatisticsSchema>;
+    type DnD5Ability = Static<typeof dnd5AbilitySchema>;
+    type DnD5Abilities = Static<typeof dnd5AbilitiesSchema>;
+    type DnD5Skill = Static<typeof dnd5SkillSchema>;
+    type DnD5SavingThrows = Static<typeof dnd5SavingThrowsSchema>;
+    type DnD5Skills = Static<typeof dnd5SkillsSchema>;
+    type DnD5HitPoints = Static<typeof dnd5HitPointsSchema>;
+    type DnD5DeathSaves = Static<typeof dnd5DeathSavesSchema>;
+    type DnD5Combat = Static<typeof dnd5CombatSchema>;
+    type DnD5Attack = Static<typeof dnd5AttackSchema>;
+    type DnD5Features = Static<typeof dnd5FeaturesSchema>;
+    type DnD5Money = Static<typeof dnd5MoneySchema>;
+    type DnD5Equipment = Static<typeof dnd5EquipmentSchema>;
+    type DnD5Spell = Static<typeof dnd5SpellSchema>;
+    type DnD5SpellLevel = Static<typeof dnd5SpellLevelSchema>;
+    type DnD5SpellLevel = Static<typeof dnd5SpellLevelSchema>;
+    type DnD5Spellcasting = Static<typeof dnd5SpellcastingSchema>;
+    type DnD5Character = Static<typeof dnd5CharacterSchema>;
 }

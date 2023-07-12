@@ -1,6 +1,6 @@
 # Cthunline Games
 
-> TS types and JSON schemas for Cthunline games
+> TS types and [TypeBox](https://github.com/sinclairzx81/typebox) schemas for Cthunline games
 
 * [Using this package in other projects](#using-this-package-in-other-projects)
     * [Install](#install)
@@ -19,23 +19,17 @@ npm i @cthunline/games
 ### Usage
 
 ```typescript
-import schemas, { CoCCharacter } from '@cthunline/games';
+import { callOfCthulhu, CoCCharacter } from '@cthunline/games';
+import { Value } from '@sinclair/typebox/value';
 
-// Use json schemas to validate data
-const validator = new Validator(schemas.callOfCthulhu);
+// Check character data validity against schema
+Value.Check(callOfCthulhu.schema, data);
+
+// Use the default character object to initialise a new character
+const newCharacter = { ...callOfCthulhu.default };
 
 // Use TS types to type character objects
 const character: CoCCharacter = {
     // ...
 };
-```
-
-## Development
-
-### Generating schemas
-
-In this project, character JSON schemas are automatically generated from TS types using [typescript-json-schema](https://github.com/YousefED/typescript-json-schema)
-
-```shell
-typescript-json-schema src/callOfCthulhu/types.d.ts CoCCharacter -o src/callOfCthulhu/schema.json --noExtraProps
 ```

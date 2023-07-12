@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "1.1.3",
+    "version": "2.0.0",
     "license": "AGPL-3.0-or-later",
     "homepage": "https://doc.cthunline.org/",
     "repository": {
@@ -10,13 +10,15 @@
     "scripts": {
         "prepare": "[ -d '.husky' ] && husky install || true",
         "lint": "eslint . --ext=.js,.ts --max-warnings=0 && prettier --check .",
-        "lint:fix": "eslint . --fix --ext=.js,.ts --max-warnings=0 && prettier --write ."
+        "format": "eslint . --fix --ext=.js,.ts --max-warnings=0 && prettier --write ."
     },
     "main": "src/index.js",
     "types": "src/index.d.ts",
+    "dependencies": {
+        "@sinclair/typebox": "^0.29.4"
+    },
     "devDependencies": {
         "@tsconfig/recommended": "^1.0.2",
-        "@types/json-schema": "^7.0.11",
         "@typescript-eslint/eslint-plugin": "^5.54.1",
         "@typescript-eslint/parser": "^5.54.1",
         "eslint": "^8.35.0",
