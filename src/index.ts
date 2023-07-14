@@ -10,6 +10,11 @@ import seventhSeaDefault from './seventhSea/default';
 import { swd6CharacterSchema } from './starWarsD6/schema';
 import swd6Default from './starWarsD6/default';
 
+export * from './callOfCthulhu/types';
+export * from './dnd5/types';
+export * from './seventhSea/types';
+export * from './starWarsD6/types';
+
 export const callOfCthulhu = {
     schema: cocCharacterSchema,
     default: cocDefault
