@@ -2,3 +2,4 @@ node_modules
 .husky
 .drone.yml
 README.md
+dist
