@@ -9,8 +9,8 @@
     },
     "scripts": {
         "prepare": "[ -d '.husky' ] && husky install || true",
-        "lint": "eslint . --ext=.js,.ts --max-warnings=0 && prettier --check .",
-        "format": "eslint . --fix --ext=.js,.ts --max-warnings=0 && prettier --write ."
+        "lint": "npx eslint . --ext=.js,.ts --max-warnings=0 && npx prettier --check . && npx tsc --noEmit",
+        "format": "npx eslint . --fix --ext=.js,.ts --max-warnings=0 && npx prettier --write . && npx tsc --noEmit"
     },
     "main": "src/index.ts",
     "dependencies": {
