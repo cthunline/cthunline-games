@@ -1,5 +1,5 @@
 import { Static } from '@sinclair/typebox';
-import { seventhSeaBiographySchema, seventhSeaArcanaSchema, seventhSeaBackgroundSchema, seventhSeaStorySchema, seventhSeaTraitsSchema, seventhSeaSkillsSchema, seventhSeaAdvantageSchema, seventhSeaCharacterSchema } from './schema';
+import { seventhSeaAdvantageSchema, seventhSeaArcanaSchema, seventhSeaBackgroundSchema, seventhSeaBiographySchema, seventhSeaCharacterSchema, seventhSeaSkillsSchema, seventhSeaStorySchema, seventhSeaTraitsSchema } from './schema';
 export type SeventhSeaBiography = Static<typeof seventhSeaBiographySchema>;
 export type SeventhSeaArcana = Static<typeof seventhSeaArcanaSchema>;
 export type SeventhSeaBackground = Static<typeof seventhSeaBackgroundSchema>;

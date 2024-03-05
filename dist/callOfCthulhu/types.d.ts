@@ -1,5 +1,5 @@
 import { Static } from '@sinclair/typebox';
-import { cocBiographySchema, cocCharacteristicSchema, cocPointSchema, cocPointsSchema, cocLuckSchema, cocSanitySchema, cocCharacteristicsSchema, cocStatusSchema, cocSkillSchema, cocCombatSchema, cocWeaponSchema, cocStorySchema, cocCharacterSchema } from './schema';
+import { cocBiographySchema, cocCharacterSchema, cocCharacteristicSchema, cocCharacteristicsSchema, cocCombatSchema, cocLuckSchema, cocPointSchema, cocPointsSchema, cocSanitySchema, cocSkillSchema, cocStatusSchema, cocStorySchema, cocWeaponSchema } from './schema';
 export type CoCBiography = Static<typeof cocBiographySchema>;
 export type CoCCharacteristic = Static<typeof cocCharacteristicSchema>;
 export type CoCPoint = Static<typeof cocPointSchema>;

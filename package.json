@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "license": "AGPL-3.0-or-later",
     "homepage": "https://doc.cthunline.org/",
     "repository": {
@@ -10,25 +10,21 @@
     "scripts": {
         "build": "tsc --build --clean tsconfig.json && tsc --project tsconfig.json",
         "prepare": "[ -d '.husky' ] && husky install || true",
-        "lint": "npx eslint . --ext=.js,.ts --max-warnings=0 && npx prettier --check . && npx tsc --noEmit",
-        "format": "npx eslint . --fix --ext=.js,.ts --max-warnings=0 && npx prettier --write . && npx tsc --noEmit"
+        "lint": "npm run lint:biome && npm run lint:ts",
+        "format": "npm run format:biome && npm run lint:ts",
+        "lint:biome": "npx @biomejs/biome check .",
+        "format:biome": "npx @biomejs/biome check --apply .",
+        "lint:ts": "tsc --noEmit"
     },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "dependencies": {
-        "@sinclair/typebox": "^0.29.4"
+        "@sinclair/typebox": "^0.32.15"
     },
     "devDependencies": {
-        "@tsconfig/recommended": "^1.0.2",
-        "@typescript-eslint/eslint-plugin": "^6.0.0",
-        "@typescript-eslint/parser": "^6.0.0",
-        "eslint": "^8.44.0",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-config-airbnb-typescript": "^17.1.0",
-        "eslint-config-prettier": "^8.8.0",
-        "eslint-plugin-import": "^2.27.5",
-        "husky": "^8.0.3",
-        "prettier": "^3.0.0",
-        "typescript": "^5.1.6"
+        "@biomejs/biome": "^1.5.3",
+        "@tsconfig/recommended": "^1.0.3",
+        "husky": "^9.0.11",
+        "typescript": "^5.3.3"
     }
 }

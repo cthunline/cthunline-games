@@ -18,14 +18,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.starWarsD6 = exports.seventhSea = exports.dnd5 = exports.callOfCthulhu = void 0;
-const schema_1 = require("./callOfCthulhu/schema");
 const default_1 = __importDefault(require("./callOfCthulhu/default"));
-const schema_2 = require("./dnd5/schema");
+const schema_1 = require("./callOfCthulhu/schema");
 const default_2 = __importDefault(require("./dnd5/default"));
-const schema_3 = require("./seventhSea/schema");
+const schema_2 = require("./dnd5/schema");
 const default_3 = __importDefault(require("./seventhSea/default"));
-const schema_4 = require("./starWarsD6/schema");
+const schema_3 = require("./seventhSea/schema");
 const default_4 = __importDefault(require("./starWarsD6/default"));
+const schema_4 = require("./starWarsD6/schema");
 __exportStar(require("./callOfCthulhu/types"), exports);
 __exportStar(require("./dnd5/types"), exports);
 __exportStar(require("./seventhSea/types"), exports);

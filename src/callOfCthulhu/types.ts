@@ -2,18 +2,18 @@ import { Static } from '@sinclair/typebox';
 
 import {
     cocBiographySchema,
+    cocCharacterSchema,
     cocCharacteristicSchema,
+    cocCharacteristicsSchema,
+    cocCombatSchema,
+    cocLuckSchema,
     cocPointSchema,
     cocPointsSchema,
-    cocLuckSchema,
     cocSanitySchema,
-    cocCharacteristicsSchema,
-    cocStatusSchema,
     cocSkillSchema,
-    cocCombatSchema,
-    cocWeaponSchema,
+    cocStatusSchema,
     cocStorySchema,
-    cocCharacterSchema
+    cocWeaponSchema
 } from './schema';
 
 export type CoCBiography = Static<typeof cocBiographySchema>;

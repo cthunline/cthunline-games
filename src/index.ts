@@ -1,14 +1,14 @@
-import { cocCharacterSchema } from './callOfCthulhu/schema';
 import cocDefault from './callOfCthulhu/default';
+import { cocCharacterSchema } from './callOfCthulhu/schema';
 
-import { dnd5CharacterSchema } from './dnd5/schema';
 import dnd5Default from './dnd5/default';
+import { dnd5CharacterSchema } from './dnd5/schema';
 
-import { seventhSeaCharacterSchema } from './seventhSea/schema';
 import seventhSeaDefault from './seventhSea/default';
+import { seventhSeaCharacterSchema } from './seventhSea/schema';
 
-import { swd6CharacterSchema } from './starWarsD6/schema';
 import swd6Default from './starWarsD6/default';
+import { swd6CharacterSchema } from './starWarsD6/schema';
 
 export * from './callOfCthulhu/types';
 export * from './dnd5/types';

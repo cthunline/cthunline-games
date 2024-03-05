@@ -1,5 +1,5 @@
 import { Static } from '@sinclair/typebox';
-import { swd6BiographySchema, swd6SkillSchema, swd6AttributeDataSchema, swd6AttributesSchema, swd6StatisticsSchema, swd6WoundStatusSchema, swd6StorySchema, swd6WeaponSchema, swd6CharacterSchema } from './schema';
+import { swd6AttributeDataSchema, swd6AttributesSchema, swd6BiographySchema, swd6CharacterSchema, swd6SkillSchema, swd6StatisticsSchema, swd6StorySchema, swd6WeaponSchema, swd6WoundStatusSchema } from './schema';
 export type SWD6Biography = Static<typeof swd6BiographySchema>;
 export type SWD6Skill = Static<typeof swd6SkillSchema>;
 export type SWD6AttributeData = Static<typeof swd6AttributeDataSchema>;
