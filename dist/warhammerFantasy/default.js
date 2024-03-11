@@ -60,19 +60,55 @@ exports.default = {
             characteristicName: 'dexterity',
             ...defaultBasicSkill
         },
-        gossip: {
-            characteristicName: 'fellowship',
-            ...defaultBasicSkill
-        },
         athletics: {
             characteristicName: 'agility',
             ...defaultBasicSkill
         },
-        haggle: {
+        bribery: {
             characteristicName: 'fellowship',
             ...defaultBasicSkill
         },
-        bribery: {
+        charm: {
+            characteristicName: 'fellowship',
+            ...defaultBasicSkill
+        },
+        charmAnimal: {
+            characteristicName: 'willpower',
+            ...defaultBasicSkill
+        },
+        climb: {
+            characteristicName: 'strength',
+            ...defaultBasicSkill
+        },
+        cool: {
+            characteristicName: 'willpower',
+            ...defaultBasicSkill
+        },
+        consumeAlcohol: {
+            characteristicName: 'toughness',
+            ...defaultBasicSkill
+        },
+        drive: {
+            characteristicName: 'agility',
+            ...defaultBasicSkill
+        },
+        endurance: {
+            characteristicName: 'toughness',
+            ...defaultBasicSkill
+        },
+        entertain: {
+            characteristicName: 'fellowship',
+            ...defaultBasicSkill
+        },
+        gamble: {
+            characteristicName: 'intelligence',
+            ...defaultBasicSkill
+        },
+        gossip: {
+            characteristicName: 'fellowship',
+            ...defaultBasicSkill
+        },
+        haggle: {
             characteristicName: 'fellowship',
             ...defaultBasicSkill
         },
@@ -80,40 +116,20 @@ exports.default = {
             characteristicName: 'strength',
             ...defaultBasicSkill
         },
-        charm: {
-            characteristicName: 'fellowship',
-            ...defaultBasicSkill
-        },
         intuition: {
             characteristicName: 'initiative',
-            ...defaultBasicSkill
-        },
-        charmAnimal: {
-            characteristicName: 'willpower',
             ...defaultBasicSkill
         },
         leadership: {
             characteristicName: 'fellowship',
             ...defaultBasicSkill
         },
-        climb: {
-            characteristicName: 'strength',
-            ...defaultBasicSkill
-        },
         meleeBasic: {
             characteristicName: 'weaponSkill',
             ...defaultBasicSkill
         },
-        cool: {
-            characteristicName: 'willpower',
-            ...defaultBasicSkill
-        },
         melee: {
             characteristicName: 'weaponSkill',
-            ...defaultBasicSkill
-        },
-        consumeAlcohol: {
-            characteristicName: 'toughness',
             ...defaultBasicSkill
         },
         navigation: {
@@ -128,32 +144,16 @@ exports.default = {
             characteristicName: 'intelligence',
             ...defaultBasicSkill
         },
-        drive: {
-            characteristicName: 'agility',
-            ...defaultBasicSkill
-        },
         perception: {
             characteristicName: 'initiative',
-            ...defaultBasicSkill
-        },
-        endurance: {
-            characteristicName: 'toughness',
             ...defaultBasicSkill
         },
         ride: {
             characteristicName: 'agility',
             ...defaultBasicSkill
         },
-        entertain: {
-            characteristicName: 'fellowship',
-            ...defaultBasicSkill
-        },
         row: {
             characteristicName: 'strength',
-            ...defaultBasicSkill
-        },
-        gamble: {
-            characteristicName: 'intelligence',
             ...defaultBasicSkill
         },
         stealth: {

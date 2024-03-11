@@ -1294,25 +1294,79 @@ export declare const warhammerFantasy: {
                 skill: number;
                 characteristicName: "dexterity";
             };
-            gossip: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
             athletics: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
                 characteristicName: "agility";
             };
-            haggle: {
+            bribery: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
                 characteristicName: "fellowship";
             };
-            bribery: {
+            charm: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            charmAnimal: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "willpower";
+            };
+            climb: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "strength";
+            };
+            cool: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "willpower";
+            };
+            consumeAlcohol: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "toughness";
+            };
+            drive: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "agility";
+            };
+            endurance: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "toughness";
+            };
+            entertain: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            gamble: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "intelligence";
+            };
+            gossip: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            haggle: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
@@ -1324,23 +1378,11 @@ export declare const warhammerFantasy: {
                 skill: number;
                 characteristicName: "strength";
             };
-            charm: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
             intuition: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
                 characteristicName: "initiative";
-            };
-            charmAnimal: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "willpower";
             };
             leadership: {
                 characteristicScore: number;
@@ -1348,35 +1390,17 @@ export declare const warhammerFantasy: {
                 skill: number;
                 characteristicName: "fellowship";
             };
-            climb: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "strength";
-            };
             meleeBasic: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
                 characteristicName: "weaponSkill";
             };
-            cool: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "willpower";
-            };
             melee: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
                 characteristicName: "weaponSkill";
-            };
-            consumeAlcohol: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "toughness";
             };
             navigation: {
                 characteristicScore: number;
@@ -1396,23 +1420,11 @@ export declare const warhammerFantasy: {
                 skill: number;
                 characteristicName: "intelligence";
             };
-            drive: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "agility";
-            };
             perception: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
                 characteristicName: "initiative";
-            };
-            endurance: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "toughness";
             };
             ride: {
                 characteristicScore: number;
@@ -1420,23 +1432,11 @@ export declare const warhammerFantasy: {
                 skill: number;
                 characteristicName: "agility";
             };
-            entertain: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
             row: {
                 characteristicScore: number;
                 advances: number;
                 skill: number;
                 characteristicName: "strength";
-            };
-            gamble: {
-                characteristicScore: number;
-                advances: number;
-                skill: number;
-                characteristicName: "intelligence";
             };
             stealth: {
                 characteristicScore: number;
