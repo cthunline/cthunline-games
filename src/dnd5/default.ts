@@ -1,3 +1,5 @@
+import { type DnD5Character } from './types';
+
 const defaultAbility = {
     modifier: 0,
     score: 10
@@ -107,4 +109,4 @@ export default {
         cantrips: [],
         levels: []
     }
-};
+} satisfies DnD5Character;

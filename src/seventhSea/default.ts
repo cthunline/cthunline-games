@@ -1,3 +1,5 @@
+import { type SeventhSeaCharacter } from './types';
+
 export default {
     biography: {
         name: '',
@@ -44,4 +46,4 @@ export default {
     advantages: [],
     items: '',
     notes: ''
-};
+} satisfies SeventhSeaCharacter;

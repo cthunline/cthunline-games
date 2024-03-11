@@ -1,3 +1,5 @@
+import { type CoCCharacter } from './types';
+
 const defaultCharacteristic = {
     regular: 0,
     half: 0,
@@ -73,4 +75,4 @@ export default {
         cash: '',
         assets: ''
     }
-};
+} satisfies CoCCharacter;

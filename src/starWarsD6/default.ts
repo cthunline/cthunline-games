@@ -1,3 +1,5 @@
+import { type SWD6Character } from './types';
+
 const defaultAttribute = {
     value: '',
     skills: []
@@ -45,4 +47,4 @@ export default {
         quote: '',
         connections: ''
     }
-};
+} satisfies SWD6Character;

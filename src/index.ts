@@ -10,10 +10,14 @@ import seventhSeaDefault from './seventhSea/default';
 import { swd6CharacterSchema } from './starWarsD6/schema';
 import swd6Default from './starWarsD6/default';
 
+import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema';
+import warhammerFantasyDefault from './warhammerFantasy/default';
+
 export * from './callOfCthulhu/types';
 export * from './dnd5/types';
 export * from './seventhSea/types';
 export * from './starWarsD6/types';
+export * from './warhammerFantasy/types';
 
 export const callOfCthulhu = {
     schema: cocCharacterSchema,
@@ -33,4 +37,9 @@ export const seventhSea = {
 export const starWarsD6 = {
     schema: swd6CharacterSchema,
     default: swd6Default
+};
+
+export const warhammerFantasy = {
+    schema: warhammerFantasyCharacterSchema,
+    default: warhammerFantasyDefault
 };
