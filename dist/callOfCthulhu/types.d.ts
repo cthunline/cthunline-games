@@ -1,4 +1,4 @@
-import { Static } from '@sinclair/typebox';
+import { type Static } from '@sinclair/typebox';
 import { cocBiographySchema, cocCharacteristicSchema, cocPointSchema, cocPointsSchema, cocLuckSchema, cocSanitySchema, cocCharacteristicsSchema, cocStatusSchema, cocSkillSchema, cocCombatSchema, cocWeaponSchema, cocStorySchema, cocCharacterSchema } from './schema';
 export type CoCBiography = Static<typeof cocBiographySchema>;
 export type CoCCharacteristic = Static<typeof cocCharacteristicSchema>;

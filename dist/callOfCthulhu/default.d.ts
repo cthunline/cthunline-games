@@ -68,11 +68,11 @@ declare const _default: {
         maximum: number;
     };
     status: {
-        temporaryInsanity: boolean;
-        indefiniteInsanity: boolean;
-        majorWound: boolean;
-        unconscious: boolean;
-        dying: boolean;
+        temporaryInsanity: false;
+        indefiniteInsanity: false;
+        majorWound: false;
+        unconscious: false;
+        dying: false;
     };
     skills: never[];
     combat: {

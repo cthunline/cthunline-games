@@ -2,6 +2,7 @@ export * from './callOfCthulhu/types';
 export * from './dnd5/types';
 export * from './seventhSea/types';
 export * from './starWarsD6/types';
+export * from './warhammerFantasy/types';
 export declare const callOfCthulhu: {
     schema: import("@sinclair/typebox").TObject<{
         biography: import("@sinclair/typebox").TObject<{
@@ -190,11 +191,11 @@ export declare const callOfCthulhu: {
             maximum: number;
         };
         status: {
-            temporaryInsanity: boolean;
-            indefiniteInsanity: boolean;
-            majorWound: boolean;
-            unconscious: boolean;
-            dying: boolean;
+            temporaryInsanity: false;
+            indefiniteInsanity: false;
+            majorWound: false;
+            unconscious: false;
+            dying: false;
         };
         skills: never[];
         combat: {
@@ -852,17 +853,17 @@ export declare const starWarsD6: {
         abilities: never[];
         statistics: {
             move: number;
-            forceSensitive: boolean;
+            forceSensitive: false;
             forcePoints: number;
             darkSidePoints: number;
             characterPoints: number;
         };
         woundStatus: {
-            stunned: boolean;
-            wounded: boolean;
-            doublyWounded: boolean;
-            incapacitated: boolean;
-            mortallyWounded: boolean;
+            stunned: false;
+            wounded: false;
+            doublyWounded: false;
+            incapacitated: false;
+            mortallyWounded: false;
         };
         weapons: never[];
         story: {
@@ -873,5 +874,624 @@ export declare const starWarsD6: {
             quote: string;
             connections: string;
         };
+    };
+};
+export declare const warhammerFantasy: {
+    schema: import("@sinclair/typebox").TObject<{
+        biography: import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            species: import("@sinclair/typebox").TString;
+            class: import("@sinclair/typebox").TString;
+            career: import("@sinclair/typebox").TString;
+            careerLevel: import("@sinclair/typebox").TString;
+            careerPath: import("@sinclair/typebox").TString;
+            status: import("@sinclair/typebox").TString;
+            age: import("@sinclair/typebox").TString;
+            height: import("@sinclair/typebox").TString;
+            hair: import("@sinclair/typebox").TString;
+            eyes: import("@sinclair/typebox").TString;
+        }>;
+        characteristics: import("@sinclair/typebox").TObject<{
+            weaponSkill: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            ballisticSkill: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            strength: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            toughness: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            initiative: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            agility: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            dexterity: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            intelligence: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            willpower: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+            fellowship: import("@sinclair/typebox").TObject<{
+                initial: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                current: import("@sinclair/typebox").TInteger;
+            }>;
+        }>;
+        fate: import("@sinclair/typebox").TObject<{
+            fate: import("@sinclair/typebox").TInteger;
+            fortune: import("@sinclair/typebox").TInteger;
+        }>;
+        resilience: import("@sinclair/typebox").TObject<{
+            resilience: import("@sinclair/typebox").TInteger;
+            resolve: import("@sinclair/typebox").TInteger;
+            motivation: import("@sinclair/typebox").TInteger;
+        }>;
+        experience: import("@sinclair/typebox").TObject<{
+            current: import("@sinclair/typebox").TInteger;
+            spent: import("@sinclair/typebox").TInteger;
+            total: import("@sinclair/typebox").TInteger;
+        }>;
+        movement: import("@sinclair/typebox").TObject<{
+            movement: import("@sinclair/typebox").TInteger;
+            walk: import("@sinclair/typebox").TInteger;
+            run: import("@sinclair/typebox").TInteger;
+        }>;
+        basicSkills: import("@sinclair/typebox").TObject<{
+            art: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"dexterity">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            gossip: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            athletics: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            haggle: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            bribery: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            intimidate: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"strength">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            charm: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            intuition: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"initiative">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            charmAnimal: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"willpower">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            leadership: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            climb: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"strength">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            meleeBasic: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"weaponSkill">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            cool: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"willpower">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            melee: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"weaponSkill">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            consumeAlcohol: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"toughness">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            navigation: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"initiative">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            dodge: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            outdoorSurvival: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"intelligence">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            drive: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            perception: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"initiative">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            endurance: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"toughness">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            ride: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            entertain: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            row: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"strength">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            gamble: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"intelligence">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+            stealth: import("@sinclair/typebox").TObject<{
+                characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
+                characteristicScore: import("@sinclair/typebox").TInteger;
+                advances: import("@sinclair/typebox").TInteger;
+                skill: import("@sinclair/typebox").TInteger;
+            }>;
+        }>;
+        otherSkills: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
+            characteristicScore: import("@sinclair/typebox").TInteger;
+            advances: import("@sinclair/typebox").TInteger;
+            skill: import("@sinclair/typebox").TInteger;
+        }>>;
+        talents: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            timesTaken: import("@sinclair/typebox").TInteger;
+            description: import("@sinclair/typebox").TString;
+        }>>;
+        ambitions: import("@sinclair/typebox").TObject<{
+            shortTerm: import("@sinclair/typebox").TString;
+            longTerm: import("@sinclair/typebox").TString;
+        }>;
+        party: import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            shortTerm: import("@sinclair/typebox").TString;
+            longTerm: import("@sinclair/typebox").TString;
+            members: import("@sinclair/typebox").TString;
+        }>;
+        armour: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            locations: import("@sinclair/typebox").TString;
+            encumbrance: import("@sinclair/typebox").TString;
+            armourPoints: import("@sinclair/typebox").TInteger;
+            qualities: import("@sinclair/typebox").TString;
+        }>>;
+        armourPoints: import("@sinclair/typebox").TObject<{
+            head: import("@sinclair/typebox").TInteger;
+            rightArm: import("@sinclair/typebox").TInteger;
+            leftArm: import("@sinclair/typebox").TInteger;
+            body: import("@sinclair/typebox").TInteger;
+            rightLeg: import("@sinclair/typebox").TInteger;
+            leftLeg: import("@sinclair/typebox").TInteger;
+            shield: import("@sinclair/typebox").TInteger;
+        }>;
+        trappings: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            encumbrance: import("@sinclair/typebox").TString;
+        }>>;
+        psychology: import("@sinclair/typebox").TString;
+        corruptionMutation: import("@sinclair/typebox").TString;
+        wealth: import("@sinclair/typebox").TObject<{
+            brassPennies: import("@sinclair/typebox").TInteger;
+            silverShillings: import("@sinclair/typebox").TInteger;
+            goldCrowns: import("@sinclair/typebox").TInteger;
+        }>;
+        encumbrance: import("@sinclair/typebox").TObject<{
+            weapons: import("@sinclair/typebox").TInteger;
+            armour: import("@sinclair/typebox").TInteger;
+            trappings: import("@sinclair/typebox").TInteger;
+            maximum: import("@sinclair/typebox").TInteger;
+            total: import("@sinclair/typebox").TInteger;
+        }>;
+        wounds: import("@sinclair/typebox").TObject<{
+            strengthBonus: import("@sinclair/typebox").TInteger;
+            twiceToughnessBonus: import("@sinclair/typebox").TInteger;
+            willpowerBonus: import("@sinclair/typebox").TInteger;
+            hardy: import("@sinclair/typebox").TInteger;
+            wounds: import("@sinclair/typebox").TInteger;
+            description: import("@sinclair/typebox").TString;
+        }>;
+        weapons: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            group: import("@sinclair/typebox").TString;
+            encumbrance: import("@sinclair/typebox").TString;
+            rangeReach: import("@sinclair/typebox").TString;
+            damage: import("@sinclair/typebox").TString;
+            qualities: import("@sinclair/typebox").TString;
+        }>>;
+        spells: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            targetNumber: import("@sinclair/typebox").TInteger;
+            range: import("@sinclair/typebox").TString;
+            target: import("@sinclair/typebox").TString;
+            duration: import("@sinclair/typebox").TString;
+            effect: import("@sinclair/typebox").TString;
+        }>>;
+        sin: import("@sinclair/typebox").TInteger;
+    }>;
+    default: {
+        biography: {
+            name: string;
+            species: string;
+            class: string;
+            career: string;
+            careerLevel: string;
+            careerPath: string;
+            status: string;
+            age: string;
+            height: string;
+            hair: string;
+            eyes: string;
+        };
+        characteristics: {
+            weaponSkill: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            ballisticSkill: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            strength: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            toughness: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            initiative: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            agility: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            dexterity: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            intelligence: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            willpower: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+            fellowship: {
+                initial: number;
+                advances: number;
+                current: number;
+            };
+        };
+        fate: {
+            fate: number;
+            fortune: number;
+        };
+        resilience: {
+            resilience: number;
+            resolve: number;
+            motivation: number;
+        };
+        experience: {
+            current: number;
+            spent: number;
+            total: number;
+        };
+        movement: {
+            movement: number;
+            walk: number;
+            run: number;
+        };
+        basicSkills: {
+            art: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "dexterity";
+            };
+            gossip: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            athletics: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "agility";
+            };
+            haggle: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            bribery: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            intimidate: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "strength";
+            };
+            charm: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            intuition: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "initiative";
+            };
+            charmAnimal: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "willpower";
+            };
+            leadership: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            climb: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "strength";
+            };
+            meleeBasic: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "weaponSkill";
+            };
+            cool: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "willpower";
+            };
+            melee: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "weaponSkill";
+            };
+            consumeAlcohol: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "toughness";
+            };
+            navigation: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "initiative";
+            };
+            dodge: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "agility";
+            };
+            outdoorSurvival: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "intelligence";
+            };
+            drive: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "agility";
+            };
+            perception: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "initiative";
+            };
+            endurance: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "toughness";
+            };
+            ride: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "agility";
+            };
+            entertain: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "fellowship";
+            };
+            row: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "strength";
+            };
+            gamble: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "intelligence";
+            };
+            stealth: {
+                characteristicScore: number;
+                advances: number;
+                skill: number;
+                characteristicName: "agility";
+            };
+        };
+        otherSkills: never[];
+        talents: never[];
+        ambitions: {
+            shortTerm: string;
+            longTerm: string;
+        };
+        party: {
+            name: string;
+            shortTerm: string;
+            longTerm: string;
+            members: string;
+        };
+        armour: never[];
+        armourPoints: {
+            head: number;
+            rightArm: number;
+            leftArm: number;
+            body: number;
+            rightLeg: number;
+            leftLeg: number;
+            shield: number;
+        };
+        trappings: never[];
+        psychology: string;
+        corruptionMutation: string;
+        wealth: {
+            brassPennies: number;
+            silverShillings: number;
+            goldCrowns: number;
+        };
+        encumbrance: {
+            weapons: number;
+            armour: number;
+            trappings: number;
+            maximum: number;
+            total: number;
+        };
+        wounds: {
+            strengthBonus: number;
+            twiceToughnessBonus: number;
+            willpowerBonus: number;
+            hardy: number;
+            wounds: number;
+            description: string;
+        };
+        weapons: never[];
+        spells: never[];
+        sin: number;
     };
 };

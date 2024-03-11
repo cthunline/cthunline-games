@@ -1,4 +1,4 @@
-import { Static } from '@sinclair/typebox';
+import { type Static } from '@sinclair/typebox';
 import { dnd5BiographySchema, dnd5StorySchema, dnd5StatisticsSchema, dnd5AbilitySchema, dnd5AbilitiesSchema, dnd5SkillSchema, dnd5SavingThrowsSchema, dnd5SkillsSchema, dnd5HitPointsSchema, dnd5DeathSavesSchema, dnd5CombatSchema, dnd5AttackSchema, dnd5FeaturesSchema, dnd5MoneySchema, dnd5EquipmentSchema, dnd5SpellSchema, dnd5SpellLevelSchema, dnd5SpellcastingSchema, dnd5CharacterSchema } from './schema';
 export type DnD5Biography = Static<typeof dnd5BiographySchema>;
 export type DnD5Story = Static<typeof dnd5StorySchema>;

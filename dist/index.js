@@ -17,7 +17,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.starWarsD6 = exports.seventhSea = exports.dnd5 = exports.callOfCthulhu = void 0;
+exports.warhammerFantasy = exports.starWarsD6 = exports.seventhSea = exports.dnd5 = exports.callOfCthulhu = void 0;
 const schema_1 = require("./callOfCthulhu/schema");
 const default_1 = __importDefault(require("./callOfCthulhu/default"));
 const schema_2 = require("./dnd5/schema");
@@ -26,10 +26,13 @@ const schema_3 = require("./seventhSea/schema");
 const default_3 = __importDefault(require("./seventhSea/default"));
 const schema_4 = require("./starWarsD6/schema");
 const default_4 = __importDefault(require("./starWarsD6/default"));
+const schema_5 = require("./warhammerFantasy/schema");
+const default_5 = __importDefault(require("./warhammerFantasy/default"));
 __exportStar(require("./callOfCthulhu/types"), exports);
 __exportStar(require("./dnd5/types"), exports);
 __exportStar(require("./seventhSea/types"), exports);
 __exportStar(require("./starWarsD6/types"), exports);
+__exportStar(require("./warhammerFantasy/types"), exports);
 exports.callOfCthulhu = {
     schema: schema_1.cocCharacterSchema,
     default: default_1.default
@@ -45,4 +48,8 @@ exports.seventhSea = {
 exports.starWarsD6 = {
     schema: schema_4.swd6CharacterSchema,
     default: default_4.default
+};
+exports.warhammerFantasy = {
+    schema: schema_5.warhammerFantasyCharacterSchema,
+    default: default_5.default
 };

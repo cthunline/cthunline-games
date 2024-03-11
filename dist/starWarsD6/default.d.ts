@@ -37,17 +37,17 @@ declare const _default: {
     abilities: never[];
     statistics: {
         move: number;
-        forceSensitive: boolean;
+        forceSensitive: false;
         forcePoints: number;
         darkSidePoints: number;
         characterPoints: number;
     };
     woundStatus: {
-        stunned: boolean;
-        wounded: boolean;
-        doublyWounded: boolean;
-        incapacitated: boolean;
-        mortallyWounded: boolean;
+        stunned: false;
+        wounded: false;
+        doublyWounded: false;
+        incapacitated: false;
+        mortallyWounded: false;
     };
     weapons: never[];
     story: {
