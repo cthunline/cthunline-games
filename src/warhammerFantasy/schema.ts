@@ -292,7 +292,7 @@ export const warhammerFantasyWeaponSchema = Type.Object(
 export const warhammerFantasySpellsSchema = Type.Object(
     {
         name: Type.String(),
-        targetNumber: Type.Integer(),
+        castingNumber: Type.Integer(),
         range: Type.String(),
         target: Type.String(),
         duration: Type.String(),

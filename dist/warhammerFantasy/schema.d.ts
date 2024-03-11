@@ -318,7 +318,7 @@ export declare const warhammerFantasyWeaponSchema: import("@sinclair/typebox").T
 }>;
 export declare const warhammerFantasySpellsSchema: import("@sinclair/typebox").TObject<{
     name: import("@sinclair/typebox").TString;
-    targetNumber: import("@sinclair/typebox").TInteger;
+    castingNumber: import("@sinclair/typebox").TInteger;
     range: import("@sinclair/typebox").TString;
     target: import("@sinclair/typebox").TString;
     duration: import("@sinclair/typebox").TString;
@@ -641,7 +641,7 @@ export declare const warhammerFantasyCharacterSchema: import("@sinclair/typebox"
     }>>;
     spells: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
         name: import("@sinclair/typebox").TString;
-        targetNumber: import("@sinclair/typebox").TInteger;
+        castingNumber: import("@sinclair/typebox").TInteger;
         range: import("@sinclair/typebox").TString;
         target: import("@sinclair/typebox").TString;
         duration: import("@sinclair/typebox").TString;

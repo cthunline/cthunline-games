@@ -1194,7 +1194,7 @@ export declare const warhammerFantasy: {
         }>>;
         spells: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             name: import("@sinclair/typebox").TString;
-            targetNumber: import("@sinclair/typebox").TInteger;
+            castingNumber: import("@sinclair/typebox").TInteger;
             range: import("@sinclair/typebox").TString;
             target: import("@sinclair/typebox").TString;
             duration: import("@sinclair/typebox").TString;

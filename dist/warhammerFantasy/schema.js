@@ -209,7 +209,7 @@ exports.warhammerFantasyWeaponSchema = typebox_1.Type.Object({
 });
 exports.warhammerFantasySpellsSchema = typebox_1.Type.Object({
     name: typebox_1.Type.String(),
-    targetNumber: typebox_1.Type.Integer(),
+    castingNumber: typebox_1.Type.Integer(),
     range: typebox_1.Type.String(),
     target: typebox_1.Type.String(),
     duration: typebox_1.Type.String(),
