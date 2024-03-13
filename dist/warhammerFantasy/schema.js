@@ -192,8 +192,9 @@ exports.warhammerFantasyWoundsSchema = typebox_1.Type.Object({
     twiceToughnessBonus: typebox_1.Type.Integer(),
     willpowerBonus: typebox_1.Type.Integer(),
     hardy: typebox_1.Type.Integer(),
-    wounds: typebox_1.Type.Integer(),
-    description: typebox_1.Type.String()
+    total: typebox_1.Type.Integer(),
+    current: typebox_1.Type.Integer(),
+    notes: typebox_1.Type.String()
 }, {
     additionalProperties: false
 });

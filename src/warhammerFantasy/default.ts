@@ -205,8 +205,9 @@ export default {
         twiceToughnessBonus: 0,
         willpowerBonus: 0,
         hardy: 0,
-        wounds: 0,
-        description: ''
+        total: 0,
+        current: 0,
+        notes: ''
     },
     weapons: [],
     spells: [],

@@ -283,8 +283,9 @@ declare const _default: {
         twiceToughnessBonus: number;
         willpowerBonus: number;
         hardy: number;
-        wounds: number;
-        description: string;
+        total: number;
+        current: number;
+        notes: string;
     };
     weapons: never[];
     spells: never[];

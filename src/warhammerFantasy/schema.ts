@@ -267,8 +267,9 @@ export const warhammerFantasyWoundsSchema = Type.Object(
         twiceToughnessBonus: Type.Integer(),
         willpowerBonus: Type.Integer(),
         hardy: Type.Integer(),
-        wounds: Type.Integer(),
-        description: Type.String()
+        total: Type.Integer(),
+        current: Type.Integer(),
+        notes: Type.String()
     },
     {
         additionalProperties: false
