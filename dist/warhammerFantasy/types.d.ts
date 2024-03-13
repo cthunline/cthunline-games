@@ -2,7 +2,7 @@ import { Static } from '@sinclair/typebox';
 import { warhammerFantasyBiographySchema, warhammerFantasyCharacteristicSchema, warhammerFantasyCharacteristicName, warhammerFantasyCharacteristicsSchema, warhammerFantasyFateSchema, warhammerFantasyResilienceSchema, warhammerFantasyExperienceSchema, warhammerFantasyMovementSchema, warhammerFantasyBasicSkillsSchema, warhammerFantasyOtherSkillSchema, warhammerFantasyTalentSchema, warhammerFantasyAmbitionsSchema, warhammerFantasyPartySchema, warhammerFantasyArmourSchema, warhammerFantasyArmourPointsSchema, warhammerFantasyTrappingSchema, warhammerFantasyWealthSchema, warhammerFantasyEncumbranceSchema, warhammerFantasyWoundsSchema, warhammerFantasyWeaponSchema, warhammerFantasySpellsSchema, warhammerFantasyCharacterSchema } from './schema';
 export type WarhammerFantasyBiography = Static<typeof warhammerFantasyBiographySchema>;
 export type WarhammerFantasyCharacteristic = Static<typeof warhammerFantasyCharacteristicSchema>;
-export type WarhammerFantasyCharacterist = Static<typeof warhammerFantasyCharacteristicName>;
+export type WarhammerFantasyCharacteristicName = Static<typeof warhammerFantasyCharacteristicName>;
 export type WarhammerFantasyCharacteristics = Static<typeof warhammerFantasyCharacteristicsSchema>;
 export type WarhammerFantasyFate = Static<typeof warhammerFantasyFateSchema>;
 export type WarhammerFantasyResilience = Static<typeof warhammerFantasyResilienceSchema>;
