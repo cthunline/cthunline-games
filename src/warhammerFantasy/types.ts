@@ -31,7 +31,7 @@ export type WarhammerFantasyBiography = Static<
 export type WarhammerFantasyCharacteristic = Static<
     typeof warhammerFantasyCharacteristicSchema
 >;
-export type WarhammerFantasyCharacterist = Static<
+export type WarhammerFantasyCharacteristicName = Static<
     typeof warhammerFantasyCharacteristicName
 >;
 export type WarhammerFantasyCharacteristics = Static<
