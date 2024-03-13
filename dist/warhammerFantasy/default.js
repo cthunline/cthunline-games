@@ -202,7 +202,7 @@ exports.default = {
         strengthBonus: 0,
         twiceToughnessBonus: 0,
         willpowerBonus: 0,
-        hardy: 0,
+        hardy: false,
         total: 0,
         current: 0,
         notes: ''

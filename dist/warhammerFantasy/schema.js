@@ -191,7 +191,7 @@ exports.warhammerFantasyWoundsSchema = typebox_1.Type.Object({
     strengthBonus: typebox_1.Type.Integer(),
     twiceToughnessBonus: typebox_1.Type.Integer(),
     willpowerBonus: typebox_1.Type.Integer(),
-    hardy: typebox_1.Type.Integer(),
+    hardy: typebox_1.Type.Boolean(),
     total: typebox_1.Type.Integer(),
     current: typebox_1.Type.Integer(),
     notes: typebox_1.Type.String()

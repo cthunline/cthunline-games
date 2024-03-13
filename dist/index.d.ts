@@ -1180,7 +1180,7 @@ export declare const warhammerFantasy: {
             strengthBonus: import("@sinclair/typebox").TInteger;
             twiceToughnessBonus: import("@sinclair/typebox").TInteger;
             willpowerBonus: import("@sinclair/typebox").TInteger;
-            hardy: import("@sinclair/typebox").TInteger;
+            hardy: import("@sinclair/typebox").TBoolean;
             total: import("@sinclair/typebox").TInteger;
             current: import("@sinclair/typebox").TInteger;
             notes: import("@sinclair/typebox").TString;
@@ -1487,7 +1487,7 @@ export declare const warhammerFantasy: {
             strengthBonus: number;
             twiceToughnessBonus: number;
             willpowerBonus: number;
-            hardy: number;
+            hardy: false;
             total: number;
             current: number;
             notes: string;

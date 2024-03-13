@@ -304,7 +304,7 @@ export declare const warhammerFantasyWoundsSchema: import("@sinclair/typebox").T
     strengthBonus: import("@sinclair/typebox").TInteger;
     twiceToughnessBonus: import("@sinclair/typebox").TInteger;
     willpowerBonus: import("@sinclair/typebox").TInteger;
-    hardy: import("@sinclair/typebox").TInteger;
+    hardy: import("@sinclair/typebox").TBoolean;
     total: import("@sinclair/typebox").TInteger;
     current: import("@sinclair/typebox").TInteger;
     notes: import("@sinclair/typebox").TString;
@@ -628,7 +628,7 @@ export declare const warhammerFantasyCharacterSchema: import("@sinclair/typebox"
         strengthBonus: import("@sinclair/typebox").TInteger;
         twiceToughnessBonus: import("@sinclair/typebox").TInteger;
         willpowerBonus: import("@sinclair/typebox").TInteger;
-        hardy: import("@sinclair/typebox").TInteger;
+        hardy: import("@sinclair/typebox").TBoolean;
         total: import("@sinclair/typebox").TInteger;
         current: import("@sinclair/typebox").TInteger;
         notes: import("@sinclair/typebox").TString;

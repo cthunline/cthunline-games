@@ -282,7 +282,7 @@ declare const _default: {
         strengthBonus: number;
         twiceToughnessBonus: number;
         willpowerBonus: number;
-        hardy: number;
+        hardy: false;
         total: number;
         current: number;
         notes: string;
