@@ -209,7 +209,7 @@ export const warhammerFantasyArmourSchema = Type.Object(
     {
         name: Type.String(),
         locations: Type.String(),
-        encumbrance: Type.String(),
+        encumbrance: Type.Integer(),
         armourPoints: Type.Integer(),
         qualities: Type.String()
     },
@@ -236,7 +236,7 @@ export const warhammerFantasyArmourPointsSchema = Type.Object(
 export const warhammerFantasyTrappingSchema = Type.Object(
     {
         name: Type.String(),
-        encumbrance: Type.String()
+        encumbrance: Type.Integer()
     },
     {
         additionalProperties: false
@@ -286,7 +286,7 @@ export const warhammerFantasyWeaponSchema = Type.Object(
     {
         name: Type.String(),
         group: Type.String(),
-        encumbrance: Type.String(),
+        encumbrance: Type.Integer(),
         rangeReach: Type.String(),
         damage: Type.String(),
         qualities: Type.String()

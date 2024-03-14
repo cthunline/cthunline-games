@@ -1118,7 +1118,7 @@ export declare const warhammerFantasy: {
         armour: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             name: import("@sinclair/typebox").TString;
             locations: import("@sinclair/typebox").TString;
-            encumbrance: import("@sinclair/typebox").TString;
+            encumbrance: import("@sinclair/typebox").TInteger;
             armourPoints: import("@sinclair/typebox").TInteger;
             qualities: import("@sinclair/typebox").TString;
         }>>;
@@ -1133,7 +1133,7 @@ export declare const warhammerFantasy: {
         }>;
         trappings: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             name: import("@sinclair/typebox").TString;
-            encumbrance: import("@sinclair/typebox").TString;
+            encumbrance: import("@sinclair/typebox").TInteger;
         }>>;
         psychology: import("@sinclair/typebox").TString;
         corruptionMutation: import("@sinclair/typebox").TString;
@@ -1161,7 +1161,7 @@ export declare const warhammerFantasy: {
         weapons: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             name: import("@sinclair/typebox").TString;
             group: import("@sinclair/typebox").TString;
-            encumbrance: import("@sinclair/typebox").TString;
+            encumbrance: import("@sinclair/typebox").TInteger;
             rangeReach: import("@sinclair/typebox").TString;
             damage: import("@sinclair/typebox").TString;
             qualities: import("@sinclair/typebox").TString;

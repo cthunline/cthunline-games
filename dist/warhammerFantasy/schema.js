@@ -143,7 +143,7 @@ exports.warhammerFantasyPartySchema = typebox_1.Type.Object({
 exports.warhammerFantasyArmourSchema = typebox_1.Type.Object({
     name: typebox_1.Type.String(),
     locations: typebox_1.Type.String(),
-    encumbrance: typebox_1.Type.String(),
+    encumbrance: typebox_1.Type.Integer(),
     armourPoints: typebox_1.Type.Integer(),
     qualities: typebox_1.Type.String()
 }, {
@@ -162,7 +162,7 @@ exports.warhammerFantasyArmourPointsSchema = typebox_1.Type.Object({
 });
 exports.warhammerFantasyTrappingSchema = typebox_1.Type.Object({
     name: typebox_1.Type.String(),
-    encumbrance: typebox_1.Type.String()
+    encumbrance: typebox_1.Type.Integer()
 }, {
     additionalProperties: false
 });
@@ -196,7 +196,7 @@ exports.warhammerFantasyWoundsSchema = typebox_1.Type.Object({
 exports.warhammerFantasyWeaponSchema = typebox_1.Type.Object({
     name: typebox_1.Type.String(),
     group: typebox_1.Type.String(),
-    encumbrance: typebox_1.Type.String(),
+    encumbrance: typebox_1.Type.Integer(),
     rangeReach: typebox_1.Type.String(),
     damage: typebox_1.Type.String(),
     qualities: typebox_1.Type.String()
