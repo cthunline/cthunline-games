@@ -7,7 +7,6 @@ const defaultCharacteristic = {
 };
 
 const defaultBasicSkill = {
-    characteristicScore: 0,
     advances: 0,
     skill: 0
 };

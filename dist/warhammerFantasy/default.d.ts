@@ -85,157 +85,131 @@ declare const _default: {
     };
     basicSkills: {
         art: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "dexterity";
         };
         athletics: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "agility";
         };
         bribery: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "fellowship";
         };
         charm: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "fellowship";
         };
         charmAnimal: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "willpower";
         };
         climb: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "strength";
         };
         cool: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "willpower";
         };
         consumeAlcohol: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "toughness";
         };
         drive: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "agility";
         };
         endurance: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "toughness";
         };
         entertain: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "fellowship";
         };
         gamble: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "intelligence";
         };
         gossip: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "fellowship";
         };
         haggle: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "fellowship";
         };
         intimidate: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "strength";
         };
         intuition: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "initiative";
         };
         leadership: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "fellowship";
         };
         meleeBasic: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "weaponSkill";
         };
         melee: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "weaponSkill";
         };
         navigation: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "initiative";
         };
         dodge: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "agility";
         };
         outdoorSurvival: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "intelligence";
         };
         perception: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "initiative";
         };
         ride: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "agility";
         };
         row: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "strength";
         };
         stealth: {
-            characteristicScore: number;
             advances: number;
             skill: number;
             characteristicName: "agility";

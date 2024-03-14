@@ -68,7 +68,6 @@ exports.warhammerFantasyMovementSchema = typebox_1.Type.Object({
 });
 exports.warhammerFantasyBasicSkill = typebox_1.Type.Object({
     characteristicName: exports.warhammerFantasyCharacteristicName,
-    characteristicScore: typebox_1.Type.Integer(),
     advances: typebox_1.Type.Integer(),
     skill: typebox_1.Type.Integer()
 }, {
@@ -76,7 +75,6 @@ exports.warhammerFantasyBasicSkill = typebox_1.Type.Object({
 });
 const getBasicSkillSchema = (char) => typebox_1.Type.Object({
     characteristicName: typebox_1.Type.Literal(char),
-    characteristicScore: typebox_1.Type.Integer(),
     advances: typebox_1.Type.Integer(),
     skill: typebox_1.Type.Integer()
 }, {
@@ -116,7 +114,6 @@ exports.warhammerFantasyBasicSkillName = typebox_1.Type.KeyOf(exports.warhammerF
 exports.warhammerFantasyOtherSkillSchema = typebox_1.Type.Object({
     name: typebox_1.Type.String(),
     characteristicName: exports.warhammerFantasyCharacteristicName,
-    characteristicScore: typebox_1.Type.Integer(),
     advances: typebox_1.Type.Integer(),
     skill: typebox_1.Type.Integer()
 }, {

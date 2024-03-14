@@ -98,7 +98,6 @@ export const warhammerFantasyMovementSchema = Type.Object(
 export const warhammerFantasyBasicSkill = Type.Object(
     {
         characteristicName: warhammerFantasyCharacteristicName,
-        characteristicScore: Type.Integer(),
         advances: Type.Integer(),
         skill: Type.Integer()
     },
@@ -115,7 +114,6 @@ const getBasicSkillSchema = <
     Type.Object(
         {
             characteristicName: Type.Literal(char),
-            characteristicScore: Type.Integer(),
             advances: Type.Integer(),
             skill: Type.Integer()
         },
@@ -166,7 +164,6 @@ export const warhammerFantasyOtherSkillSchema = Type.Object(
     {
         name: Type.String(),
         characteristicName: warhammerFantasyCharacteristicName,
-        characteristicScore: Type.Integer(),
         advances: Type.Integer(),
         skill: Type.Integer()
     },
