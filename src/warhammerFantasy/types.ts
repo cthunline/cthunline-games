@@ -11,6 +11,7 @@ import {
     warhammerFantasyMovementSchema,
     warhammerFantasyBasicSkillsSchema,
     warhammerFantasyBasicSkillName,
+    warhammerFantasyBasicSkill,
     warhammerFantasyOtherSkillSchema,
     warhammerFantasyTalentSchema,
     warhammerFantasyAmbitionsSchema,
@@ -53,6 +54,9 @@ export type WarhammerFantasyBasicSkills = Static<
 >;
 export type WarhammerFantasyBasicSkillName = Static<
     typeof warhammerFantasyBasicSkillName
+>;
+export type WarhammerFantasyBasicSkill = Static<
+    typeof warhammerFantasyBasicSkill
 >;
 export type WarhammerFantasyOtherSkill = Static<
     typeof warhammerFantasyOtherSkillSchema

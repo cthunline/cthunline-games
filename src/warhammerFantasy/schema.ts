@@ -95,6 +95,18 @@ export const warhammerFantasyMovementSchema = Type.Object(
     }
 );
 
+export const warhammerFantasyBasicSkill = Type.Object(
+    {
+        characteristicName: warhammerFantasyCharacteristicName,
+        characteristicScore: Type.Integer(),
+        advances: Type.Integer(),
+        skill: Type.Integer()
+    },
+    {
+        additionalProperties: false
+    }
+);
+
 const getBasicSkillSchema = <
     C extends Static<typeof warhammerFantasyCharacteristicName>
 >(

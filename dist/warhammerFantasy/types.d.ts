@@ -1,5 +1,5 @@
 import { Static } from '@sinclair/typebox';
-import { warhammerFantasyBiographySchema, warhammerFantasyCharacteristicSchema, warhammerFantasyCharacteristicName, warhammerFantasyCharacteristicsSchema, warhammerFantasyFateSchema, warhammerFantasyResilienceSchema, warhammerFantasyExperienceSchema, warhammerFantasyMovementSchema, warhammerFantasyBasicSkillsSchema, warhammerFantasyBasicSkillName, warhammerFantasyOtherSkillSchema, warhammerFantasyTalentSchema, warhammerFantasyAmbitionsSchema, warhammerFantasyPartySchema, warhammerFantasyArmourSchema, warhammerFantasyArmourPointsSchema, warhammerFantasyTrappingSchema, warhammerFantasyWealthSchema, warhammerFantasyEncumbranceSchema, warhammerFantasyWoundsSchema, warhammerFantasyWeaponSchema, warhammerFantasySpellsSchema, warhammerFantasyCharacterSchema } from './schema';
+import { warhammerFantasyBiographySchema, warhammerFantasyCharacteristicSchema, warhammerFantasyCharacteristicName, warhammerFantasyCharacteristicsSchema, warhammerFantasyFateSchema, warhammerFantasyResilienceSchema, warhammerFantasyExperienceSchema, warhammerFantasyMovementSchema, warhammerFantasyBasicSkillsSchema, warhammerFantasyBasicSkillName, warhammerFantasyBasicSkill, warhammerFantasyOtherSkillSchema, warhammerFantasyTalentSchema, warhammerFantasyAmbitionsSchema, warhammerFantasyPartySchema, warhammerFantasyArmourSchema, warhammerFantasyArmourPointsSchema, warhammerFantasyTrappingSchema, warhammerFantasyWealthSchema, warhammerFantasyEncumbranceSchema, warhammerFantasyWoundsSchema, warhammerFantasyWeaponSchema, warhammerFantasySpellsSchema, warhammerFantasyCharacterSchema } from './schema';
 export type WarhammerFantasyBiography = Static<typeof warhammerFantasyBiographySchema>;
 export type WarhammerFantasyCharacteristic = Static<typeof warhammerFantasyCharacteristicSchema>;
 export type WarhammerFantasyCharacteristicName = Static<typeof warhammerFantasyCharacteristicName>;
@@ -10,6 +10,7 @@ export type WarhammerFantasyExperience = Static<typeof warhammerFantasyExperienc
 export type WarhammerFantasyMovement = Static<typeof warhammerFantasyMovementSchema>;
 export type WarhammerFantasyBasicSkills = Static<typeof warhammerFantasyBasicSkillsSchema>;
 export type WarhammerFantasyBasicSkillName = Static<typeof warhammerFantasyBasicSkillName>;
+export type WarhammerFantasyBasicSkill = Static<typeof warhammerFantasyBasicSkill>;
 export type WarhammerFantasyOtherSkill = Static<typeof warhammerFantasyOtherSkillSchema>;
 export type WarhammerFantasyTalent = Static<typeof warhammerFantasyTalentSchema>;
 export type WarhammerFantasyAmbitions = Static<typeof warhammerFantasyAmbitionsSchema>;

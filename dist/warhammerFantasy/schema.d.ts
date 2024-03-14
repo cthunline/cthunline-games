@@ -88,6 +88,12 @@ export declare const warhammerFantasyMovementSchema: import("@sinclair/typebox")
     walk: import("@sinclair/typebox").TInteger;
     run: import("@sinclair/typebox").TInteger;
 }>;
+export declare const warhammerFantasyBasicSkill: import("@sinclair/typebox").TObject<{
+    characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
+    characteristicScore: import("@sinclair/typebox").TInteger;
+    advances: import("@sinclair/typebox").TInteger;
+    skill: import("@sinclair/typebox").TInteger;
+}>;
 export declare const warhammerFantasyBasicSkillsSchema: import("@sinclair/typebox").TObject<{
     art: import("@sinclair/typebox").TObject<{
         characteristicName: import("@sinclair/typebox").TLiteral<"dexterity">;
