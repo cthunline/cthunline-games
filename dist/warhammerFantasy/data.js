@@ -40,5 +40,33 @@ exports.default = {
         'row',
         'gamble',
         'stealth'
-    ]
+    ],
+    basicSkillCharacteristics: {
+        art: 'dexterity',
+        gossip: 'fellowship',
+        athletics: 'agility',
+        haggle: 'fellowship',
+        bribery: 'fellowship',
+        intimidate: 'strength',
+        charm: 'fellowship',
+        intuition: 'initiative',
+        charmAnimal: 'willpower',
+        leadership: 'fellowship',
+        climb: 'strength',
+        meleeBasic: 'weaponSkill',
+        cool: 'willpower',
+        melee: 'weaponSkill',
+        consumeAlcohol: 'toughness',
+        navigation: 'initiative',
+        dodge: 'agility',
+        outdoorSurvival: 'intelligence',
+        drive: 'agility',
+        perception: 'initiative',
+        endurance: 'toughness',
+        ride: 'agility',
+        entertain: 'fellowship',
+        row: 'strength',
+        gamble: 'intelligence',
+        stealth: 'agility'
+    }
 };

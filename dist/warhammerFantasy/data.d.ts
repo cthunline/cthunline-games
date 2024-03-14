@@ -1,5 +1,33 @@
 declare const _default: {
     characteristicNames: ("strength" | "dexterity" | "intelligence" | "initiative" | "weaponSkill" | "ballisticSkill" | "toughness" | "agility" | "willpower" | "fellowship")[];
     basicSkillNames: ("athletics" | "perception" | "stealth" | "intimidate" | "ride" | "art" | "gossip" | "haggle" | "bribery" | "charm" | "intuition" | "charmAnimal" | "leadership" | "climb" | "meleeBasic" | "cool" | "melee" | "consumeAlcohol" | "navigation" | "dodge" | "outdoorSurvival" | "drive" | "endurance" | "entertain" | "row" | "gamble")[];
+    basicSkillCharacteristics: {
+        art: "dexterity";
+        gossip: "fellowship";
+        athletics: "agility";
+        haggle: "fellowship";
+        bribery: "fellowship";
+        intimidate: "strength";
+        charm: "fellowship";
+        intuition: "initiative";
+        charmAnimal: "willpower";
+        leadership: "fellowship";
+        climb: "strength";
+        meleeBasic: "weaponSkill";
+        cool: "willpower";
+        melee: "weaponSkill";
+        consumeAlcohol: "toughness";
+        navigation: "initiative";
+        dodge: "agility";
+        outdoorSurvival: "intelligence";
+        drive: "agility";
+        perception: "initiative";
+        endurance: "toughness";
+        ride: "agility";
+        entertain: "fellowship";
+        row: "strength";
+        gamble: "intelligence";
+        stealth: "agility";
+    };
 };
 export default _default;
