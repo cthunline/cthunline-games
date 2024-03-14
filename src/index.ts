@@ -12,6 +12,7 @@ import swd6Default from './starWarsD6/default';
 
 import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema';
 import warhammerFantasyDefault from './warhammerFantasy/default';
+import warhammerFantasyData from './warhammerFantasy/data';
 
 export * from './callOfCthulhu/types';
 export * from './dnd5/types';
@@ -41,5 +42,6 @@ export const starWarsD6 = {
 
 export const warhammerFantasy = {
     schema: warhammerFantasyCharacterSchema,
-    default: warhammerFantasyDefault
+    default: warhammerFantasyDefault,
+    data: warhammerFantasyData
 };

@@ -28,6 +28,7 @@ const schema_4 = require("./starWarsD6/schema");
 const default_4 = __importDefault(require("./starWarsD6/default"));
 const schema_5 = require("./warhammerFantasy/schema");
 const default_5 = __importDefault(require("./warhammerFantasy/default"));
+const data_1 = __importDefault(require("./warhammerFantasy/data"));
 __exportStar(require("./callOfCthulhu/types"), exports);
 __exportStar(require("./dnd5/types"), exports);
 __exportStar(require("./seventhSea/types"), exports);
@@ -51,5 +52,6 @@ exports.starWarsD6 = {
 };
 exports.warhammerFantasy = {
     schema: schema_5.warhammerFantasyCharacterSchema,
-    default: default_5.default
+    default: default_5.default,
+    data: data_1.default
 };

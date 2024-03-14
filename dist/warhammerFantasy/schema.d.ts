@@ -16,7 +16,6 @@ export declare const warhammerFantasyCharacteristicSchema: import("@sinclair/typ
     advances: import("@sinclair/typebox").TInteger;
     current: import("@sinclair/typebox").TInteger;
 }>;
-export declare const warhammerFantasyCharacteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
 export declare const warhammerFantasyCharacteristicsSchema: import("@sinclair/typebox").TObject<{
     weaponSkill: import("@sinclair/typebox").TObject<{
         initial: import("@sinclair/typebox").TInteger;
@@ -69,6 +68,7 @@ export declare const warhammerFantasyCharacteristicsSchema: import("@sinclair/ty
         current: import("@sinclair/typebox").TInteger;
     }>;
 }>;
+export declare const warhammerFantasyCharacteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
 export declare const warhammerFantasyFateSchema: import("@sinclair/typebox").TObject<{
     fate: import("@sinclair/typebox").TInteger;
     fortune: import("@sinclair/typebox").TInteger;
@@ -246,9 +246,10 @@ export declare const warhammerFantasyBasicSkillsSchema: import("@sinclair/typebo
         skill: import("@sinclair/typebox").TInteger;
     }>;
 }>;
+export declare const warhammerFantasyBasicSkillName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"athletics">, import("@sinclair/typebox").TLiteral<"perception">, import("@sinclair/typebox").TLiteral<"stealth">, import("@sinclair/typebox").TLiteral<"intimidate">, import("@sinclair/typebox").TLiteral<"ride">, import("@sinclair/typebox").TLiteral<"art">, import("@sinclair/typebox").TLiteral<"gossip">, import("@sinclair/typebox").TLiteral<"haggle">, import("@sinclair/typebox").TLiteral<"bribery">, import("@sinclair/typebox").TLiteral<"charm">, import("@sinclair/typebox").TLiteral<"intuition">, import("@sinclair/typebox").TLiteral<"charmAnimal">, import("@sinclair/typebox").TLiteral<"leadership">, import("@sinclair/typebox").TLiteral<"climb">, import("@sinclair/typebox").TLiteral<"meleeBasic">, import("@sinclair/typebox").TLiteral<"cool">, import("@sinclair/typebox").TLiteral<"melee">, import("@sinclair/typebox").TLiteral<"consumeAlcohol">, import("@sinclair/typebox").TLiteral<"navigation">, import("@sinclair/typebox").TLiteral<"dodge">, import("@sinclair/typebox").TLiteral<"outdoorSurvival">, import("@sinclair/typebox").TLiteral<"drive">, import("@sinclair/typebox").TLiteral<"endurance">, import("@sinclair/typebox").TLiteral<"entertain">, import("@sinclair/typebox").TLiteral<"row">, import("@sinclair/typebox").TLiteral<"gamble">]>;
 export declare const warhammerFantasyOtherSkillSchema: import("@sinclair/typebox").TObject<{
     name: import("@sinclair/typebox").TString;
-    characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
+    characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
     characteristicScore: import("@sinclair/typebox").TInteger;
     advances: import("@sinclair/typebox").TInteger;
     skill: import("@sinclair/typebox").TInteger;
@@ -570,7 +571,7 @@ export declare const warhammerFantasyCharacterSchema: import("@sinclair/typebox"
     }>;
     otherSkills: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
         name: import("@sinclair/typebox").TString;
-        characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
+        characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
         characteristicScore: import("@sinclair/typebox").TInteger;
         advances: import("@sinclair/typebox").TInteger;
         skill: import("@sinclair/typebox").TInteger;

@@ -30,21 +30,6 @@ export const warhammerFantasyCharacteristicSchema = Type.Object(
     }
 );
 
-export const warhammerFantasyCharacteristicName = Type.Union([
-    Type.Literal('weaponSkill'),
-    Type.Literal('ballisticSkill'),
-    Type.Literal('strength'),
-    Type.Literal('toughness'),
-    Type.Literal('initiative'),
-    Type.Literal('agility'),
-    Type.Literal('dexterity'),
-    Type.Literal('intelligence'),
-    Type.Literal('willpower'),
-    Type.Literal('fellowship')
-]);
-
-type CharacteristicName = Static<typeof warhammerFantasyCharacteristicName>;
-
 export const warhammerFantasyCharacteristicsSchema = Type.Object(
     {
         weaponSkill: warhammerFantasyCharacteristicSchema,
@@ -61,6 +46,10 @@ export const warhammerFantasyCharacteristicsSchema = Type.Object(
     {
         additionalProperties: false
     }
+);
+
+export const warhammerFantasyCharacteristicName = Type.KeyOf(
+    warhammerFantasyCharacteristicsSchema
 );
 
 export const warhammerFantasyFateSchema = Type.Object(
@@ -106,7 +95,11 @@ export const warhammerFantasyMovementSchema = Type.Object(
     }
 );
 
-const getBasicSkillSchema = <C extends CharacteristicName>(char: C) =>
+const getBasicSkillSchema = <
+    C extends Static<typeof warhammerFantasyCharacteristicName>
+>(
+    char: C
+) =>
     Type.Object(
         {
             characteristicName: Type.Literal(char),
@@ -151,6 +144,10 @@ export const warhammerFantasyBasicSkillsSchema = Type.Object(
     {
         additionalProperties: false
     }
+);
+
+export const warhammerFantasyBasicSkillName = Type.KeyOf(
+    warhammerFantasyBasicSkillsSchema
 );
 
 export const warhammerFantasyOtherSkillSchema = Type.Object(

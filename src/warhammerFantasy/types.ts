@@ -10,6 +10,7 @@ import {
     warhammerFantasyExperienceSchema,
     warhammerFantasyMovementSchema,
     warhammerFantasyBasicSkillsSchema,
+    warhammerFantasyBasicSkillName,
     warhammerFantasyOtherSkillSchema,
     warhammerFantasyTalentSchema,
     warhammerFantasyAmbitionsSchema,
@@ -49,6 +50,9 @@ export type WarhammerFantasyMovement = Static<
 >;
 export type WarhammerFantasyBasicSkills = Static<
     typeof warhammerFantasyBasicSkillsSchema
+>;
+export type WarhammerFantasyBasicSkillName = Static<
+    typeof warhammerFantasyBasicSkillName
 >;
 export type WarhammerFantasyOtherSkill = Static<
     typeof warhammerFantasyOtherSkillSchema

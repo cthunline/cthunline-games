@@ -1122,7 +1122,7 @@ export declare const warhammerFantasy: {
         }>;
         otherSkills: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             name: import("@sinclair/typebox").TString;
-            characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
+            characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
             characteristicScore: import("@sinclair/typebox").TInteger;
             advances: import("@sinclair/typebox").TInteger;
             skill: import("@sinclair/typebox").TInteger;
@@ -1495,5 +1495,9 @@ export declare const warhammerFantasy: {
         weapons: never[];
         spells: never[];
         sin: number;
+    };
+    data: {
+        characteristicNames: ("strength" | "dexterity" | "intelligence" | "initiative" | "weaponSkill" | "ballisticSkill" | "toughness" | "agility" | "willpower" | "fellowship")[];
+        basicSkillNames: ("athletics" | "perception" | "stealth" | "intimidate" | "ride" | "art" | "gossip" | "haggle" | "bribery" | "charm" | "intuition" | "charmAnimal" | "leadership" | "climb" | "meleeBasic" | "cool" | "melee" | "consumeAlcohol" | "navigation" | "dodge" | "outdoorSurvival" | "drive" | "endurance" | "entertain" | "row" | "gamble")[];
     };
 };
