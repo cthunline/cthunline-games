@@ -296,7 +296,7 @@ export declare const warhammerFantasyWeaponSchema: import("@sinclair/typebox").T
     damage: import("@sinclair/typebox").TString;
     qualities: import("@sinclair/typebox").TString;
 }>;
-export declare const warhammerFantasySpellsSchema: import("@sinclair/typebox").TObject<{
+export declare const warhammerFantasySpellSchema: import("@sinclair/typebox").TObject<{
     name: import("@sinclair/typebox").TString;
     castingNumber: import("@sinclair/typebox").TInteger;
     range: import("@sinclair/typebox").TString;

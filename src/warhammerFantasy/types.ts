@@ -23,7 +23,7 @@ import {
     warhammerFantasyEncumbranceSchema,
     warhammerFantasyWoundsSchema,
     warhammerFantasyWeaponSchema,
-    warhammerFantasySpellsSchema,
+    warhammerFantasySpellSchema,
     warhammerFantasyCharacterSchema
 } from './schema';
 
@@ -89,9 +89,7 @@ export type WarhammerFantasyWounds = Static<
 export type WarhammerFantasyWeapon = Static<
     typeof warhammerFantasyWeaponSchema
 >;
-export type WarhammerFantasySpells = Static<
-    typeof warhammerFantasySpellsSchema
->;
+export type WarhammerFantasySpell = Static<typeof warhammerFantasySpellSchema>;
 export type WarhammerFantasyCharacter = Static<
     typeof warhammerFantasyCharacterSchema
 >;

@@ -296,7 +296,7 @@ export const warhammerFantasyWeaponSchema = Type.Object(
     }
 );
 
-export const warhammerFantasySpellsSchema = Type.Object(
+export const warhammerFantasySpellSchema = Type.Object(
     {
         name: Type.String(),
         castingNumber: Type.Integer(),
@@ -332,7 +332,7 @@ export const warhammerFantasyCharacterSchema = Type.Object(
         encumbrance: warhammerFantasyEncumbranceSchema,
         wounds: warhammerFantasyWoundsSchema,
         weapons: Type.Array(warhammerFantasyWeaponSchema),
-        spells: Type.Array(warhammerFantasySpellsSchema),
+        spells: Type.Array(warhammerFantasySpellSchema),
         sin: Type.Integer()
     },
     {

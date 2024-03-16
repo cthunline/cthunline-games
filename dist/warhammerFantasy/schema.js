@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.warhammerFantasyCharacterSchema = exports.warhammerFantasySpellsSchema = exports.warhammerFantasyWeaponSchema = exports.warhammerFantasyWoundsSchema = exports.warhammerFantasyEncumbranceSchema = exports.warhammerFantasyWealthSchema = exports.warhammerFantasyTrappingSchema = exports.warhammerFantasyArmourPointsSchema = exports.warhammerFantasyArmourSchema = exports.warhammerFantasyPartySchema = exports.warhammerFantasyAmbitionsSchema = exports.warhammerFantasyTalentSchema = exports.warhammerFantasyOtherSkillSchema = exports.warhammerFantasyBasicSkillName = exports.warhammerFantasyBasicSkillsSchema = exports.warhammerFantasyBasicSkill = exports.warhammerFantasyMovementSchema = exports.warhammerFantasyExperienceSchema = exports.warhammerFantasyResilienceSchema = exports.warhammerFantasyFateSchema = exports.warhammerFantasyCharacteristicName = exports.warhammerFantasyCharacteristicsSchema = exports.warhammerFantasyCharacteristicSchema = exports.warhammerFantasyBiographySchema = void 0;
+exports.warhammerFantasyCharacterSchema = exports.warhammerFantasySpellSchema = exports.warhammerFantasyWeaponSchema = exports.warhammerFantasyWoundsSchema = exports.warhammerFantasyEncumbranceSchema = exports.warhammerFantasyWealthSchema = exports.warhammerFantasyTrappingSchema = exports.warhammerFantasyArmourPointsSchema = exports.warhammerFantasyArmourSchema = exports.warhammerFantasyPartySchema = exports.warhammerFantasyAmbitionsSchema = exports.warhammerFantasyTalentSchema = exports.warhammerFantasyOtherSkillSchema = exports.warhammerFantasyBasicSkillName = exports.warhammerFantasyBasicSkillsSchema = exports.warhammerFantasyBasicSkill = exports.warhammerFantasyMovementSchema = exports.warhammerFantasyExperienceSchema = exports.warhammerFantasyResilienceSchema = exports.warhammerFantasyFateSchema = exports.warhammerFantasyCharacteristicName = exports.warhammerFantasyCharacteristicsSchema = exports.warhammerFantasyCharacteristicSchema = exports.warhammerFantasyBiographySchema = void 0;
 const typebox_1 = require("@sinclair/typebox");
 exports.warhammerFantasyBiographySchema = typebox_1.Type.Object({
     name: typebox_1.Type.String(),
@@ -203,7 +203,7 @@ exports.warhammerFantasyWeaponSchema = typebox_1.Type.Object({
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasySpellsSchema = typebox_1.Type.Object({
+exports.warhammerFantasySpellSchema = typebox_1.Type.Object({
     name: typebox_1.Type.String(),
     castingNumber: typebox_1.Type.Integer(),
     range: typebox_1.Type.String(),
@@ -234,7 +234,7 @@ exports.warhammerFantasyCharacterSchema = typebox_1.Type.Object({
     encumbrance: exports.warhammerFantasyEncumbranceSchema,
     wounds: exports.warhammerFantasyWoundsSchema,
     weapons: typebox_1.Type.Array(exports.warhammerFantasyWeaponSchema),
-    spells: typebox_1.Type.Array(exports.warhammerFantasySpellsSchema),
+    spells: typebox_1.Type.Array(exports.warhammerFantasySpellSchema),
     sin: typebox_1.Type.Integer()
 }, {
     additionalProperties: false

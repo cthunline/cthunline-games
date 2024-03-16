@@ -1,5 +1,5 @@
 import { Static } from '@sinclair/typebox';
-import { warhammerFantasyBiographySchema, warhammerFantasyCharacteristicSchema, warhammerFantasyCharacteristicName, warhammerFantasyCharacteristicsSchema, warhammerFantasyFateSchema, warhammerFantasyResilienceSchema, warhammerFantasyExperienceSchema, warhammerFantasyMovementSchema, warhammerFantasyBasicSkillsSchema, warhammerFantasyBasicSkillName, warhammerFantasyBasicSkill, warhammerFantasyOtherSkillSchema, warhammerFantasyTalentSchema, warhammerFantasyAmbitionsSchema, warhammerFantasyPartySchema, warhammerFantasyArmourSchema, warhammerFantasyArmourPointsSchema, warhammerFantasyTrappingSchema, warhammerFantasyWealthSchema, warhammerFantasyEncumbranceSchema, warhammerFantasyWoundsSchema, warhammerFantasyWeaponSchema, warhammerFantasySpellsSchema, warhammerFantasyCharacterSchema } from './schema';
+import { warhammerFantasyBiographySchema, warhammerFantasyCharacteristicSchema, warhammerFantasyCharacteristicName, warhammerFantasyCharacteristicsSchema, warhammerFantasyFateSchema, warhammerFantasyResilienceSchema, warhammerFantasyExperienceSchema, warhammerFantasyMovementSchema, warhammerFantasyBasicSkillsSchema, warhammerFantasyBasicSkillName, warhammerFantasyBasicSkill, warhammerFantasyOtherSkillSchema, warhammerFantasyTalentSchema, warhammerFantasyAmbitionsSchema, warhammerFantasyPartySchema, warhammerFantasyArmourSchema, warhammerFantasyArmourPointsSchema, warhammerFantasyTrappingSchema, warhammerFantasyWealthSchema, warhammerFantasyEncumbranceSchema, warhammerFantasyWoundsSchema, warhammerFantasyWeaponSchema, warhammerFantasySpellSchema, warhammerFantasyCharacterSchema } from './schema';
 export type WarhammerFantasyBiography = Static<typeof warhammerFantasyBiographySchema>;
 export type WarhammerFantasyCharacteristic = Static<typeof warhammerFantasyCharacteristicSchema>;
 export type WarhammerFantasyCharacteristicName = Static<typeof warhammerFantasyCharacteristicName>;
@@ -22,5 +22,5 @@ export type WarhammerFantasyWealth = Static<typeof warhammerFantasyWealthSchema>
 export type WarhammerFantasyEncumbrance = Static<typeof warhammerFantasyEncumbranceSchema>;
 export type WarhammerFantasyWounds = Static<typeof warhammerFantasyWoundsSchema>;
 export type WarhammerFantasyWeapon = Static<typeof warhammerFantasyWeaponSchema>;
-export type WarhammerFantasySpells = Static<typeof warhammerFantasySpellsSchema>;
+export type WarhammerFantasySpell = Static<typeof warhammerFantasySpellSchema>;
 export type WarhammerFantasyCharacter = Static<typeof warhammerFantasyCharacterSchema>;
