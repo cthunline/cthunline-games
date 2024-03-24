@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "2.4.15",
+    "version": "2.4.16",
     "license": "AGPL-3.0-or-later",
     "homepage": "https://doc.cthunline.org/",
     "repository": {
@@ -16,12 +16,12 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "dependencies": {
-        "@sinclair/typebox": "^0.32.15"
+        "@sinclair/typebox": "^0.32.19"
     },
     "devDependencies": {
-        "@tsconfig/recommended": "^1.0.3",
-        "@typescript-eslint/eslint-plugin": "^7.2.0",
-        "@typescript-eslint/parser": "^7.2.0",
+        "@tsconfig/recommended": "^1.0.4",
+        "@typescript-eslint/eslint-plugin": "^7.3.1",
+        "@typescript-eslint/parser": "^7.3.1",
         "eslint": "^8.57.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-airbnb-typescript": "^18.0.0",
@@ -29,6 +29,6 @@
         "eslint-plugin-import": "^2.29.1",
         "husky": "^9.0.11",
         "prettier": "^3.2.5",
-        "typescript": "^5.4.2"
+        "typescript": "^5.4.3"
     }
 }

@@ -1,8 +1,14 @@
+import { CoCCharacter } from './callOfCthulhu/types';
+import { DnD5Character } from './dnd5/types';
+import { SeventhSeaCharacter } from './seventhSea/types';
+import { SWD6Character } from './starWarsD6/types';
+import { WarhammerFantasyCharacter } from './warhammerFantasy/types';
 export * from './callOfCthulhu/types';
 export * from './dnd5/types';
 export * from './seventhSea/types';
 export * from './starWarsD6/types';
 export * from './warhammerFantasy/types';
+export type Character = CoCCharacter | DnD5Character | SeventhSeaCharacter | SWD6Character | WarhammerFantasyCharacter;
 export declare const callOfCthulhu: {
     schema: import("@sinclair/typebox").TObject<{
         biography: import("@sinclair/typebox").TObject<{
