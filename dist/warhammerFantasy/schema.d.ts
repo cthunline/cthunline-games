@@ -76,7 +76,7 @@ export declare const warhammerFantasyFateSchema: import("@sinclair/typebox").TOb
 export declare const warhammerFantasyResilienceSchema: import("@sinclair/typebox").TObject<{
     resilience: import("@sinclair/typebox").TInteger;
     resolve: import("@sinclair/typebox").TInteger;
-    motivation: import("@sinclair/typebox").TInteger;
+    motivation: import("@sinclair/typebox").TString;
 }>;
 export declare const warhammerFantasyExperienceSchema: import("@sinclair/typebox").TObject<{
     current: import("@sinclair/typebox").TInteger;
@@ -377,7 +377,7 @@ export declare const warhammerFantasyCharacterSchema: import("@sinclair/typebox"
     resilience: import("@sinclair/typebox").TObject<{
         resilience: import("@sinclair/typebox").TInteger;
         resolve: import("@sinclair/typebox").TInteger;
-        motivation: import("@sinclair/typebox").TInteger;
+        motivation: import("@sinclair/typebox").TString;
     }>;
     experience: import("@sinclair/typebox").TObject<{
         current: import("@sinclair/typebox").TInteger;

@@ -48,7 +48,7 @@ exports.warhammerFantasyFateSchema = typebox_1.Type.Object({
 exports.warhammerFantasyResilienceSchema = typebox_1.Type.Object({
     resilience: typebox_1.Type.Integer(),
     resolve: typebox_1.Type.Integer(),
-    motivation: typebox_1.Type.Integer()
+    motivation: typebox_1.Type.String()
 }, {
     additionalProperties: false
 });

@@ -66,7 +66,7 @@ export const warhammerFantasyResilienceSchema = Type.Object(
     {
         resilience: Type.Integer(),
         resolve: Type.Integer(),
-        motivation: Type.Integer()
+        motivation: Type.String()
     },
     {
         additionalProperties: false

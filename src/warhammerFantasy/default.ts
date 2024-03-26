@@ -44,7 +44,7 @@ export default {
     resilience: {
         resilience: 0,
         resolve: 0,
-        motivation: 0
+        motivation: ''
     },
     experience: {
         current: 0,

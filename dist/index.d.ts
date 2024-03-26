@@ -956,7 +956,7 @@ export declare const warhammerFantasy: {
         resilience: import("@sinclair/typebox").TObject<{
             resilience: import("@sinclair/typebox").TInteger;
             resolve: import("@sinclair/typebox").TInteger;
-            motivation: import("@sinclair/typebox").TInteger;
+            motivation: import("@sinclair/typebox").TString;
         }>;
         experience: import("@sinclair/typebox").TObject<{
             current: import("@sinclair/typebox").TInteger;
@@ -1255,7 +1255,7 @@ export declare const warhammerFantasy: {
         resilience: {
             resilience: number;
             resolve: number;
-            motivation: number;
+            motivation: string;
         };
         experience: {
             current: number;

@@ -71,7 +71,7 @@ declare const _default: {
     resilience: {
         resilience: number;
         resolve: number;
-        motivation: number;
+        motivation: string;
     };
     experience: {
         current: number;
