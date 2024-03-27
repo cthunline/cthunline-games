@@ -1181,6 +1181,7 @@ export declare const warhammerFantasy: {
             effect: import("@sinclair/typebox").TString;
         }>>;
         sin: import("@sinclair/typebox").TInteger;
+        advantage: import("@sinclair/typebox").TInteger;
     }>;
     default: {
         biography: {
@@ -1448,6 +1449,7 @@ export declare const warhammerFantasy: {
         weapons: never[];
         spells: never[];
         sin: number;
+        advantage: number;
     };
     data: {
         characteristicNames: ("strength" | "dexterity" | "intelligence" | "initiative" | "weaponSkill" | "ballisticSkill" | "toughness" | "agility" | "willpower" | "fellowship")[];

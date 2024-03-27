@@ -235,7 +235,8 @@ exports.warhammerFantasyCharacterSchema = typebox_1.Type.Object({
     wounds: exports.warhammerFantasyWoundsSchema,
     weapons: typebox_1.Type.Array(exports.warhammerFantasyWeaponSchema),
     spells: typebox_1.Type.Array(exports.warhammerFantasySpellSchema),
-    sin: typebox_1.Type.Integer()
+    sin: typebox_1.Type.Integer(),
+    advantage: typebox_1.Type.Integer()
 }, {
     additionalProperties: false
 });

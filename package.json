@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "2.5.0",
+    "version": "2.5.1",
     "license": "AGPL-3.0-or-later",
     "homepage": "https://doc.cthunline.org/",
     "repository": {
@@ -9,7 +9,7 @@
     },
     "scripts": {
         "build": "tsc --build --clean tsconfig.json && tsc --project tsconfig.json",
-        "prepare": "[ -d '.husky' ] && husky install || true",
+        "prepare": "[ -d '.husky' ] && husky || true",
         "lint": "npx eslint . --ext=.js,.ts --max-warnings=0 && npx prettier --check . && npx tsc --noEmit",
         "format": "npx eslint . --fix --ext=.js,.ts --max-warnings=0 && npx prettier --write . && npx tsc --noEmit"
     },
@@ -19,7 +19,7 @@
         "@sinclair/typebox": "^0.32.20"
     },
     "devDependencies": {
-        "@tsconfig/recommended": "^1.0.4",
+        "@tsconfig/recommended": "^1.0.5",
         "@typescript-eslint/eslint-plugin": "^7.4.0",
         "@typescript-eslint/parser": "^7.4.0",
         "eslint": "^8.57.0",

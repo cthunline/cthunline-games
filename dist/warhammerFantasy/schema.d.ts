@@ -602,4 +602,5 @@ export declare const warhammerFantasyCharacterSchema: import("@sinclair/typebox"
         effect: import("@sinclair/typebox").TString;
     }>>;
     sin: import("@sinclair/typebox").TInteger;
+    advantage: import("@sinclair/typebox").TInteger;
 }>;

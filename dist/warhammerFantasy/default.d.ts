@@ -264,5 +264,6 @@ declare const _default: {
     weapons: never[];
     spells: never[];
     sin: number;
+    advantage: number;
 };
 export default _default;

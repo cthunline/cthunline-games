@@ -210,5 +210,6 @@ export default {
     },
     weapons: [],
     spells: [],
-    sin: 0
+    sin: 0,
+    advantage: 0
 } satisfies WarhammerFantasyCharacter;

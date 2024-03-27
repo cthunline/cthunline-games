@@ -333,7 +333,8 @@ export const warhammerFantasyCharacterSchema = Type.Object(
         wounds: warhammerFantasyWoundsSchema,
         weapons: Type.Array(warhammerFantasyWeaponSchema),
         spells: Type.Array(warhammerFantasySpellSchema),
-        sin: Type.Integer()
+        sin: Type.Integer(),
+        advantage: Type.Integer()
     },
     {
         additionalProperties: false
