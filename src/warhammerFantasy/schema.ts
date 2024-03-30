@@ -259,8 +259,9 @@ export const warhammerFantasyEncumbranceSchema = Type.Object(
         weapons: Type.Integer(),
         armour: Type.Integer(),
         trappings: Type.Integer(),
-        maximum: Type.Integer(),
-        total: Type.Integer()
+        total: Type.Integer(),
+        maximumBonus: Type.Integer(),
+        maximum: Type.Integer()
     },
     {
         additionalProperties: false

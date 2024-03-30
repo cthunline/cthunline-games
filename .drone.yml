@@ -6,7 +6,6 @@ name: cthunline-games-ci
 trigger:
   branch:
   - master
-  - dev
   event:
   - push
   - pull_request

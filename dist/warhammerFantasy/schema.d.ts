@@ -276,8 +276,9 @@ export declare const warhammerFantasyEncumbranceSchema: import("@sinclair/typebo
     weapons: import("@sinclair/typebox").TInteger;
     armour: import("@sinclair/typebox").TInteger;
     trappings: import("@sinclair/typebox").TInteger;
-    maximum: import("@sinclair/typebox").TInteger;
     total: import("@sinclair/typebox").TInteger;
+    maximumBonus: import("@sinclair/typebox").TInteger;
+    maximum: import("@sinclair/typebox").TInteger;
 }>;
 export declare const warhammerFantasyWoundsSchema: import("@sinclair/typebox").TObject<{
     strengthBonus: import("@sinclair/typebox").TInteger;
@@ -573,8 +574,9 @@ export declare const warhammerFantasyCharacterSchema: import("@sinclair/typebox"
         weapons: import("@sinclair/typebox").TInteger;
         armour: import("@sinclair/typebox").TInteger;
         trappings: import("@sinclair/typebox").TInteger;
-        maximum: import("@sinclair/typebox").TInteger;
         total: import("@sinclair/typebox").TInteger;
+        maximumBonus: import("@sinclair/typebox").TInteger;
+        maximum: import("@sinclair/typebox").TInteger;
     }>;
     wounds: import("@sinclair/typebox").TObject<{
         strengthBonus: import("@sinclair/typebox").TInteger;

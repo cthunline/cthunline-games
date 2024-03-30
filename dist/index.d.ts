@@ -1152,8 +1152,9 @@ export declare const warhammerFantasy: {
             weapons: import("@sinclair/typebox").TInteger;
             armour: import("@sinclair/typebox").TInteger;
             trappings: import("@sinclair/typebox").TInteger;
-            maximum: import("@sinclair/typebox").TInteger;
             total: import("@sinclair/typebox").TInteger;
+            maximumBonus: import("@sinclair/typebox").TInteger;
+            maximum: import("@sinclair/typebox").TInteger;
         }>;
         wounds: import("@sinclair/typebox").TObject<{
             strengthBonus: import("@sinclair/typebox").TInteger;
@@ -1434,8 +1435,9 @@ export declare const warhammerFantasy: {
             weapons: number;
             armour: number;
             trappings: number;
-            maximum: number;
             total: number;
+            maximumBonus: number;
+            maximum: number;
         };
         wounds: {
             strengthBonus: number;

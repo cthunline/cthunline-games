@@ -249,8 +249,9 @@ declare const _default: {
         weapons: number;
         armour: number;
         trappings: number;
-        maximum: number;
         total: number;
+        maximumBonus: number;
+        maximum: number;
     };
     wounds: {
         strengthBonus: number;

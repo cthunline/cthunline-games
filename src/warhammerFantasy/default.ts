@@ -196,8 +196,9 @@ export default {
         weapons: 0,
         armour: 0,
         trappings: 0,
-        maximum: 0,
-        total: 0
+        total: 0,
+        maximumBonus: 0,
+        maximum: 0
     },
     wounds: {
         strengthBonus: 0,

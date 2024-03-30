@@ -177,8 +177,9 @@ exports.warhammerFantasyEncumbranceSchema = typebox_1.Type.Object({
     weapons: typebox_1.Type.Integer(),
     armour: typebox_1.Type.Integer(),
     trappings: typebox_1.Type.Integer(),
-    maximum: typebox_1.Type.Integer(),
-    total: typebox_1.Type.Integer()
+    total: typebox_1.Type.Integer(),
+    maximumBonus: typebox_1.Type.Integer(),
+    maximum: typebox_1.Type.Integer()
 }, {
     additionalProperties: false
 });
