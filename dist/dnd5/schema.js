@@ -1,172 +1,169 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.dnd5CharacterSchema = exports.dnd5SpellcastingSchema = exports.dnd5SpellLevelSchema = exports.dnd5SpellSchema = exports.dnd5EquipmentSchema = exports.dnd5MoneySchema = exports.dnd5FeaturesSchema = exports.dnd5AttackSchema = exports.dnd5CombatSchema = exports.dnd5DeathSavesSchema = exports.dnd5HitPointsSchema = exports.dnd5SkillsSchema = exports.dnd5SavingThrowsSchema = exports.dnd5SkillSchema = exports.dnd5AbilitiesSchema = exports.dnd5AbilitySchema = exports.dnd5StatisticsSchema = exports.dnd5StorySchema = exports.dnd5BiographySchema = void 0;
-const typebox_1 = require("@sinclair/typebox");
-exports.dnd5BiographySchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    class: typebox_1.Type.String(),
-    level: typebox_1.Type.Integer(),
-    background: typebox_1.Type.String(),
-    race: typebox_1.Type.String(),
-    alignment: typebox_1.Type.String(),
-    description: typebox_1.Type.String()
+import { Type } from '@sinclair/typebox';
+export const dnd5BiographySchema = Type.Object({
+    name: Type.String(),
+    class: Type.String(),
+    level: Type.Integer(),
+    background: Type.String(),
+    race: Type.String(),
+    alignment: Type.String(),
+    description: Type.String()
 }, {
     additionalProperties: false
 });
-exports.dnd5StorySchema = typebox_1.Type.Object({
-    backstory: typebox_1.Type.String(),
-    personalityTraits: typebox_1.Type.String(),
-    ideals: typebox_1.Type.String(),
-    bonds: typebox_1.Type.String(),
-    flaws: typebox_1.Type.String(),
-    alliesAndOrganizations: typebox_1.Type.String()
+export const dnd5StorySchema = Type.Object({
+    backstory: Type.String(),
+    personalityTraits: Type.String(),
+    ideals: Type.String(),
+    bonds: Type.String(),
+    flaws: Type.String(),
+    alliesAndOrganizations: Type.String()
 }, {
     additionalProperties: false
 });
-exports.dnd5StatisticsSchema = typebox_1.Type.Object({
-    experiencePoints: typebox_1.Type.Integer(),
-    inspiration: typebox_1.Type.Integer(),
-    proficiencyBonus: typebox_1.Type.Integer(),
-    passiveWisdom: typebox_1.Type.Integer()
+export const dnd5StatisticsSchema = Type.Object({
+    experiencePoints: Type.Integer(),
+    inspiration: Type.Integer(),
+    proficiencyBonus: Type.Integer(),
+    passiveWisdom: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.dnd5AbilitySchema = typebox_1.Type.Object({
-    modifier: typebox_1.Type.Integer(),
-    score: typebox_1.Type.Integer()
+export const dnd5AbilitySchema = Type.Object({
+    modifier: Type.Integer(),
+    score: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.dnd5AbilitiesSchema = typebox_1.Type.Object({
-    strength: exports.dnd5AbilitySchema,
-    dexterity: exports.dnd5AbilitySchema,
-    constitution: exports.dnd5AbilitySchema,
-    intelligence: exports.dnd5AbilitySchema,
-    wisdom: exports.dnd5AbilitySchema,
-    charisma: exports.dnd5AbilitySchema
+export const dnd5AbilitiesSchema = Type.Object({
+    strength: dnd5AbilitySchema,
+    dexterity: dnd5AbilitySchema,
+    constitution: dnd5AbilitySchema,
+    intelligence: dnd5AbilitySchema,
+    wisdom: dnd5AbilitySchema,
+    charisma: dnd5AbilitySchema
 }, {
     additionalProperties: false
 });
-exports.dnd5SkillSchema = typebox_1.Type.Object({
-    modifier: typebox_1.Type.Integer(),
-    proficient: typebox_1.Type.Boolean()
+export const dnd5SkillSchema = Type.Object({
+    modifier: Type.Integer(),
+    proficient: Type.Boolean()
 }, {
     additionalProperties: false
 });
-exports.dnd5SavingThrowsSchema = typebox_1.Type.Record(typebox_1.Type.KeyOf(exports.dnd5AbilitiesSchema), exports.dnd5SkillSchema, {
+export const dnd5SavingThrowsSchema = Type.Record(Type.KeyOf(dnd5AbilitiesSchema), dnd5SkillSchema, {
     additionalProperties: false
 });
-exports.dnd5SkillsSchema = typebox_1.Type.Object({
-    acrobatics: exports.dnd5SkillSchema,
-    animalHandling: exports.dnd5SkillSchema,
-    arcana: exports.dnd5SkillSchema,
-    athletics: exports.dnd5SkillSchema,
-    deception: exports.dnd5SkillSchema,
-    history: exports.dnd5SkillSchema,
-    insight: exports.dnd5SkillSchema,
-    intimidation: exports.dnd5SkillSchema,
-    investigation: exports.dnd5SkillSchema,
-    medicine: exports.dnd5SkillSchema,
-    nature: exports.dnd5SkillSchema,
-    perception: exports.dnd5SkillSchema,
-    performance: exports.dnd5SkillSchema,
-    persuasion: exports.dnd5SkillSchema,
-    religion: exports.dnd5SkillSchema,
-    sleightOfHand: exports.dnd5SkillSchema,
-    stealth: exports.dnd5SkillSchema,
-    survival: exports.dnd5SkillSchema
+export const dnd5SkillsSchema = Type.Object({
+    acrobatics: dnd5SkillSchema,
+    animalHandling: dnd5SkillSchema,
+    arcana: dnd5SkillSchema,
+    athletics: dnd5SkillSchema,
+    deception: dnd5SkillSchema,
+    history: dnd5SkillSchema,
+    insight: dnd5SkillSchema,
+    intimidation: dnd5SkillSchema,
+    investigation: dnd5SkillSchema,
+    medicine: dnd5SkillSchema,
+    nature: dnd5SkillSchema,
+    perception: dnd5SkillSchema,
+    performance: dnd5SkillSchema,
+    persuasion: dnd5SkillSchema,
+    religion: dnd5SkillSchema,
+    sleightOfHand: dnd5SkillSchema,
+    stealth: dnd5SkillSchema,
+    survival: dnd5SkillSchema
 }, {
     additionalProperties: false
 });
-exports.dnd5HitPointsSchema = typebox_1.Type.Object({
-    maximum: typebox_1.Type.Integer(),
-    current: typebox_1.Type.Integer(),
-    temporary: typebox_1.Type.Integer()
+export const dnd5HitPointsSchema = Type.Object({
+    maximum: Type.Integer(),
+    current: Type.Integer(),
+    temporary: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.dnd5DeathSavesSchema = typebox_1.Type.Object({
-    successes: typebox_1.Type.Integer(),
-    failures: typebox_1.Type.Integer()
+export const dnd5DeathSavesSchema = Type.Object({
+    successes: Type.Integer(),
+    failures: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.dnd5CombatSchema = typebox_1.Type.Object({
-    armorClass: typebox_1.Type.Integer(),
-    initiative: typebox_1.Type.Integer(),
-    speed: typebox_1.Type.Integer(),
-    hitPoints: exports.dnd5HitPointsSchema,
-    hitDice: typebox_1.Type.String(),
-    deathSaves: exports.dnd5DeathSavesSchema
+export const dnd5CombatSchema = Type.Object({
+    armorClass: Type.Integer(),
+    initiative: Type.Integer(),
+    speed: Type.Integer(),
+    hitPoints: dnd5HitPointsSchema,
+    hitDice: Type.String(),
+    deathSaves: dnd5DeathSavesSchema
 }, {
     additionalProperties: false
 });
-exports.dnd5AttackSchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    attackBonus: typebox_1.Type.Integer(),
-    damage: typebox_1.Type.String(),
-    type: typebox_1.Type.String()
+export const dnd5AttackSchema = Type.Object({
+    name: Type.String(),
+    attackBonus: Type.Integer(),
+    damage: Type.String(),
+    type: Type.String()
 }, {
     additionalProperties: false
 });
-exports.dnd5FeaturesSchema = typebox_1.Type.Object({
-    featuresAndTraits: typebox_1.Type.String(),
-    proficienciesAndLanguages: typebox_1.Type.String()
+export const dnd5FeaturesSchema = Type.Object({
+    featuresAndTraits: Type.String(),
+    proficienciesAndLanguages: Type.String()
 }, {
     additionalProperties: false
 });
-exports.dnd5MoneySchema = typebox_1.Type.Object({
-    copper: typebox_1.Type.Integer(),
-    silver: typebox_1.Type.Integer(),
-    electrum: typebox_1.Type.Integer(),
-    gold: typebox_1.Type.Integer(),
-    platinum: typebox_1.Type.Integer()
+export const dnd5MoneySchema = Type.Object({
+    copper: Type.Integer(),
+    silver: Type.Integer(),
+    electrum: Type.Integer(),
+    gold: Type.Integer(),
+    platinum: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.dnd5EquipmentSchema = typebox_1.Type.Object({
-    money: exports.dnd5MoneySchema,
-    items: typebox_1.Type.String(),
-    treasure: typebox_1.Type.String()
+export const dnd5EquipmentSchema = Type.Object({
+    money: dnd5MoneySchema,
+    items: Type.String(),
+    treasure: Type.String()
 }, {
     additionalProperties: false
 });
-exports.dnd5SpellSchema = typebox_1.Type.Object({
-    prepared: typebox_1.Type.Boolean(),
-    name: typebox_1.Type.String()
+export const dnd5SpellSchema = Type.Object({
+    prepared: Type.Boolean(),
+    name: Type.String()
 }, {
     additionalProperties: false
 });
-exports.dnd5SpellLevelSchema = typebox_1.Type.Object({
-    level: typebox_1.Type.Integer(),
-    slotsTotal: typebox_1.Type.Integer(),
-    slotsExpended: typebox_1.Type.Integer(),
-    spells: typebox_1.Type.Array(exports.dnd5SpellSchema)
+export const dnd5SpellLevelSchema = Type.Object({
+    level: Type.Integer(),
+    slotsTotal: Type.Integer(),
+    slotsExpended: Type.Integer(),
+    spells: Type.Array(dnd5SpellSchema)
 }, {
     additionalProperties: false
 });
-exports.dnd5SpellcastingSchema = typebox_1.Type.Object({
-    class: typebox_1.Type.String(),
-    spellAbility: typebox_1.Type.Integer(),
-    spellSaveDC: typebox_1.Type.Integer(),
-    spellAttackBonus: typebox_1.Type.Integer(),
-    cantrips: typebox_1.Type.Array(typebox_1.Type.String()),
-    levels: typebox_1.Type.Array(exports.dnd5SpellLevelSchema)
+export const dnd5SpellcastingSchema = Type.Object({
+    class: Type.String(),
+    spellAbility: Type.Integer(),
+    spellSaveDC: Type.Integer(),
+    spellAttackBonus: Type.Integer(),
+    cantrips: Type.Array(Type.String()),
+    levels: Type.Array(dnd5SpellLevelSchema)
 }, {
     additionalProperties: false
 });
-exports.dnd5CharacterSchema = typebox_1.Type.Object({
-    biography: exports.dnd5BiographySchema,
-    story: exports.dnd5StorySchema,
-    statistics: exports.dnd5StatisticsSchema,
-    abilities: exports.dnd5AbilitiesSchema,
-    savingThrows: exports.dnd5SavingThrowsSchema,
-    skills: exports.dnd5SkillsSchema,
-    combat: exports.dnd5CombatSchema,
-    attacks: typebox_1.Type.Array(exports.dnd5AttackSchema),
-    features: exports.dnd5FeaturesSchema,
-    spellcasting: exports.dnd5SpellcastingSchema,
-    equipment: exports.dnd5EquipmentSchema
+export const dnd5CharacterSchema = Type.Object({
+    biography: dnd5BiographySchema,
+    story: dnd5StorySchema,
+    statistics: dnd5StatisticsSchema,
+    abilities: dnd5AbilitiesSchema,
+    savingThrows: dnd5SavingThrowsSchema,
+    skills: dnd5SkillsSchema,
+    combat: dnd5CombatSchema,
+    attacks: Type.Array(dnd5AttackSchema),
+    features: dnd5FeaturesSchema,
+    spellcasting: dnd5SpellcastingSchema,
+    equipment: dnd5EquipmentSchema
 }, {
     additionalProperties: false
 });

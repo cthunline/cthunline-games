@@ -1,11 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const defaultCharacteristic = {
     regular: 0,
     half: 0,
     fifth: 0
 };
-exports.default = {
+export default {
     biography: {
         name: '',
         birthPlace: '',

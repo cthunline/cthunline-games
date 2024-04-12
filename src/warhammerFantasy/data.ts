@@ -1,7 +1,7 @@
 import {
     type WarhammerFantasyBasicSkillName,
     type WarhammerFantasyCharacteristicName
-} from './types';
+} from './types.js';
 
 interface WarhammerFantasyData {
     characteristicNames: WarhammerFantasyCharacteristicName[];

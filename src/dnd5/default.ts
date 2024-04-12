@@ -1,4 +1,4 @@
-import { type DnD5Character } from './types';
+import { type DnD5Character } from './types.js';
 
 const defaultAbility = {
     modifier: 0,

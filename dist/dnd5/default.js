@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const defaultAbility = {
     modifier: 0,
     score: 10
@@ -8,7 +6,7 @@ const defaultSkill = {
     modifier: 0,
     proficient: false
 };
-exports.default = {
+export default {
     biography: {
         name: '',
         class: '',

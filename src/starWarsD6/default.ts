@@ -1,4 +1,4 @@
-import { type SWD6Character } from './types';
+import { type SWD6Character } from './types.js';
 
 const defaultAttribute = {
     value: '',

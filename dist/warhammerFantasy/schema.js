@@ -1,86 +1,83 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.warhammerFantasyCharacterSchema = exports.warhammerFantasySpellSchema = exports.warhammerFantasyWeaponSchema = exports.warhammerFantasyWoundsSchema = exports.warhammerFantasyEncumbranceSchema = exports.warhammerFantasyWealthSchema = exports.warhammerFantasyTrappingSchema = exports.warhammerFantasyArmourPointsSchema = exports.warhammerFantasyArmourSchema = exports.warhammerFantasyPartySchema = exports.warhammerFantasyAmbitionsSchema = exports.warhammerFantasyTalentSchema = exports.warhammerFantasyOtherSkillSchema = exports.warhammerFantasyBasicSkillName = exports.warhammerFantasyBasicSkillsSchema = exports.warhammerFantasyBasicSkill = exports.warhammerFantasyMovementSchema = exports.warhammerFantasyExperienceSchema = exports.warhammerFantasyResilienceSchema = exports.warhammerFantasyFateSchema = exports.warhammerFantasyCharacteristicName = exports.warhammerFantasyCharacteristicsSchema = exports.warhammerFantasyCharacteristicSchema = exports.warhammerFantasyBiographySchema = void 0;
-const typebox_1 = require("@sinclair/typebox");
-exports.warhammerFantasyBiographySchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    species: typebox_1.Type.String(),
-    class: typebox_1.Type.String(),
-    career: typebox_1.Type.String(),
-    careerLevel: typebox_1.Type.String(),
-    careerPath: typebox_1.Type.String(),
-    status: typebox_1.Type.String(),
-    age: typebox_1.Type.String(),
-    height: typebox_1.Type.String(),
-    hair: typebox_1.Type.String(),
-    eyes: typebox_1.Type.String()
+import { Type } from '@sinclair/typebox';
+export const warhammerFantasyBiographySchema = Type.Object({
+    name: Type.String(),
+    species: Type.String(),
+    class: Type.String(),
+    career: Type.String(),
+    careerLevel: Type.String(),
+    careerPath: Type.String(),
+    status: Type.String(),
+    age: Type.String(),
+    height: Type.String(),
+    hair: Type.String(),
+    eyes: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyCharacteristicSchema = typebox_1.Type.Object({
-    initial: typebox_1.Type.Integer(),
-    advances: typebox_1.Type.Integer(),
-    current: typebox_1.Type.Integer()
+export const warhammerFantasyCharacteristicSchema = Type.Object({
+    initial: Type.Integer(),
+    advances: Type.Integer(),
+    current: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyCharacteristicsSchema = typebox_1.Type.Object({
-    weaponSkill: exports.warhammerFantasyCharacteristicSchema,
-    ballisticSkill: exports.warhammerFantasyCharacteristicSchema,
-    strength: exports.warhammerFantasyCharacteristicSchema,
-    toughness: exports.warhammerFantasyCharacteristicSchema,
-    initiative: exports.warhammerFantasyCharacteristicSchema,
-    agility: exports.warhammerFantasyCharacteristicSchema,
-    dexterity: exports.warhammerFantasyCharacteristicSchema,
-    intelligence: exports.warhammerFantasyCharacteristicSchema,
-    willpower: exports.warhammerFantasyCharacteristicSchema,
-    fellowship: exports.warhammerFantasyCharacteristicSchema
+export const warhammerFantasyCharacteristicsSchema = Type.Object({
+    weaponSkill: warhammerFantasyCharacteristicSchema,
+    ballisticSkill: warhammerFantasyCharacteristicSchema,
+    strength: warhammerFantasyCharacteristicSchema,
+    toughness: warhammerFantasyCharacteristicSchema,
+    initiative: warhammerFantasyCharacteristicSchema,
+    agility: warhammerFantasyCharacteristicSchema,
+    dexterity: warhammerFantasyCharacteristicSchema,
+    intelligence: warhammerFantasyCharacteristicSchema,
+    willpower: warhammerFantasyCharacteristicSchema,
+    fellowship: warhammerFantasyCharacteristicSchema
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyCharacteristicName = typebox_1.Type.KeyOf(exports.warhammerFantasyCharacteristicsSchema);
-exports.warhammerFantasyFateSchema = typebox_1.Type.Object({
-    fate: typebox_1.Type.Integer(),
-    fortune: typebox_1.Type.Integer()
+export const warhammerFantasyCharacteristicName = Type.KeyOf(warhammerFantasyCharacteristicsSchema);
+export const warhammerFantasyFateSchema = Type.Object({
+    fate: Type.Integer(),
+    fortune: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyResilienceSchema = typebox_1.Type.Object({
-    resilience: typebox_1.Type.Integer(),
-    resolve: typebox_1.Type.Integer(),
-    motivation: typebox_1.Type.String()
+export const warhammerFantasyResilienceSchema = Type.Object({
+    resilience: Type.Integer(),
+    resolve: Type.Integer(),
+    motivation: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyExperienceSchema = typebox_1.Type.Object({
-    current: typebox_1.Type.Integer(),
-    spent: typebox_1.Type.Integer(),
-    total: typebox_1.Type.Integer()
+export const warhammerFantasyExperienceSchema = Type.Object({
+    current: Type.Integer(),
+    spent: Type.Integer(),
+    total: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyMovementSchema = typebox_1.Type.Object({
-    movement: typebox_1.Type.Integer(),
-    walk: typebox_1.Type.Integer(),
-    run: typebox_1.Type.Integer()
+export const warhammerFantasyMovementSchema = Type.Object({
+    movement: Type.Integer(),
+    walk: Type.Integer(),
+    run: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyBasicSkill = typebox_1.Type.Object({
-    characteristicName: exports.warhammerFantasyCharacteristicName,
-    advances: typebox_1.Type.Integer(),
-    skill: typebox_1.Type.Integer()
+export const warhammerFantasyBasicSkill = Type.Object({
+    characteristicName: warhammerFantasyCharacteristicName,
+    advances: Type.Integer(),
+    skill: Type.Integer()
 }, {
     additionalProperties: false
 });
-const getBasicSkillSchema = (char) => typebox_1.Type.Object({
-    characteristicName: typebox_1.Type.Literal(char),
-    advances: typebox_1.Type.Integer(),
-    skill: typebox_1.Type.Integer()
+const getBasicSkillSchema = (char) => Type.Object({
+    characteristicName: Type.Literal(char),
+    advances: Type.Integer(),
+    skill: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyBasicSkillsSchema = typebox_1.Type.Object({
+export const warhammerFantasyBasicSkillsSchema = Type.Object({
     art: getBasicSkillSchema('dexterity'),
     gossip: getBasicSkillSchema('fellowship'),
     athletics: getBasicSkillSchema('agility'),
@@ -110,134 +107,134 @@ exports.warhammerFantasyBasicSkillsSchema = typebox_1.Type.Object({
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyBasicSkillName = typebox_1.Type.KeyOf(exports.warhammerFantasyBasicSkillsSchema);
-exports.warhammerFantasyOtherSkillSchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    characteristicName: exports.warhammerFantasyCharacteristicName,
-    advances: typebox_1.Type.Integer(),
-    skill: typebox_1.Type.Integer()
+export const warhammerFantasyBasicSkillName = Type.KeyOf(warhammerFantasyBasicSkillsSchema);
+export const warhammerFantasyOtherSkillSchema = Type.Object({
+    name: Type.String(),
+    characteristicName: warhammerFantasyCharacteristicName,
+    advances: Type.Integer(),
+    skill: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyTalentSchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    timesTaken: typebox_1.Type.Integer(),
-    description: typebox_1.Type.String()
+export const warhammerFantasyTalentSchema = Type.Object({
+    name: Type.String(),
+    timesTaken: Type.Integer(),
+    description: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyAmbitionsSchema = typebox_1.Type.Object({
-    shortTerm: typebox_1.Type.String(),
-    longTerm: typebox_1.Type.String()
+export const warhammerFantasyAmbitionsSchema = Type.Object({
+    shortTerm: Type.String(),
+    longTerm: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyPartySchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    shortTerm: typebox_1.Type.String(),
-    longTerm: typebox_1.Type.String(),
-    members: typebox_1.Type.String()
+export const warhammerFantasyPartySchema = Type.Object({
+    name: Type.String(),
+    shortTerm: Type.String(),
+    longTerm: Type.String(),
+    members: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyArmourSchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    locations: typebox_1.Type.String(),
-    encumbrance: typebox_1.Type.Integer(),
-    armourPoints: typebox_1.Type.Integer(),
-    qualities: typebox_1.Type.String()
+export const warhammerFantasyArmourSchema = Type.Object({
+    name: Type.String(),
+    locations: Type.String(),
+    encumbrance: Type.Integer(),
+    armourPoints: Type.Integer(),
+    qualities: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyArmourPointsSchema = typebox_1.Type.Object({
-    head: typebox_1.Type.Integer(),
-    rightArm: typebox_1.Type.Integer(),
-    leftArm: typebox_1.Type.Integer(),
-    body: typebox_1.Type.Integer(),
-    rightLeg: typebox_1.Type.Integer(),
-    leftLeg: typebox_1.Type.Integer(),
-    shield: typebox_1.Type.Integer()
+export const warhammerFantasyArmourPointsSchema = Type.Object({
+    head: Type.Integer(),
+    rightArm: Type.Integer(),
+    leftArm: Type.Integer(),
+    body: Type.Integer(),
+    rightLeg: Type.Integer(),
+    leftLeg: Type.Integer(),
+    shield: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyTrappingSchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    encumbrance: typebox_1.Type.Integer()
+export const warhammerFantasyTrappingSchema = Type.Object({
+    name: Type.String(),
+    encumbrance: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyWealthSchema = typebox_1.Type.Object({
-    brassPennies: typebox_1.Type.Integer(),
-    silverShillings: typebox_1.Type.Integer(),
-    goldCrowns: typebox_1.Type.Integer()
+export const warhammerFantasyWealthSchema = Type.Object({
+    brassPennies: Type.Integer(),
+    silverShillings: Type.Integer(),
+    goldCrowns: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyEncumbranceSchema = typebox_1.Type.Object({
-    weapons: typebox_1.Type.Integer(),
-    armour: typebox_1.Type.Integer(),
-    trappings: typebox_1.Type.Integer(),
-    total: typebox_1.Type.Integer(),
-    maximumBonus: typebox_1.Type.Integer(),
-    maximum: typebox_1.Type.Integer()
+export const warhammerFantasyEncumbranceSchema = Type.Object({
+    weapons: Type.Integer(),
+    armour: Type.Integer(),
+    trappings: Type.Integer(),
+    total: Type.Integer(),
+    maximumBonus: Type.Integer(),
+    maximum: Type.Integer()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyWoundsSchema = typebox_1.Type.Object({
-    strengthBonus: typebox_1.Type.Integer(),
-    twiceToughnessBonus: typebox_1.Type.Integer(),
-    willpowerBonus: typebox_1.Type.Integer(),
-    hardy: typebox_1.Type.Boolean(),
-    total: typebox_1.Type.Integer(),
-    current: typebox_1.Type.Integer(),
-    notes: typebox_1.Type.String()
+export const warhammerFantasyWoundsSchema = Type.Object({
+    strengthBonus: Type.Integer(),
+    twiceToughnessBonus: Type.Integer(),
+    willpowerBonus: Type.Integer(),
+    hardy: Type.Boolean(),
+    total: Type.Integer(),
+    current: Type.Integer(),
+    notes: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyWeaponSchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    group: typebox_1.Type.String(),
-    encumbrance: typebox_1.Type.Integer(),
-    rangeReach: typebox_1.Type.String(),
-    damage: typebox_1.Type.String(),
-    qualities: typebox_1.Type.String()
+export const warhammerFantasyWeaponSchema = Type.Object({
+    name: Type.String(),
+    group: Type.String(),
+    encumbrance: Type.Integer(),
+    rangeReach: Type.String(),
+    damage: Type.String(),
+    qualities: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasySpellSchema = typebox_1.Type.Object({
-    name: typebox_1.Type.String(),
-    castingNumber: typebox_1.Type.Integer(),
-    range: typebox_1.Type.String(),
-    target: typebox_1.Type.String(),
-    duration: typebox_1.Type.String(),
-    effect: typebox_1.Type.String()
+export const warhammerFantasySpellSchema = Type.Object({
+    name: Type.String(),
+    castingNumber: Type.Integer(),
+    range: Type.String(),
+    target: Type.String(),
+    duration: Type.String(),
+    effect: Type.String()
 }, {
     additionalProperties: false
 });
-exports.warhammerFantasyCharacterSchema = typebox_1.Type.Object({
-    biography: exports.warhammerFantasyBiographySchema,
-    characteristics: exports.warhammerFantasyCharacteristicsSchema,
-    fate: exports.warhammerFantasyFateSchema,
-    resilience: exports.warhammerFantasyResilienceSchema,
-    experience: exports.warhammerFantasyExperienceSchema,
-    movement: exports.warhammerFantasyMovementSchema,
-    basicSkills: exports.warhammerFantasyBasicSkillsSchema,
-    otherSkills: typebox_1.Type.Array(exports.warhammerFantasyOtherSkillSchema),
-    talents: typebox_1.Type.Array(exports.warhammerFantasyTalentSchema),
-    ambitions: exports.warhammerFantasyAmbitionsSchema,
-    party: exports.warhammerFantasyPartySchema,
-    armour: typebox_1.Type.Array(exports.warhammerFantasyArmourSchema),
-    armourPoints: exports.warhammerFantasyArmourPointsSchema,
-    trappings: typebox_1.Type.Array(exports.warhammerFantasyTrappingSchema),
-    psychology: typebox_1.Type.String(),
-    corruptionMutation: typebox_1.Type.String(),
-    wealth: exports.warhammerFantasyWealthSchema,
-    encumbrance: exports.warhammerFantasyEncumbranceSchema,
-    wounds: exports.warhammerFantasyWoundsSchema,
-    weapons: typebox_1.Type.Array(exports.warhammerFantasyWeaponSchema),
-    spells: typebox_1.Type.Array(exports.warhammerFantasySpellSchema),
-    sin: typebox_1.Type.Integer(),
-    advantage: typebox_1.Type.Integer()
+export const warhammerFantasyCharacterSchema = Type.Object({
+    biography: warhammerFantasyBiographySchema,
+    characteristics: warhammerFantasyCharacteristicsSchema,
+    fate: warhammerFantasyFateSchema,
+    resilience: warhammerFantasyResilienceSchema,
+    experience: warhammerFantasyExperienceSchema,
+    movement: warhammerFantasyMovementSchema,
+    basicSkills: warhammerFantasyBasicSkillsSchema,
+    otherSkills: Type.Array(warhammerFantasyOtherSkillSchema),
+    talents: Type.Array(warhammerFantasyTalentSchema),
+    ambitions: warhammerFantasyAmbitionsSchema,
+    party: warhammerFantasyPartySchema,
+    armour: Type.Array(warhammerFantasyArmourSchema),
+    armourPoints: warhammerFantasyArmourPointsSchema,
+    trappings: Type.Array(warhammerFantasyTrappingSchema),
+    psychology: Type.String(),
+    corruptionMutation: Type.String(),
+    wealth: warhammerFantasyWealthSchema,
+    encumbrance: warhammerFantasyEncumbranceSchema,
+    wounds: warhammerFantasyWoundsSchema,
+    weapons: Type.Array(warhammerFantasyWeaponSchema),
+    spells: Type.Array(warhammerFantasySpellSchema),
+    sin: Type.Integer(),
+    advantage: Type.Integer()
 }, {
     additionalProperties: false
 });

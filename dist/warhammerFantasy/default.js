@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const defaultCharacteristic = {
     initial: 0,
     advances: 0,
@@ -9,7 +7,7 @@ const defaultBasicSkill = {
     advances: 0,
     skill: 0
 };
-exports.default = {
+export default {
     biography: {
         name: '',
         species: '',

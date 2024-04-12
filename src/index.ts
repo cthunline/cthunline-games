@@ -1,30 +1,30 @@
-import { cocCharacterSchema } from './callOfCthulhu/schema';
-import cocDefault from './callOfCthulhu/default';
+import { cocCharacterSchema } from './callOfCthulhu/schema.js';
+import cocDefault from './callOfCthulhu/default.js';
 
-import { dnd5CharacterSchema } from './dnd5/schema';
-import dnd5Default from './dnd5/default';
+import { dnd5CharacterSchema } from './dnd5/schema.js';
+import dnd5Default from './dnd5/default.js';
 
-import { seventhSeaCharacterSchema } from './seventhSea/schema';
-import seventhSeaDefault from './seventhSea/default';
+import { seventhSeaCharacterSchema } from './seventhSea/schema.js';
+import seventhSeaDefault from './seventhSea/default.js';
 
-import { swd6CharacterSchema } from './starWarsD6/schema';
-import swd6Default from './starWarsD6/default';
+import { swd6CharacterSchema } from './starWarsD6/schema.js';
+import swd6Default from './starWarsD6/default.js';
 
-import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema';
-import warhammerFantasyDefault from './warhammerFantasy/default';
-import warhammerFantasyData from './warhammerFantasy/data';
+import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema.js';
+import warhammerFantasyDefault from './warhammerFantasy/default.js';
+import warhammerFantasyData from './warhammerFantasy/data.js';
 
-import { CoCCharacter } from './callOfCthulhu/types';
-import { DnD5Character } from './dnd5/types';
-import { SeventhSeaCharacter } from './seventhSea/types';
-import { SWD6Character } from './starWarsD6/types';
-import { WarhammerFantasyCharacter } from './warhammerFantasy/types';
+import { type CoCCharacter } from './callOfCthulhu/types.js';
+import { type DnD5Character } from './dnd5/types.js';
+import { type SeventhSeaCharacter } from './seventhSea/types.js';
+import { type SWD6Character } from './starWarsD6/types.js';
+import { type WarhammerFantasyCharacter } from './warhammerFantasy/types.js';
 
-export * from './callOfCthulhu/types';
-export * from './dnd5/types';
-export * from './seventhSea/types';
-export * from './starWarsD6/types';
-export * from './warhammerFantasy/types';
+export * from './callOfCthulhu/types.js';
+export * from './dnd5/types.js';
+export * from './seventhSea/types.js';
+export * from './starWarsD6/types.js';
+export * from './warhammerFantasy/types.js';
 
 export type Character =
     | CoCCharacter
