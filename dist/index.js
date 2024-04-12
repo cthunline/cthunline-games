@@ -1,19 +1,19 @@
-import { cocCharacterSchema } from './callOfCthulhu/schema';
-import cocDefault from './callOfCthulhu/default';
-import { dnd5CharacterSchema } from './dnd5/schema';
-import dnd5Default from './dnd5/default';
-import { seventhSeaCharacterSchema } from './seventhSea/schema';
-import seventhSeaDefault from './seventhSea/default';
-import { swd6CharacterSchema } from './starWarsD6/schema';
-import swd6Default from './starWarsD6/default';
-import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema';
-import warhammerFantasyDefault from './warhammerFantasy/default';
-import warhammerFantasyData from './warhammerFantasy/data';
-export * from './callOfCthulhu/types';
-export * from './dnd5/types';
-export * from './seventhSea/types';
-export * from './starWarsD6/types';
-export * from './warhammerFantasy/types';
+import { cocCharacterSchema } from './callOfCthulhu/schema.js';
+import cocDefault from './callOfCthulhu/default.js';
+import { dnd5CharacterSchema } from './dnd5/schema.js';
+import dnd5Default from './dnd5/default.js';
+import { seventhSeaCharacterSchema } from './seventhSea/schema.js';
+import seventhSeaDefault from './seventhSea/default.js';
+import { swd6CharacterSchema } from './starWarsD6/schema.js';
+import swd6Default from './starWarsD6/default.js';
+import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema.js';
+import warhammerFantasyDefault from './warhammerFantasy/default.js';
+import warhammerFantasyData from './warhammerFantasy/data.js';
+export * from './callOfCthulhu/types.js';
+export * from './dnd5/types.js';
+export * from './seventhSea/types.js';
+export * from './starWarsD6/types.js';
+export * from './warhammerFantasy/types.js';
 export const callOfCthulhu = {
     schema: cocCharacterSchema,
     default: cocDefault
