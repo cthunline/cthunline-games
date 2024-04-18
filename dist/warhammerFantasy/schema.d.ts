@@ -103,6 +103,7 @@ export declare const warhammerFantasyBasicSkill: import("@sinclair/typebox").TOb
     characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
     advances: import("@sinclair/typebox").TInteger;
     skill: import("@sinclair/typebox").TInteger;
+    careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
 }>;
 export declare const warhammerFantasyBasicSkillsSchema: import("@sinclair/typebox").TObject<{
     art: import("@sinclair/typebox").TObject<{

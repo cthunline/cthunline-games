@@ -105,7 +105,13 @@ export const warhammerFantasyBasicSkill = Type.Object(
     {
         characteristicName: warhammerFantasyCharacteristicName,
         advances: Type.Integer(),
-        skill: Type.Integer()
+        skill: Type.Integer(),
+        careerLevel: Type.Optional(
+            Type.Integer({
+                minimum: 1,
+                maximum: 4
+            })
+        )
     },
     {
         additionalProperties: false
