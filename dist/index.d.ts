@@ -902,51 +902,61 @@ export declare const warhammerFantasy: {
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             ballisticSkill: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             strength: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             toughness: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             initiative: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             agility: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             dexterity: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             intelligence: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             willpower: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             fellowship: import("@sinclair/typebox").TObject<{
                 initial: import("@sinclair/typebox").TInteger;
                 advances: import("@sinclair/typebox").TInteger;
                 current: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
         }>;
         fate: import("@sinclair/typebox").TObject<{
@@ -973,131 +983,157 @@ export declare const warhammerFantasy: {
                 characteristicName: import("@sinclair/typebox").TLiteral<"dexterity">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             gossip: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             athletics: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             haggle: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             bribery: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             intimidate: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"strength">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             charm: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             intuition: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"initiative">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             charmAnimal: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"willpower">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             leadership: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             climb: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"strength">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             meleeBasic: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"weaponSkill">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             cool: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"willpower">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             melee: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"weaponSkill">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             consumeAlcohol: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"toughness">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             navigation: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"initiative">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             dodge: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             outdoorSurvival: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"intelligence">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             drive: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             perception: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"initiative">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             endurance: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"toughness">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             ride: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             entertain: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"fellowship">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             row: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"strength">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             gamble: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"intelligence">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
             stealth: import("@sinclair/typebox").TObject<{
                 characteristicName: import("@sinclair/typebox").TLiteral<"agility">;
                 advances: import("@sinclair/typebox").TInteger;
                 skill: import("@sinclair/typebox").TInteger;
+                careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
             }>;
         }>;
         otherSkills: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
@@ -1105,6 +1141,7 @@ export declare const warhammerFantasy: {
             characteristicName: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"strength">, import("@sinclair/typebox").TLiteral<"dexterity">, import("@sinclair/typebox").TLiteral<"intelligence">, import("@sinclair/typebox").TLiteral<"initiative">, import("@sinclair/typebox").TLiteral<"weaponSkill">, import("@sinclair/typebox").TLiteral<"ballisticSkill">, import("@sinclair/typebox").TLiteral<"toughness">, import("@sinclair/typebox").TLiteral<"agility">, import("@sinclair/typebox").TLiteral<"willpower">, import("@sinclair/typebox").TLiteral<"fellowship">]>;
             advances: import("@sinclair/typebox").TInteger;
             skill: import("@sinclair/typebox").TInteger;
+            careerLevel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TInteger>;
         }>>;
         talents: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             name: import("@sinclair/typebox").TString;

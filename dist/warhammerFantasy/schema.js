@@ -17,7 +17,11 @@ export const warhammerFantasyBiographySchema = Type.Object({
 export const warhammerFantasyCharacteristicSchema = Type.Object({
     initial: Type.Integer(),
     advances: Type.Integer(),
-    current: Type.Integer()
+    current: Type.Integer(),
+    careerLevel: Type.Optional(Type.Integer({
+        minimum: 1,
+        maximum: 4
+    }))
 }, {
     additionalProperties: false
 });
@@ -73,7 +77,11 @@ export const warhammerFantasyBasicSkill = Type.Object({
 const getBasicSkillSchema = (char) => Type.Object({
     characteristicName: Type.Literal(char),
     advances: Type.Integer(),
-    skill: Type.Integer()
+    skill: Type.Integer(),
+    careerLevel: Type.Optional(Type.Integer({
+        minimum: 1,
+        maximum: 4
+    }))
 }, {
     additionalProperties: false
 });
@@ -112,7 +120,11 @@ export const warhammerFantasyOtherSkillSchema = Type.Object({
     name: Type.String(),
     characteristicName: warhammerFantasyCharacteristicName,
     advances: Type.Integer(),
-    skill: Type.Integer()
+    skill: Type.Integer(),
+    careerLevel: Type.Optional(Type.Integer({
+        minimum: 1,
+        maximum: 4
+    }))
 }, {
     additionalProperties: false
 });
