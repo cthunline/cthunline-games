@@ -1,6 +1,6 @@
 declare const _default: {
     characteristicNames: ("strength" | "dexterity" | "intelligence" | "initiative" | "weaponSkill" | "ballisticSkill" | "toughness" | "agility" | "willpower" | "fellowship")[];
-    basicSkillNames: ("athletics" | "perception" | "stealth" | "intimidate" | "ride" | "art" | "gossip" | "haggle" | "bribery" | "charm" | "intuition" | "charmAnimal" | "leadership" | "climb" | "meleeBasic" | "cool" | "melee" | "consumeAlcohol" | "navigation" | "dodge" | "outdoorSurvival" | "drive" | "endurance" | "entertain" | "row" | "gamble")[];
+    basicSkillNames: ("cool" | "leadership" | "athletics" | "perception" | "stealth" | "intimidate" | "ride" | "art" | "gossip" | "haggle" | "bribery" | "charm" | "intuition" | "charmAnimal" | "climb" | "meleeBasic" | "melee" | "consumeAlcohol" | "navigation" | "dodge" | "outdoorSurvival" | "drive" | "endurance" | "entertain" | "row" | "gamble")[];
     basicSkillCharacteristics: {
         art: "dexterity";
         gossip: "fellowship";

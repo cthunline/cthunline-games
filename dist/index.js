@@ -1,3 +1,6 @@
+import { apocalypseWorldCharacterSchema } from './apocalypseWorld/schema.js';
+import apocalypseWorldDefault from './apocalypseWorld/default.js';
+import apocalypseWorldData from './apocalypseWorld/data.js';
 import { cocCharacterSchema } from './callOfCthulhu/schema.js';
 import cocDefault from './callOfCthulhu/default.js';
 import { dnd5CharacterSchema } from './dnd5/schema.js';
@@ -9,11 +12,17 @@ import swd6Default from './starWarsD6/default.js';
 import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema.js';
 import warhammerFantasyDefault from './warhammerFantasy/default.js';
 import warhammerFantasyData from './warhammerFantasy/data.js';
+export * from './apocalypseWorld/types.js';
 export * from './callOfCthulhu/types.js';
 export * from './dnd5/types.js';
 export * from './seventhSea/types.js';
 export * from './starWarsD6/types.js';
 export * from './warhammerFantasy/types.js';
+export const apocalypseWorld = {
+    schema: apocalypseWorldCharacterSchema,
+    default: apocalypseWorldDefault,
+    data: apocalypseWorldData
+};
 export const callOfCthulhu = {
     schema: cocCharacterSchema,
     default: cocDefault

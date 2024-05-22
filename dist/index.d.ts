@@ -1,14 +1,300 @@
+import { type ApocalypseWorldCharacter } from './apocalypseWorld/types.js';
 import { type CoCCharacter } from './callOfCthulhu/types.js';
 import { type DnD5Character } from './dnd5/types.js';
 import { type SeventhSeaCharacter } from './seventhSea/types.js';
 import { type SWD6Character } from './starWarsD6/types.js';
 import { type WarhammerFantasyCharacter } from './warhammerFantasy/types.js';
+export * from './apocalypseWorld/types.js';
 export * from './callOfCthulhu/types.js';
 export * from './dnd5/types.js';
 export * from './seventhSea/types.js';
 export * from './starWarsD6/types.js';
 export * from './warhammerFantasy/types.js';
-export type Character = CoCCharacter | DnD5Character | SeventhSeaCharacter | SWD6Character | WarhammerFantasyCharacter;
+export type Character = ApocalypseWorldCharacter | CoCCharacter | DnD5Character | SeventhSeaCharacter | SWD6Character | WarhammerFantasyCharacter;
+export declare const apocalypseWorld: {
+    schema: import("@sinclair/typebox").TObject<{
+        playbook: import("@sinclair/typebox").TUnion<[import("@sinclair/typebox").TLiteral<"angel">, import("@sinclair/typebox").TLiteral<"battleBabe">, import("@sinclair/typebox").TLiteral<"brainer">, import("@sinclair/typebox").TLiteral<"chopper">, import("@sinclair/typebox").TLiteral<"driver">, import("@sinclair/typebox").TLiteral<"gunLugger">, import("@sinclair/typebox").TLiteral<"hardHolder">, import("@sinclair/typebox").TLiteral<"hocus">, import("@sinclair/typebox").TLiteral<"operator">, import("@sinclair/typebox").TLiteral<"savvyHead">, import("@sinclair/typebox").TLiteral<"skinner">]>;
+        bio: import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            look: import("@sinclair/typebox").TString;
+        }>;
+        stats: import("@sinclair/typebox").TObject<{
+            cool: import("@sinclair/typebox").TObject<{
+                value: import("@sinclair/typebox").TString;
+                highlighted: import("@sinclair/typebox").TBoolean;
+            }>;
+            hard: import("@sinclair/typebox").TObject<{
+                value: import("@sinclair/typebox").TString;
+                highlighted: import("@sinclair/typebox").TBoolean;
+            }>;
+            hot: import("@sinclair/typebox").TObject<{
+                value: import("@sinclair/typebox").TString;
+                highlighted: import("@sinclair/typebox").TBoolean;
+            }>;
+            sharp: import("@sinclair/typebox").TObject<{
+                value: import("@sinclair/typebox").TString;
+                highlighted: import("@sinclair/typebox").TBoolean;
+            }>;
+            weird: import("@sinclair/typebox").TObject<{
+                value: import("@sinclair/typebox").TString;
+                highlighted: import("@sinclair/typebox").TBoolean;
+            }>;
+        }>;
+        hx: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            character: import("@sinclair/typebox").TString;
+            value: import("@sinclair/typebox").TInteger;
+        }>>;
+        special: import("@sinclair/typebox").TString;
+        harm: import("@sinclair/typebox").TObject<{
+            countdown: import("@sinclair/typebox").TInteger;
+            stabilized: import("@sinclair/typebox").TBoolean;
+            shattered: import("@sinclair/typebox").TBoolean;
+            crippled: import("@sinclair/typebox").TBoolean;
+            disfigured: import("@sinclair/typebox").TBoolean;
+            broken: import("@sinclair/typebox").TBoolean;
+        }>;
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            title: import("@sinclair/typebox").TString;
+            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        otherMoves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            title: import("@sinclair/typebox").TString;
+            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        hold: import("@sinclair/typebox").TString;
+        gearAndBarter: import("@sinclair/typebox").TString;
+        angel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            stock: import("@sinclair/typebox").TString;
+        }>>;
+        battleBabe: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            customWeapons: import("@sinclair/typebox").TString;
+        }>>;
+        brainer: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            brainerGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                title: import("@sinclair/typebox").TString;
+                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            customWeapons: import("@sinclair/typebox").TString;
+        }>>;
+        chopper: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            gang: import("@sinclair/typebox").TObject<{
+                size: import("@sinclair/typebox").TString;
+                harm: import("@sinclair/typebox").TString;
+                armor: import("@sinclair/typebox").TString;
+                tags: import("@sinclair/typebox").TString;
+                advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                    title: import("@sinclair/typebox").TString;
+                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    enabled: import("@sinclair/typebox").TBoolean;
+                }>>;
+                problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                    title: import("@sinclair/typebox").TString;
+                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    enabled: import("@sinclair/typebox").TBoolean;
+                }>>;
+            }>;
+            bike: import("@sinclair/typebox").TObject<{
+                strengths: import("@sinclair/typebox").TString;
+                looks: import("@sinclair/typebox").TString;
+                weaknesses: import("@sinclair/typebox").TString;
+            }>;
+        }>>;
+        driver: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            cars: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                frame: import("@sinclair/typebox").TString;
+                power: import("@sinclair/typebox").TString;
+                looks: import("@sinclair/typebox").TString;
+                armor: import("@sinclair/typebox").TString;
+                weak: import("@sinclair/typebox").TString;
+                tags: import("@sinclair/typebox").TString;
+            }>>;
+        }>>;
+        gunLugger: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            weapons: import("@sinclair/typebox").TString;
+            armor: import("@sinclair/typebox").TString;
+        }>>;
+        hardHolder: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            holding: import("@sinclair/typebox").TObject<{
+                holdingStats: import("@sinclair/typebox").TObject<{
+                    size: import("@sinclair/typebox").TString;
+                    surplus: import("@sinclair/typebox").TString;
+                    barter: import("@sinclair/typebox").TString;
+                    gigs: import("@sinclair/typebox").TString;
+                    want: import("@sinclair/typebox").TString;
+                }>;
+                gang: import("@sinclair/typebox").TObject<{
+                    size: import("@sinclair/typebox").TString;
+                    harm: import("@sinclair/typebox").TString;
+                    armor: import("@sinclair/typebox").TString;
+                    tags: import("@sinclair/typebox").TString;
+                }>;
+                advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                    title: import("@sinclair/typebox").TString;
+                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    enabled: import("@sinclair/typebox").TBoolean;
+                }>>;
+                problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                    title: import("@sinclair/typebox").TString;
+                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    enabled: import("@sinclair/typebox").TBoolean;
+                }>>;
+            }>;
+        }>>;
+        hocus: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            followers: import("@sinclair/typebox").TObject<{
+                description: import("@sinclair/typebox").TString;
+                surplus: import("@sinclair/typebox").TString;
+                barter: import("@sinclair/typebox").TString;
+                fortune: import("@sinclair/typebox").TString;
+                want: import("@sinclair/typebox").TString;
+                type: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                    title: import("@sinclair/typebox").TString;
+                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    enabled: import("@sinclair/typebox").TBoolean;
+                }>>;
+                advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                    title: import("@sinclair/typebox").TString;
+                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    enabled: import("@sinclair/typebox").TBoolean;
+                }>>;
+                problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                    title: import("@sinclair/typebox").TString;
+                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    enabled: import("@sinclair/typebox").TBoolean;
+                }>>;
+            }>;
+        }>>;
+        operator: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            payingGigs: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                title: import("@sinclair/typebox").TString;
+                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            obligationGigs: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                title: import("@sinclair/typebox").TString;
+                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            crewContacts: import("@sinclair/typebox").TString;
+        }>>;
+        skinner: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+            graciousWeapons: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                title: import("@sinclair/typebox").TString;
+                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            luxeGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                title: import("@sinclair/typebox").TString;
+                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+        }>>;
+    }>;
+    default: {
+        playbook: "angel";
+        bio: {
+            name: string;
+            look: string;
+        };
+        stats: {
+            cool: {
+                value: string;
+                highlighted: false;
+            };
+            hard: {
+                value: string;
+                highlighted: false;
+            };
+            hot: {
+                value: string;
+                highlighted: false;
+            };
+            sharp: {
+                value: string;
+                highlighted: false;
+            };
+            weird: {
+                value: string;
+                highlighted: false;
+            };
+        };
+        hx: never[];
+        special: string;
+        harm: {
+            countdown: number;
+            stabilized: false;
+            shattered: false;
+            crippled: false;
+            disfigured: false;
+            broken: false;
+        };
+        moves: never[];
+        otherMoves: never[];
+        hold: string;
+        gearAndBarter: string;
+    };
+    data: {
+        readonly angel: {
+            readonly moves: ["sixthSense", "infirmary", "professionalCompassion", "battlefieldGrace", "healingTouch", "touchedByDeath"];
+            readonly improvements: ["increaseSharp", "increaseCool", "increaseHard", "increaseHard", "increaseWeird", "angelMove", "angelMove", "twoGigsMoonlighting", "otherPlaybookMove", "otherPlaybookMove"];
+        };
+        readonly battleBabe: {
+            readonly moves: ["dangerousSexy", "iceCold", "merciless", "visionsOfDeath", "perfectInstincts", "impossibleReflexes"];
+            readonly improvements: ["increaseHard", "increaseHot", "increaseSharp", "increaseWeird", "battleBabeMove", "battleBabeMove", "twoGigsMoonlighting", "gangLeadership", "otherPlaybookMove", "otherPlaybookMove"];
+        };
+        readonly brainer: {
+            readonly moves: ["unnaturalLustTransfixion", "casualBrainReceptivity", "preternaturalAtWillBrainAttunement", "deepBrainScan", "directBrainWhisperProjection", "inBrainPuppetStrings"];
+            readonly improvements: ["increaseCool", "increaseSharp", "increaseHard", "increaseHard", "brainerMove", "brainerMove", "twoGigsMoonlighting", "hodlingWealth", "otherPlaybookMove", "otherPlaybookMove"];
+            readonly gear: ["implantSyringe", "brainRelay", "receptivityDrugs", "violationGlove", "painWaveProjector", "deepEarPlugs"];
+        };
+        readonly chopper: {
+            readonly moves: ["packAlpha", "fuckingThieves"];
+            readonly improvements: ["increaseHard", "increaseCool", "increaseSharp", "increaseWeird", "increaseWeird", "gangOption", "twoGigsMoonlighting", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
+            readonly advantages: ["medium", "wellArmed", "wellArmored", "wellDisciplined", "nomadic", "rich"];
+            readonly problems: ["breakdown", "grounded", "desertion", "obligation", "disease"];
+        };
+        readonly driver: {
+            readonly moves: ["noShitDriver", "goodInTheClinch", "weatherEye", "daredevil", "collector", "otherCarIsTank"];
+            readonly improvements: ["increaseCool", "increaseHard", "increaseHot", "increaseWeird", "driverMove", "driverMove", "twoGigsMoonlighting", "garageCrew", "otherPlaybookMove", "otherPlaybookMove"];
+        };
+        readonly gunLugger: {
+            readonly moves: ["battleHardened", "fuckThisShit", "battlefieldInstincts", "insanoLikeDrano", "preparedForInevitable", "bloodcrazed", "notToBeFuckedWith"];
+            readonly improvements: ["increaseCool", "increaseSharp", "increaseWeird", "gunLuggerMove", "gunLuggerMove", "twoGigsMoonlighting", "holdingWealth", "gangPackAlpha", "otherPlaybookMove", "otherPlaybookMove"];
+        };
+        readonly hardHolder: {
+            readonly moves: ["leadership", "wealth"];
+            readonly improvements: ["increaseHard", "increaseWeird", "increaseCool", "increaseHot", "increaseSharp", "holdingOption", "holdingOption", "eraseHoldingOption", "otherPlaybookMove", "otherPlaybookMove"];
+            readonly advantages: ["largePopulation", "smallPopulation", "lucrativeRaiding", "protectionTribute", "manufactory", "market", "largeGang", "wellDisciplinedGang", "goodArmory", "goodCompound"];
+            readonly problems: ["disease", "famine", "decadence", "holdingOwesTribute", "smallGang", "gangSavagery", "shitArmory", "shitCoumpound"];
+        };
+        readonly hocus: {
+            readonly moves: ["fortunes", "frenzy", "charismatic", "fuckingWacknut", "seeingSouls", "divineProtection"];
+            readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "hocusMove", "hocusMove", "followersOption", "followersOption", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
+            readonly types: ["cult", "family", "students", "scene", "staff", "court"];
+            readonly advantages: ["dedicated", "fortune", "augury", "party", "insight", "hardWorking", "growth"];
+            readonly problems: ["fewFollowers", "desertion", "desperation", "stupor", "disease", "violence", "savagery"];
+        };
+        readonly operator: {
+            readonly moves: ["moonlighting", "easyToTrust", "eyeOnTheDoor", "opportunistic", "reputation"];
+            readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "operatorMove", "operatorMove", "gigCrew", "gigCrew", "removeObligationGig", "otherPlaybookMove", "otherPlaybookMove"];
+            readonly payingGigs: ["bodyguarding", "surveillance", "raiding", "enforcement", "honestWork", "companionship", "deliveries", "infiltration", "scavenging", "brokeringDeals", "technicalWork", "fucking", "compoundDefense", "doingMurders"];
+            readonly obligationGigs: ["avoidingSomeone", "payingDebts", "revenge", "protectingSomeone", "pursuingLuxury", "maintainingHonor", "seekingAnswers"];
+        };
+        readonly savvyHead: {
+            readonly moves: ["thingsSpeak", "bonefeel", "oftenerRight", "realityFrayingEdge", "spookyIntense", "deepInsights"];
+            readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "savvyHeadMove", "savvyHeadMove", "twoGigsMoonlighting", "gangLeadership", "lifeSupport", "otherPlaybookMove", "otherPlaybookMove"];
+        };
+        readonly skinner: {
+            readonly moves: ["breathtaking", "lost", "artfulGracious", "arrestingSkinner", "hypnotic"];
+            readonly improvements: ["increaseCool", "increaseCool", "increaseHard", "increaseSharp", "skinnerMove", "skinnerMove", "twoGigsMoonlighting", "followersFortunes", "otherPlaybookMove", "otherPlaybookMove"];
+            readonly graciousWeapons: ["sleevePistol", "ornateDagger", "hiddenKnives", "ornateSword", "antiqueHandgun"];
+            readonly luxeGear: ["antiqueCoins", "eyeglasses", "longCoat", "spectacularTattoos", "skinHairKit", "pet"];
+        };
+    };
+};
 export declare const callOfCthulhu: {
     schema: import("@sinclair/typebox").TObject<{
         biography: import("@sinclair/typebox").TObject<{
@@ -1492,7 +1778,7 @@ export declare const warhammerFantasy: {
     };
     data: {
         characteristicNames: ("strength" | "dexterity" | "intelligence" | "initiative" | "weaponSkill" | "ballisticSkill" | "toughness" | "agility" | "willpower" | "fellowship")[];
-        basicSkillNames: ("athletics" | "perception" | "stealth" | "intimidate" | "ride" | "art" | "gossip" | "haggle" | "bribery" | "charm" | "intuition" | "charmAnimal" | "leadership" | "climb" | "meleeBasic" | "cool" | "melee" | "consumeAlcohol" | "navigation" | "dodge" | "outdoorSurvival" | "drive" | "endurance" | "entertain" | "row" | "gamble")[];
+        basicSkillNames: ("cool" | "leadership" | "athletics" | "perception" | "stealth" | "intimidate" | "ride" | "art" | "gossip" | "haggle" | "bribery" | "charm" | "intuition" | "charmAnimal" | "climb" | "meleeBasic" | "melee" | "consumeAlcohol" | "navigation" | "dodge" | "outdoorSurvival" | "drive" | "endurance" | "entertain" | "row" | "gamble")[];
         basicSkillCharacteristics: {
             art: "dexterity";
             gossip: "fellowship";
