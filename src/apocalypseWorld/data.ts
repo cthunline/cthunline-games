@@ -80,7 +80,7 @@ export default {
             'brainerMove',
             'brainerMove',
             'twoGigsMoonlighting',
-            'hodlingWealth',
+            'holdingWealth',
             'otherPlaybookMove',
             'otherPlaybookMove'
         ],
