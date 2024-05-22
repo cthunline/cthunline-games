@@ -52,7 +52,7 @@ export const apocalypseWorldStatsSchema = Type.Object(
 export const apocalypseWorldHxSchema = Type.Object(
     {
         character: Type.String(),
-        value: Type.Integer()
+        value: Type.String()
     },
     {
         additionalProperties: false

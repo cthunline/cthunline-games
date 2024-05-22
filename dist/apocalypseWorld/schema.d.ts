@@ -31,7 +31,7 @@ export declare const apocalypseWorldStatsSchema: import("@sinclair/typebox").TOb
 }>;
 export declare const apocalypseWorldHxSchema: import("@sinclair/typebox").TObject<{
     character: import("@sinclair/typebox").TString;
-    value: import("@sinclair/typebox").TInteger;
+    value: import("@sinclair/typebox").TString;
 }>;
 export declare const apocalypseWorldHarmSchema: import("@sinclair/typebox").TObject<{
     countdown: import("@sinclair/typebox").TInteger;
@@ -180,7 +180,7 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
     }>;
     hx: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
         character: import("@sinclair/typebox").TString;
-        value: import("@sinclair/typebox").TInteger;
+        value: import("@sinclair/typebox").TString;
     }>>;
     special: import("@sinclair/typebox").TString;
     harm: import("@sinclair/typebox").TObject<{

@@ -42,7 +42,7 @@ export declare const apocalypseWorld: {
         }>;
         hx: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             character: import("@sinclair/typebox").TString;
-            value: import("@sinclair/typebox").TInteger;
+            value: import("@sinclair/typebox").TString;
         }>>;
         special: import("@sinclair/typebox").TString;
         harm: import("@sinclair/typebox").TObject<{
