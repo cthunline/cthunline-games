@@ -75,7 +75,7 @@ export const apocalypseWorldHarmSchema = Type.Object(
 
 export const apocalypseWorldImprovementSchema = Type.Object(
     {
-        description: Type.String(),
+        name: Type.String(),
         enabled: Type.Boolean()
     },
     {
@@ -96,8 +96,7 @@ export const apocalypseWorldExperienceSchema = Type.Object(
 
 export const apocalypseWorldBasicListElementSchema = Type.Object(
     {
-        title: Type.String(),
-        description: Type.Optional(Type.String()),
+        name: Type.String(),
         enabled: Type.Boolean()
     },
     {
