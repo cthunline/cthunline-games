@@ -38,6 +38,7 @@ declare const _default: {
     otherMoves: never[];
     hold: string;
     gearAndBarter: string;
+    notes: string;
     angel: {
         moves: {
             name: string;

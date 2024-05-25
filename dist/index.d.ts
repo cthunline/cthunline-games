@@ -58,6 +58,7 @@ export declare const apocalypseWorld: {
         }>>;
         hold: import("@sinclair/typebox").TString;
         gearAndBarter: import("@sinclair/typebox").TString;
+        notes: import("@sinclair/typebox").TString;
         angel: import("@sinclair/typebox").TObject<{
             moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
                 name: import("@sinclair/typebox").TString;
@@ -315,6 +316,7 @@ export declare const apocalypseWorld: {
         otherMoves: never[];
         hold: string;
         gearAndBarter: string;
+        notes: string;
         angel: {
             moves: {
                 name: string;

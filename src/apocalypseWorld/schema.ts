@@ -217,6 +217,7 @@ export const apocalypseWorldCharacterSchema = Type.Object(
         otherMoves: Type.Array(apocalypseWorldBasicListElementSchema),
         hold: Type.String(),
         gearAndBarter: Type.String(),
+        notes: Type.String(),
         // playbooks
         angel: Type.Object(
             {

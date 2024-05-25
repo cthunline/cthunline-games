@@ -40,6 +40,7 @@ export default {
     otherMoves: [],
     hold: '',
     gearAndBarter: '',
+    notes: '',
     angel: {
         moves: [
             { name: 'sixthSense', enabled: false },

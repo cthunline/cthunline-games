@@ -184,6 +184,7 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
     }>>;
     hold: import("@sinclair/typebox").TString;
     gearAndBarter: import("@sinclair/typebox").TString;
+    notes: import("@sinclair/typebox").TString;
     angel: import("@sinclair/typebox").TObject<{
         moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             name: import("@sinclair/typebox").TString;
