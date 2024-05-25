@@ -15,6 +15,9 @@ type ApocalypseWorldData = Record<
         obligationGigs?: string[];
         graciousWeapons?: string[];
         luxeGear?: string[];
+        fuckOffBigGuns?: string[];
+        seriousGuns?: string[];
+        backupWeapons?: string[];
     }
 >;
 
@@ -166,6 +169,28 @@ export default {
             'gangPackAlpha',
             'otherPlaybookMove',
             'otherPlaybookMove'
+        ],
+        fuckOffBigGuns: [
+            'silencedSniper',
+            'mg',
+            'assaultRifle',
+            'grenadeLauncher'
+        ],
+        seriousGuns: [
+            'huntingRifle',
+            'shotgun',
+            'smg',
+            'magnum',
+            'grenadeTube',
+            'apAmmo',
+            'silencer'
+        ],
+        backupWeapons: [
+            '9mm',
+            'bigAssKnife',
+            'machete',
+            'manyKnives',
+            'grenades'
         ]
     },
     hardHolder: {
