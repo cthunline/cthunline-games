@@ -42,23 +42,18 @@ export declare const apocalypseWorldHarmSchema: import("@sinclair/typebox").TObj
     broken: import("@sinclair/typebox").TBoolean;
 }>;
 export declare const apocalypseWorldImprovementSchema: import("@sinclair/typebox").TObject<{
-    description: import("@sinclair/typebox").TString;
+    name: import("@sinclair/typebox").TString;
     enabled: import("@sinclair/typebox").TBoolean;
 }>;
 export declare const apocalypseWorldExperienceSchema: import("@sinclair/typebox").TObject<{
     value: import("@sinclair/typebox").TInteger;
-    improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        description: import("@sinclair/typebox").TString;
-        enabled: import("@sinclair/typebox").TBoolean;
-    }>>;
     commonImprovements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        description: import("@sinclair/typebox").TString;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
 }>;
 export declare const apocalypseWorldBasicListElementSchema: import("@sinclair/typebox").TObject<{
-    title: import("@sinclair/typebox").TString;
-    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+    name: import("@sinclair/typebox").TString;
     enabled: import("@sinclair/typebox").TBoolean;
 }>;
 export declare const apocalypseWorldCharacterChopperGangSchema: import("@sinclair/typebox").TObject<{
@@ -67,13 +62,11 @@ export declare const apocalypseWorldCharacterChopperGangSchema: import("@sinclai
     armor: import("@sinclair/typebox").TString;
     tags: import("@sinclair/typebox").TString;
     advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
     problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
 }>;
@@ -118,13 +111,11 @@ export declare const apocalypseWorldCharacterHardHolderHoldingSchema: import("@s
         tags: import("@sinclair/typebox").TString;
     }>;
     advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
     problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
 }>;
@@ -135,18 +126,15 @@ export declare const apocalypseWorldCharacterHocusFollowersSchema: import("@sinc
     fortune: import("@sinclair/typebox").TString;
     want: import("@sinclair/typebox").TString;
     type: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
     advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
     problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
 }>;
@@ -182,7 +170,6 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
         character: import("@sinclair/typebox").TString;
         value: import("@sinclair/typebox").TString;
     }>>;
-    special: import("@sinclair/typebox").TString;
     harm: import("@sinclair/typebox").TObject<{
         countdown: import("@sinclair/typebox").TInteger;
         stabilized: import("@sinclair/typebox").TBoolean;
@@ -191,46 +178,69 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
         disfigured: import("@sinclair/typebox").TBoolean;
         broken: import("@sinclair/typebox").TBoolean;
     }>;
-    moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
-        enabled: import("@sinclair/typebox").TBoolean;
-    }>>;
     otherMoves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        title: import("@sinclair/typebox").TString;
-        description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        name: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
     hold: import("@sinclair/typebox").TString;
     gearAndBarter: import("@sinclair/typebox").TString;
-    angel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+    angel: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         stock: import("@sinclair/typebox").TString;
-    }>>;
-    battleBabe: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
-        customWeapons: import("@sinclair/typebox").TString;
-    }>>;
-    brainer: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
-        brainerGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            title: import("@sinclair/typebox").TString;
-            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+    }>;
+    battleBabe: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
         customWeapons: import("@sinclair/typebox").TString;
-    }>>;
-    chopper: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+    }>;
+    brainer: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        brainerGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        customWeapons: import("@sinclair/typebox").TString;
+    }>;
+    chopper: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         gang: import("@sinclair/typebox").TObject<{
             size: import("@sinclair/typebox").TString;
             harm: import("@sinclair/typebox").TString;
             armor: import("@sinclair/typebox").TString;
             tags: import("@sinclair/typebox").TString;
             advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
         }>;
@@ -239,8 +249,16 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
             looks: import("@sinclair/typebox").TString;
             weaknesses: import("@sinclair/typebox").TString;
         }>;
-    }>>;
-    driver: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+    }>;
+    driver: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         cars: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             frame: import("@sinclair/typebox").TString;
             power: import("@sinclair/typebox").TString;
@@ -249,12 +267,39 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
             weak: import("@sinclair/typebox").TString;
             tags: import("@sinclair/typebox").TString;
         }>>;
-    }>>;
-    gunLugger: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
-        weapons: import("@sinclair/typebox").TString;
+    }>;
+    gunLugger: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        fuckOffBigGuns: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        seriousGuns: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        backupWeapons: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         armor: import("@sinclair/typebox").TString;
-    }>>;
-    hardHolder: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+    }>;
+    hardHolder: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         holding: import("@sinclair/typebox").TObject<{
             holdingStats: import("@sinclair/typebox").TObject<{
                 size: import("@sinclair/typebox").TString;
@@ -270,18 +315,24 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
                 tags: import("@sinclair/typebox").TString;
             }>;
             advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
         }>;
-    }>>;
-    hocus: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+    }>;
+    hocus: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         followers: import("@sinclair/typebox").TObject<{
             description: import("@sinclair/typebox").TString;
             surplus: import("@sinclair/typebox").TString;
@@ -289,45 +340,64 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
             fortune: import("@sinclair/typebox").TString;
             want: import("@sinclair/typebox").TString;
             type: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
         }>;
-    }>>;
-    operator: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+    }>;
+    operator: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         payingGigs: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            title: import("@sinclair/typebox").TString;
-            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+            name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
         obligationGigs: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            title: import("@sinclair/typebox").TString;
-            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+            name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
         crewContacts: import("@sinclair/typebox").TString;
-    }>>;
-    skinner: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+    }>;
+    savvyHead: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+    }>;
+    skinner: import("@sinclair/typebox").TObject<{
+        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+        improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
         graciousWeapons: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            title: import("@sinclair/typebox").TString;
-            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+            name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
         luxeGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            title: import("@sinclair/typebox").TString;
-            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+            name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
-    }>>;
+    }>;
 }>;

@@ -44,7 +44,6 @@ export declare const apocalypseWorld: {
             character: import("@sinclair/typebox").TString;
             value: import("@sinclair/typebox").TString;
         }>>;
-        special: import("@sinclair/typebox").TString;
         harm: import("@sinclair/typebox").TObject<{
             countdown: import("@sinclair/typebox").TInteger;
             stabilized: import("@sinclair/typebox").TBoolean;
@@ -53,46 +52,69 @@ export declare const apocalypseWorld: {
             disfigured: import("@sinclair/typebox").TBoolean;
             broken: import("@sinclair/typebox").TBoolean;
         }>;
-        moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            title: import("@sinclair/typebox").TString;
-            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
-            enabled: import("@sinclair/typebox").TBoolean;
-        }>>;
         otherMoves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            title: import("@sinclair/typebox").TString;
-            description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+            name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
         hold: import("@sinclair/typebox").TString;
         gearAndBarter: import("@sinclair/typebox").TString;
-        angel: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+        angel: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             stock: import("@sinclair/typebox").TString;
-        }>>;
-        battleBabe: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
-            customWeapons: import("@sinclair/typebox").TString;
-        }>>;
-        brainer: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
-            brainerGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+        }>;
+        battleBabe: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             customWeapons: import("@sinclair/typebox").TString;
-        }>>;
-        chopper: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+        }>;
+        brainer: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            brainerGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            customWeapons: import("@sinclair/typebox").TString;
+        }>;
+        chopper: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             gang: import("@sinclair/typebox").TObject<{
                 size: import("@sinclair/typebox").TString;
                 harm: import("@sinclair/typebox").TString;
                 armor: import("@sinclair/typebox").TString;
                 tags: import("@sinclair/typebox").TString;
                 advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                    title: import("@sinclair/typebox").TString;
-                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
                 problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                    title: import("@sinclair/typebox").TString;
-                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
             }>;
@@ -101,8 +123,16 @@ export declare const apocalypseWorld: {
                 looks: import("@sinclair/typebox").TString;
                 weaknesses: import("@sinclair/typebox").TString;
             }>;
-        }>>;
-        driver: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+        }>;
+        driver: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             cars: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
                 frame: import("@sinclair/typebox").TString;
                 power: import("@sinclair/typebox").TString;
@@ -111,12 +141,39 @@ export declare const apocalypseWorld: {
                 weak: import("@sinclair/typebox").TString;
                 tags: import("@sinclair/typebox").TString;
             }>>;
-        }>>;
-        gunLugger: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
-            weapons: import("@sinclair/typebox").TString;
+        }>;
+        gunLugger: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            fuckOffBigGuns: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            seriousGuns: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            backupWeapons: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             armor: import("@sinclair/typebox").TString;
-        }>>;
-        hardHolder: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+        }>;
+        hardHolder: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             holding: import("@sinclair/typebox").TObject<{
                 holdingStats: import("@sinclair/typebox").TObject<{
                     size: import("@sinclair/typebox").TString;
@@ -132,18 +189,24 @@ export declare const apocalypseWorld: {
                     tags: import("@sinclair/typebox").TString;
                 }>;
                 advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                    title: import("@sinclair/typebox").TString;
-                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
                 problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                    title: import("@sinclair/typebox").TString;
-                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
             }>;
-        }>>;
-        hocus: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+        }>;
+        hocus: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             followers: import("@sinclair/typebox").TObject<{
                 description: import("@sinclair/typebox").TString;
                 surplus: import("@sinclair/typebox").TString;
@@ -151,47 +214,66 @@ export declare const apocalypseWorld: {
                 fortune: import("@sinclair/typebox").TString;
                 want: import("@sinclair/typebox").TString;
                 type: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                    title: import("@sinclair/typebox").TString;
-                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
                 advantages: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                    title: import("@sinclair/typebox").TString;
-                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
                 problems: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                    title: import("@sinclair/typebox").TString;
-                    description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                    name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
             }>;
-        }>>;
-        operator: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+        }>;
+        operator: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             payingGigs: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             obligationGigs: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             crewContacts: import("@sinclair/typebox").TString;
-        }>>;
-        skinner: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TObject<{
+        }>;
+        savvyHead: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+        }>;
+        skinner: import("@sinclair/typebox").TObject<{
+            moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+            improvements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
             graciousWeapons: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
             luxeGear: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-                title: import("@sinclair/typebox").TString;
-                description: import("@sinclair/typebox").TOptional<import("@sinclair/typebox").TString>;
+                name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
-        }>>;
+        }>;
     }>;
     default: {
         playbook: "angel";
@@ -222,7 +304,6 @@ export declare const apocalypseWorld: {
             };
         };
         hx: never[];
-        special: string;
         harm: {
             countdown: number;
             stabilized: false;
@@ -231,67 +312,281 @@ export declare const apocalypseWorld: {
             disfigured: false;
             broken: false;
         };
-        moves: never[];
         otherMoves: never[];
         hold: string;
         gearAndBarter: string;
+        angel: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            stock: string;
+        };
+        battleBabe: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            customWeapons: string;
+        };
+        brainer: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            brainerGear: {
+                name: string;
+                enabled: false;
+            }[];
+            customWeapons: string;
+        };
+        chopper: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            gang: {
+                size: string;
+                harm: string;
+                armor: string;
+                tags: string;
+                advantages: {
+                    name: string;
+                    enabled: false;
+                }[];
+                problems: {
+                    name: string;
+                    enabled: false;
+                }[];
+            };
+            bike: {
+                strengths: string;
+                looks: string;
+                weaknesses: string;
+            };
+        };
+        driver: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            cars: never[];
+        };
+        gunLugger: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            fuckOffBigGuns: {
+                name: string;
+                enabled: false;
+            }[];
+            seriousGuns: {
+                name: string;
+                enabled: false;
+            }[];
+            backupWeapons: {
+                name: string;
+                enabled: false;
+            }[];
+            armor: string;
+        };
+        hardHolder: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            holding: {
+                holdingStats: {
+                    size: string;
+                    surplus: string;
+                    barter: string;
+                    gigs: string;
+                    want: string;
+                };
+                gang: {
+                    size: string;
+                    harm: string;
+                    armor: string;
+                    tags: string;
+                };
+                advantages: {
+                    name: string;
+                    enabled: false;
+                }[];
+                problems: {
+                    name: string;
+                    enabled: false;
+                }[];
+            };
+        };
+        hocus: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            followers: {
+                description: string;
+                surplus: string;
+                barter: string;
+                fortune: string;
+                want: string;
+                type: {
+                    name: string;
+                    enabled: false;
+                }[];
+                advantages: {
+                    name: string;
+                    enabled: false;
+                }[];
+                problems: {
+                    name: string;
+                    enabled: false;
+                }[];
+            };
+        };
+        operator: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            payingGigs: {
+                name: string;
+                enabled: false;
+            }[];
+            obligationGigs: {
+                name: string;
+                enabled: false;
+            }[];
+            crewContacts: string;
+        };
+        savvyHead: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+        };
+        skinner: {
+            moves: {
+                name: string;
+                enabled: false;
+            }[];
+            improvements: {
+                name: string;
+                enabled: false;
+            }[];
+            graciousWeapons: {
+                name: string;
+                enabled: false;
+            }[];
+            luxeGear: {
+                name: string;
+                enabled: false;
+            }[];
+        };
     };
     data: {
-        readonly angel: {
-            readonly moves: ["sixthSense", "infirmary", "professionalCompassion", "battlefieldGrace", "healingTouch", "touchedByDeath"];
-            readonly improvements: ["increaseSharp", "increaseCool", "increaseHard", "increaseHard", "increaseWeird", "angelMove", "angelMove", "twoGigsMoonlighting", "otherPlaybookMove", "otherPlaybookMove"];
-        };
-        readonly battleBabe: {
-            readonly moves: ["dangerousSexy", "iceCold", "merciless", "visionsOfDeath", "perfectInstincts", "impossibleReflexes"];
-            readonly improvements: ["increaseHard", "increaseHot", "increaseSharp", "increaseWeird", "battleBabeMove", "battleBabeMove", "twoGigsMoonlighting", "gangLeadership", "otherPlaybookMove", "otherPlaybookMove"];
-        };
-        readonly brainer: {
-            readonly moves: ["unnaturalLustTransfixion", "casualBrainReceptivity", "preternaturalAtWillBrainAttunement", "deepBrainScan", "directBrainWhisperProjection", "inBrainPuppetStrings"];
-            readonly improvements: ["increaseCool", "increaseSharp", "increaseHard", "increaseHard", "brainerMove", "brainerMove", "twoGigsMoonlighting", "hodlingWealth", "otherPlaybookMove", "otherPlaybookMove"];
-            readonly gear: ["implantSyringe", "brainRelay", "receptivityDrugs", "violationGlove", "painWaveProjector", "deepEarPlugs"];
-        };
-        readonly chopper: {
-            readonly moves: ["packAlpha", "fuckingThieves"];
-            readonly improvements: ["increaseHard", "increaseCool", "increaseSharp", "increaseWeird", "increaseWeird", "gangOption", "twoGigsMoonlighting", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
-            readonly advantages: ["medium", "wellArmed", "wellArmored", "wellDisciplined", "nomadic", "rich"];
-            readonly problems: ["breakdown", "grounded", "desertion", "obligation", "disease"];
-        };
-        readonly driver: {
-            readonly moves: ["noShitDriver", "goodInTheClinch", "weatherEye", "daredevil", "collector", "otherCarIsTank"];
-            readonly improvements: ["increaseCool", "increaseHard", "increaseHot", "increaseWeird", "driverMove", "driverMove", "twoGigsMoonlighting", "garageCrew", "otherPlaybookMove", "otherPlaybookMove"];
-        };
-        readonly gunLugger: {
-            readonly moves: ["battleHardened", "fuckThisShit", "battlefieldInstincts", "insanoLikeDrano", "preparedForInevitable", "bloodcrazed", "notToBeFuckedWith"];
-            readonly improvements: ["increaseCool", "increaseSharp", "increaseWeird", "gunLuggerMove", "gunLuggerMove", "twoGigsMoonlighting", "holdingWealth", "gangPackAlpha", "otherPlaybookMove", "otherPlaybookMove"];
-        };
-        readonly hardHolder: {
-            readonly moves: ["leadership", "wealth"];
-            readonly improvements: ["increaseHard", "increaseWeird", "increaseCool", "increaseHot", "increaseSharp", "holdingOption", "holdingOption", "eraseHoldingOption", "otherPlaybookMove", "otherPlaybookMove"];
-            readonly advantages: ["largePopulation", "smallPopulation", "lucrativeRaiding", "protectionTribute", "manufactory", "market", "largeGang", "wellDisciplinedGang", "goodArmory", "goodCompound"];
-            readonly problems: ["disease", "famine", "decadence", "holdingOwesTribute", "smallGang", "gangSavagery", "shitArmory", "shitCoumpound"];
-        };
-        readonly hocus: {
-            readonly moves: ["fortunes", "frenzy", "charismatic", "fuckingWacknut", "seeingSouls", "divineProtection"];
-            readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "hocusMove", "hocusMove", "followersOption", "followersOption", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
-            readonly types: ["cult", "family", "students", "scene", "staff", "court"];
-            readonly advantages: ["dedicated", "fortune", "augury", "party", "insight", "hardWorking", "growth"];
-            readonly problems: ["fewFollowers", "desertion", "desperation", "stupor", "disease", "violence", "savagery"];
-        };
-        readonly operator: {
-            readonly moves: ["moonlighting", "easyToTrust", "eyeOnTheDoor", "opportunistic", "reputation"];
-            readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "operatorMove", "operatorMove", "gigCrew", "gigCrew", "removeObligationGig", "otherPlaybookMove", "otherPlaybookMove"];
-            readonly payingGigs: ["bodyguarding", "surveillance", "raiding", "enforcement", "honestWork", "companionship", "deliveries", "infiltration", "scavenging", "brokeringDeals", "technicalWork", "fucking", "compoundDefense", "doingMurders"];
-            readonly obligationGigs: ["avoidingSomeone", "payingDebts", "revenge", "protectingSomeone", "pursuingLuxury", "maintainingHonor", "seekingAnswers"];
-        };
-        readonly savvyHead: {
-            readonly moves: ["thingsSpeak", "bonefeel", "oftenerRight", "realityFrayingEdge", "spookyIntense", "deepInsights"];
-            readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "savvyHeadMove", "savvyHeadMove", "twoGigsMoonlighting", "gangLeadership", "lifeSupport", "otherPlaybookMove", "otherPlaybookMove"];
-        };
-        readonly skinner: {
-            readonly moves: ["breathtaking", "lost", "artfulGracious", "arrestingSkinner", "hypnotic"];
-            readonly improvements: ["increaseCool", "increaseCool", "increaseHard", "increaseSharp", "skinnerMove", "skinnerMove", "twoGigsMoonlighting", "followersFortunes", "otherPlaybookMove", "otherPlaybookMove"];
-            readonly graciousWeapons: ["sleevePistol", "ornateDagger", "hiddenKnives", "ornateSword", "antiqueHandgun"];
-            readonly luxeGear: ["antiqueCoins", "eyeglasses", "longCoat", "spectacularTattoos", "skinHairKit", "pet"];
+        readonly stats: ["cool", "hard", "hot", "sharp", "weird"];
+        readonly playbooks: {
+            readonly angel: {
+                readonly moves: ["sixthSense", "infirmary", "professionalCompassion", "battlefieldGrace", "healingTouch", "touchedByDeath"];
+                readonly improvements: ["increaseSharp", "increaseCool", "increaseHard", "increaseHard", "increaseWeird", "angelMove", "angelMove", "twoGigsMoonlighting", "otherPlaybookMove", "otherPlaybookMove"];
+            };
+            readonly battleBabe: {
+                readonly moves: ["dangerousSexy", "iceCold", "merciless", "visionsOfDeath", "perfectInstincts", "impossibleReflexes"];
+                readonly improvements: ["increaseHard", "increaseHot", "increaseSharp", "increaseWeird", "battleBabeMove", "battleBabeMove", "twoGigsMoonlighting", "gangLeadership", "otherPlaybookMove", "otherPlaybookMove"];
+            };
+            readonly brainer: {
+                readonly moves: ["unnaturalLustTransfixion", "casualBrainReceptivity", "preternaturalAtWillBrainAttunement", "deepBrainScan", "directBrainWhisperProjection", "inBrainPuppetStrings"];
+                readonly improvements: ["increaseCool", "increaseSharp", "increaseHard", "increaseHard", "brainerMove", "brainerMove", "twoGigsMoonlighting", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
+                readonly gear: ["implantSyringe", "brainRelay", "receptivityDrugs", "violationGlove", "painWaveProjector", "deepEarPlugs"];
+            };
+            readonly chopper: {
+                readonly moves: ["packAlpha", "fuckingThieves"];
+                readonly improvements: ["increaseHard", "increaseCool", "increaseSharp", "increaseWeird", "increaseWeird", "gangOption", "twoGigsMoonlighting", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
+                readonly advantages: ["medium", "wellArmed", "wellArmored", "wellDisciplined", "nomadic", "rich"];
+                readonly problems: ["breakdown", "grounded", "desertion", "obligation", "disease"];
+            };
+            readonly driver: {
+                readonly moves: ["noShitDriver", "goodInTheClinch", "weatherEye", "daredevil", "collector", "otherCarIsTank"];
+                readonly improvements: ["increaseCool", "increaseHard", "increaseHot", "increaseWeird", "driverMove", "driverMove", "twoGigsMoonlighting", "garageCrew", "otherPlaybookMove", "otherPlaybookMove"];
+            };
+            readonly gunLugger: {
+                readonly moves: ["battleHardened", "fuckThisShit", "battlefieldInstincts", "insanoLikeDrano", "preparedForInevitable", "bloodcrazed", "notToBeFuckedWith"];
+                readonly improvements: ["increaseCool", "increaseSharp", "increaseWeird", "gunLuggerMove", "gunLuggerMove", "twoGigsMoonlighting", "holdingWealth", "gangPackAlpha", "otherPlaybookMove", "otherPlaybookMove"];
+                readonly fuckOffBigGuns: ["silencedSniper", "mg", "assaultRifle", "grenadeLauncher"];
+                readonly seriousGuns: ["huntingRifle", "shotgun", "smg", "magnum", "grenadeTube", "apAmmo", "silencer"];
+                readonly backupWeapons: ["9mm", "bigAssKnife", "machete", "manyKnives", "grenades"];
+            };
+            readonly hardHolder: {
+                readonly moves: ["leadership", "wealth"];
+                readonly improvements: ["increaseHard", "increaseWeird", "increaseCool", "increaseHot", "increaseSharp", "holdingOption", "holdingOption", "eraseHoldingOption", "otherPlaybookMove", "otherPlaybookMove"];
+                readonly advantages: ["largePopulation", "smallPopulation", "lucrativeRaiding", "protectionTribute", "manufactory", "market", "largeGang", "wellDisciplinedGang", "goodArmory", "goodCompound"];
+                readonly problems: ["disease", "famine", "decadence", "holdingOwesTribute", "smallGang", "gangSavagery", "shitArmory", "shitCoumpound"];
+            };
+            readonly hocus: {
+                readonly moves: ["fortunes", "frenzy", "charismatic", "fuckingWacknut", "seeingSouls", "divineProtection"];
+                readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "hocusMove", "hocusMove", "followersOption", "followersOption", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
+                readonly types: ["cult", "family", "students", "scene", "staff", "court"];
+                readonly advantages: ["dedicated", "fortune", "augury", "party", "insight", "hardWorking", "growth"];
+                readonly problems: ["fewFollowers", "desertion", "desperation", "stupor", "disease", "violence", "savagery"];
+            };
+            readonly operator: {
+                readonly moves: ["moonlighting", "easyToTrust", "eyeOnTheDoor", "opportunistic", "reputation"];
+                readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "operatorMove", "operatorMove", "gigCrew", "gigCrew", "removeObligationGig", "otherPlaybookMove", "otherPlaybookMove"];
+                readonly payingGigs: ["bodyguarding", "surveillance", "raiding", "enforcement", "honestWork", "companionship", "deliveries", "infiltration", "scavenging", "brokeringDeals", "technicalWork", "fucking", "compoundDefense", "doingMurders"];
+                readonly obligationGigs: ["avoidingSomeone", "payingDebts", "revenge", "protectingSomeone", "pursuingLuxury", "maintainingHonor", "seekingAnswers"];
+            };
+            readonly savvyHead: {
+                readonly moves: ["thingsSpeak", "bonefeel", "oftenerRight", "realityFrayingEdge", "spookyIntense", "deepInsights"];
+                readonly improvements: ["increaseCool", "increaseHard", "increaseSharp", "savvyHeadMove", "savvyHeadMove", "twoGigsMoonlighting", "gangLeadership", "lifeSupport", "otherPlaybookMove", "otherPlaybookMove"];
+            };
+            readonly skinner: {
+                readonly moves: ["breathtaking", "lost", "artfulGracious", "arrestingSkinner", "hypnotic"];
+                readonly improvements: ["increaseCool", "increaseCool", "increaseHard", "increaseSharp", "skinnerMove", "skinnerMove", "twoGigsMoonlighting", "followersFortunes", "otherPlaybookMove", "otherPlaybookMove"];
+                readonly graciousWeapons: ["sleevePistol", "ornateDagger", "hiddenKnives", "ornateSword", "antiqueHandgun"];
+                readonly luxeGear: ["antiqueCoins", "eyeglasses", "longCoat", "spectacularTattoos", "skinHairKit", "pet"];
+            };
         };
     };
 };
