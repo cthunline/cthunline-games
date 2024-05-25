@@ -53,7 +53,8 @@ export declare const apocalypseWorld: {
             broken: import("@sinclair/typebox").TBoolean;
         }>;
         otherMoves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-            name: import("@sinclair/typebox").TString;
+            title: import("@sinclair/typebox").TString;
+            description: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
         hold: import("@sinclair/typebox").TString;

@@ -68,6 +68,13 @@ export const apocalypseWorldBasicListElementSchema = Type.Object({
 }, {
     additionalProperties: false
 });
+export const apocalypseWorldDetailedListElementSchema = Type.Object({
+    title: Type.String(),
+    description: Type.String(),
+    enabled: Type.Boolean()
+}, {
+    additionalProperties: false
+});
 // ------------------------ Playbooks
 // chopper
 export const apocalypseWorldCharacterChopperGangSchema = Type.Object({
@@ -144,7 +151,7 @@ export const apocalypseWorldCharacterSchema = Type.Object({
     stats: apocalypseWorldStatsSchema,
     hx: Type.Array(apocalypseWorldHxSchema),
     harm: apocalypseWorldHarmSchema,
-    otherMoves: Type.Array(apocalypseWorldBasicListElementSchema),
+    otherMoves: Type.Array(apocalypseWorldDetailedListElementSchema),
     hold: Type.String(),
     gearAndBarter: Type.String(),
     notes: Type.String(),

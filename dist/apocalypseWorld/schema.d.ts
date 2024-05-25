@@ -56,6 +56,11 @@ export declare const apocalypseWorldBasicListElementSchema: import("@sinclair/ty
     name: import("@sinclair/typebox").TString;
     enabled: import("@sinclair/typebox").TBoolean;
 }>;
+export declare const apocalypseWorldDetailedListElementSchema: import("@sinclair/typebox").TObject<{
+    title: import("@sinclair/typebox").TString;
+    description: import("@sinclair/typebox").TString;
+    enabled: import("@sinclair/typebox").TBoolean;
+}>;
 export declare const apocalypseWorldCharacterChopperGangSchema: import("@sinclair/typebox").TObject<{
     size: import("@sinclair/typebox").TString;
     harm: import("@sinclair/typebox").TString;
@@ -179,7 +184,8 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
         broken: import("@sinclair/typebox").TBoolean;
     }>;
     otherMoves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
-        name: import("@sinclair/typebox").TString;
+        title: import("@sinclair/typebox").TString;
+        description: import("@sinclair/typebox").TString;
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
     hold: import("@sinclair/typebox").TString;
