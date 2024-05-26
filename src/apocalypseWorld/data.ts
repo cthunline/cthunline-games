@@ -2,6 +2,7 @@ import { type ApocalypseWorldPlaybook } from './types.js';
 
 type ApocalypseWorldData = {
     stats: string[];
+    commonImprovements: string[];
     playbooks: Record<
         ApocalypseWorldPlaybook,
         {
@@ -26,6 +27,14 @@ type ApocalypseWorldData = {
 
 export default {
     stats: ['cool', 'hard', 'hot', 'sharp', 'weird'],
+    commonImprovements: [
+        'increaseAnyStat',
+        'retireCharacter',
+        'secondCharacter',
+        'newCharacterType',
+        'advanceBasicMoves',
+        'advanceOtherBasicMoves'
+    ],
     playbooks: {
         angel: {
             moves: [
