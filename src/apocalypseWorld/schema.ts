@@ -225,6 +225,7 @@ export const apocalypseWorldCharacterSchema = Type.Object(
         stats: apocalypseWorldStatsSchema,
         hx: Type.Array(apocalypseWorldHxSchema),
         harm: apocalypseWorldHarmSchema,
+        experience: apocalypseWorldExperienceSchema,
         otherMoves: Type.Array(apocalypseWorldDetailedListElementSchema),
         hold: Type.String(),
         gearAndBarter: Type.String(),

@@ -37,6 +37,10 @@ export default {
         disfigured: false,
         broken: false
     },
+    experience: {
+        value: 0,
+        commonImprovements: []
+    },
     otherMoves: [],
     hold: '',
     gearAndBarter: '',
