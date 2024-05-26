@@ -52,6 +52,13 @@ export declare const apocalypseWorld: {
             disfigured: import("@sinclair/typebox").TBoolean;
             broken: import("@sinclair/typebox").TBoolean;
         }>;
+        experience: import("@sinclair/typebox").TObject<{
+            value: import("@sinclair/typebox").TInteger;
+            commonImprovements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                name: import("@sinclair/typebox").TString;
+                enabled: import("@sinclair/typebox").TBoolean;
+            }>>;
+        }>;
         otherMoves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
             title: import("@sinclair/typebox").TString;
             description: import("@sinclair/typebox").TString;
@@ -314,6 +321,10 @@ export declare const apocalypseWorld: {
             disfigured: false;
             broken: false;
         };
+        experience: {
+            value: number;
+            commonImprovements: never[];
+        };
         otherMoves: never[];
         hold: string;
         gearAndBarter: string;
@@ -530,6 +541,7 @@ export declare const apocalypseWorld: {
     };
     data: {
         readonly stats: ["cool", "hard", "hot", "sharp", "weird"];
+        readonly commonImprovements: ["increaseAnyStat", "retireCharacter", "secondCharacter", "newCharacterType", "advanceBasicMoves", "advanceOtherBasicMoves"];
         readonly playbooks: {
             readonly angel: {
                 readonly moves: ["sixthSense", "infirmary", "professionalCompassion", "battlefieldGrace", "healingTouch", "touchedByDeath"];

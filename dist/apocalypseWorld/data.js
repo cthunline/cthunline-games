@@ -1,5 +1,13 @@
 export default {
     stats: ['cool', 'hard', 'hot', 'sharp', 'weird'],
+    commonImprovements: [
+        'increaseAnyStat',
+        'retireCharacter',
+        'secondCharacter',
+        'newCharacterType',
+        'advanceBasicMoves',
+        'advanceOtherBasicMoves'
+    ],
     playbooks: {
         angel: {
             moves: [

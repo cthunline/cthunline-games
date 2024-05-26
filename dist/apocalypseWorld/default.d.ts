@@ -35,6 +35,10 @@ declare const _default: {
         disfigured: false;
         broken: false;
     };
+    experience: {
+        value: number;
+        commonImprovements: never[];
+    };
     otherMoves: never[];
     hold: string;
     gearAndBarter: string;

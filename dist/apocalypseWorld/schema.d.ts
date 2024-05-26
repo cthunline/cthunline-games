@@ -183,6 +183,13 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
         disfigured: import("@sinclair/typebox").TBoolean;
         broken: import("@sinclair/typebox").TBoolean;
     }>;
+    experience: import("@sinclair/typebox").TObject<{
+        value: import("@sinclair/typebox").TInteger;
+        commonImprovements: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
+    }>;
     otherMoves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
         title: import("@sinclair/typebox").TString;
         description: import("@sinclair/typebox").TString;

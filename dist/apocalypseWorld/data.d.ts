@@ -1,5 +1,6 @@
 declare const _default: {
     readonly stats: ["cool", "hard", "hot", "sharp", "weird"];
+    readonly commonImprovements: ["increaseAnyStat", "retireCharacter", "secondCharacter", "newCharacterType", "advanceBasicMoves", "advanceOtherBasicMoves"];
     readonly playbooks: {
         readonly angel: {
             readonly moves: ["sixthSense", "infirmary", "professionalCompassion", "battlefieldGrace", "healingTouch", "touchedByDeath"];
