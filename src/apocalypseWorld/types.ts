@@ -10,6 +10,7 @@ import {
     type apocalypseWorldImprovementSchema,
     type apocalypseWorldExperienceSchema,
     type apocalypseWorldBasicListElementSchema,
+    type apocalypseWorldDetailedListElementSchema,
     type apocalypseWorldCharacterChopperGangSchema,
     type apocalypseWorldCharacterChopperBikeSchema,
     type apocalypseWorldCharacterDriverCarSchema,
@@ -36,6 +37,9 @@ export type ApocalypseWorldExperience = Static<
 >;
 export type ApocalypseWorldBasicListElement = Static<
     typeof apocalypseWorldBasicListElementSchema
+>;
+export type ApocalypseWorldDetailedListElement = Static<
+    typeof apocalypseWorldDetailedListElementSchema
 >;
 export type ApocalypseWorldCharacterChopperGang = Static<
     typeof apocalypseWorldCharacterChopperGangSchema
