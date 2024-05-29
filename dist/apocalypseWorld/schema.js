@@ -174,8 +174,7 @@ export const apocalypseWorldCharacterSchema = Type.Object({
     brainer: Type.Object({
         moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
-        brainerGear: Type.Array(apocalypseWorldBasicListItemSchema),
-        customWeapons: Type.String()
+        brainerGear: Type.Array(apocalypseWorldBasicListItemSchema)
     }, {
         additionalProperties: false
     }),

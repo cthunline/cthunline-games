@@ -233,7 +233,6 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
             name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
-        customWeapons: import("@sinclair/typebox").TString;
     }>;
     chopper: import("@sinclair/typebox").TObject<{
         moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{

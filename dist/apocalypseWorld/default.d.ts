@@ -78,7 +78,6 @@ declare const _default: {
             name: string;
             enabled: false;
         }[];
-        customWeapons: string;
     };
     chopper: {
         moves: {

@@ -102,7 +102,6 @@ export declare const apocalypseWorld: {
                 name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
-            customWeapons: import("@sinclair/typebox").TString;
         }>;
         chopper: import("@sinclair/typebox").TObject<{
             moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
@@ -364,7 +363,6 @@ export declare const apocalypseWorld: {
                 name: string;
                 enabled: false;
             }[];
-            customWeapons: string;
         };
         chopper: {
             moves: {

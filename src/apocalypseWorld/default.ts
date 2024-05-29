@@ -119,8 +119,7 @@ export default {
             { name: 'violationGlove', enabled: false },
             { name: 'painWaveProjector', enabled: false },
             { name: 'deepEarPlugs', enabled: false }
-        ],
-        customWeapons: ''
+        ]
     },
     chopper: {
         moves: [
