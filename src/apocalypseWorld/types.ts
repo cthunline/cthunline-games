@@ -9,8 +9,8 @@ import {
     type apocalypseWorldHarmSchema,
     type apocalypseWorldImprovementSchema,
     type apocalypseWorldExperienceSchema,
-    type apocalypseWorldBasicListElementSchema,
-    type apocalypseWorldDetailedListElementSchema,
+    type apocalypseWorldBasicListItemSchema,
+    type apocalypseWorldDetailedListItemSchema,
     type apocalypseWorldCharacterChopperGangSchema,
     type apocalypseWorldCharacterChopperBikeSchema,
     type apocalypseWorldCharacterDriverCarSchema,
@@ -35,11 +35,11 @@ export type ApocalypseWorldImprovement = Static<
 export type ApocalypseWorldExperience = Static<
     typeof apocalypseWorldExperienceSchema
 >;
-export type ApocalypseWorldBasicListElement = Static<
-    typeof apocalypseWorldBasicListElementSchema
+export type ApocalypseWorldBasicListItem = Static<
+    typeof apocalypseWorldBasicListItemSchema
 >;
-export type ApocalypseWorldDetailedListElement = Static<
-    typeof apocalypseWorldDetailedListElementSchema
+export type ApocalypseWorldDetailedListItem = Static<
+    typeof apocalypseWorldDetailedListItemSchema
 >;
 export type ApocalypseWorldCharacterChopperGang = Static<
     typeof apocalypseWorldCharacterChopperGangSchema

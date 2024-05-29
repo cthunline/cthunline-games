@@ -52,11 +52,11 @@ export declare const apocalypseWorldExperienceSchema: import("@sinclair/typebox"
         enabled: import("@sinclair/typebox").TBoolean;
     }>>;
 }>;
-export declare const apocalypseWorldBasicListElementSchema: import("@sinclair/typebox").TObject<{
+export declare const apocalypseWorldBasicListItemSchema: import("@sinclair/typebox").TObject<{
     name: import("@sinclair/typebox").TString;
     enabled: import("@sinclair/typebox").TBoolean;
 }>;
-export declare const apocalypseWorldDetailedListElementSchema: import("@sinclair/typebox").TObject<{
+export declare const apocalypseWorldDetailedListItemSchema: import("@sinclair/typebox").TObject<{
     title: import("@sinclair/typebox").TString;
     description: import("@sinclair/typebox").TString;
     enabled: import("@sinclair/typebox").TBoolean;

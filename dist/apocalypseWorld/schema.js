@@ -62,13 +62,13 @@ export const apocalypseWorldExperienceSchema = Type.Object({
 }, {
     additionalProperties: false
 });
-export const apocalypseWorldBasicListElementSchema = Type.Object({
+export const apocalypseWorldBasicListItemSchema = Type.Object({
     name: Type.String(),
     enabled: Type.Boolean()
 }, {
     additionalProperties: false
 });
-export const apocalypseWorldDetailedListElementSchema = Type.Object({
+export const apocalypseWorldDetailedListItemSchema = Type.Object({
     title: Type.String(),
     description: Type.String(),
     enabled: Type.Boolean()
@@ -82,8 +82,8 @@ export const apocalypseWorldCharacterChopperGangSchema = Type.Object({
     harm: Type.String(),
     armor: Type.String(),
     tags: Type.String(),
-    advantages: Type.Array(apocalypseWorldBasicListElementSchema),
-    problems: Type.Array(apocalypseWorldBasicListElementSchema)
+    advantages: Type.Array(apocalypseWorldBasicListItemSchema),
+    problems: Type.Array(apocalypseWorldBasicListItemSchema)
 }, {
     additionalProperties: false
 });
@@ -126,8 +126,8 @@ export const apocalypseWorldCharacterHardHolderGangSchema = Type.Object({
 export const apocalypseWorldCharacterHardHolderHoldingSchema = Type.Object({
     holdingStats: apocalypseWorldCharacterHardHolderHoldingStatsSchema,
     gang: apocalypseWorldCharacterHardHolderGangSchema,
-    advantages: Type.Array(apocalypseWorldBasicListElementSchema),
-    problems: Type.Array(apocalypseWorldBasicListElementSchema)
+    advantages: Type.Array(apocalypseWorldBasicListItemSchema),
+    problems: Type.Array(apocalypseWorldBasicListItemSchema)
 }, {
     additionalProperties: false
 });
@@ -138,9 +138,9 @@ export const apocalypseWorldCharacterHocusFollowersSchema = Type.Object({
     barter: Type.String(),
     fortune: Type.String(),
     want: Type.String(),
-    type: Type.Array(apocalypseWorldBasicListElementSchema),
-    advantages: Type.Array(apocalypseWorldBasicListElementSchema),
-    problems: Type.Array(apocalypseWorldBasicListElementSchema)
+    type: Type.Array(apocalypseWorldBasicListItemSchema),
+    advantages: Type.Array(apocalypseWorldBasicListItemSchema),
+    problems: Type.Array(apocalypseWorldBasicListItemSchema)
 }, {
     additionalProperties: false
 });
@@ -152,35 +152,35 @@ export const apocalypseWorldCharacterSchema = Type.Object({
     hx: Type.Array(apocalypseWorldHxSchema),
     harm: apocalypseWorldHarmSchema,
     experience: apocalypseWorldExperienceSchema,
-    otherMoves: Type.Array(apocalypseWorldDetailedListElementSchema),
+    otherMoves: Type.Array(apocalypseWorldDetailedListItemSchema),
     hold: Type.String(),
     gearAndBarter: Type.String(),
     notes: Type.String(),
     // playbooks
     angel: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
         stock: Type.String()
     }, {
         additionalProperties: false
     }),
     battleBabe: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
         customWeapons: Type.String()
     }, {
         additionalProperties: false
     }),
     brainer: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
-        brainerGear: Type.Array(apocalypseWorldBasicListElementSchema),
+        brainerGear: Type.Array(apocalypseWorldBasicListItemSchema),
         customWeapons: Type.String()
     }, {
         additionalProperties: false
     }),
     chopper: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
         gang: apocalypseWorldCharacterChopperGangSchema,
         bike: apocalypseWorldCharacterChopperBikeSchema
@@ -188,56 +188,56 @@ export const apocalypseWorldCharacterSchema = Type.Object({
         additionalProperties: false
     }),
     driver: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
         cars: Type.Array(apocalypseWorldCharacterDriverCarSchema)
     }, {
         additionalProperties: false
     }),
     gunLugger: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
-        fuckOffBigGuns: Type.Array(apocalypseWorldBasicListElementSchema),
-        seriousGuns: Type.Array(apocalypseWorldBasicListElementSchema),
-        backupWeapons: Type.Array(apocalypseWorldBasicListElementSchema),
+        fuckOffBigGuns: Type.Array(apocalypseWorldBasicListItemSchema),
+        seriousGuns: Type.Array(apocalypseWorldBasicListItemSchema),
+        backupWeapons: Type.Array(apocalypseWorldBasicListItemSchema),
         armor: Type.String()
     }, {
         additionalProperties: false
     }),
     hardHolder: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
         holding: apocalypseWorldCharacterHardHolderHoldingSchema
     }, {
         additionalProperties: false
     }),
     hocus: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
         followers: apocalypseWorldCharacterHocusFollowersSchema
     }, {
         additionalProperties: false
     }),
     operator: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
-        payingGigs: Type.Array(apocalypseWorldBasicListElementSchema),
-        obligationGigs: Type.Array(apocalypseWorldBasicListElementSchema),
+        payingGigs: Type.Array(apocalypseWorldBasicListItemSchema),
+        obligationGigs: Type.Array(apocalypseWorldBasicListItemSchema),
         crewContacts: Type.String()
     }, {
         additionalProperties: false
     }),
     savvyHead: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema)
     }, {
         additionalProperties: false
     }),
     skinner: Type.Object({
-        moves: Type.Array(apocalypseWorldBasicListElementSchema),
+        moves: Type.Array(apocalypseWorldBasicListItemSchema),
         improvements: Type.Array(apocalypseWorldImprovementSchema),
-        graciousWeapons: Type.Array(apocalypseWorldBasicListElementSchema),
-        luxeGear: Type.Array(apocalypseWorldBasicListElementSchema)
+        graciousWeapons: Type.Array(apocalypseWorldBasicListItemSchema),
+        luxeGear: Type.Array(apocalypseWorldBasicListItemSchema)
     }, {
         additionalProperties: false
     })
