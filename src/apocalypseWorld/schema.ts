@@ -207,7 +207,7 @@ export const apocalypseWorldCharacterHocusFollowersSchema = Type.Object(
         barter: Type.String(),
         fortune: Type.String(),
         want: Type.String(),
-        type: Type.Array(apocalypseWorldBasicListItemSchema),
+        types: Type.Array(apocalypseWorldBasicListItemSchema),
         advantages: Type.Array(apocalypseWorldBasicListItemSchema),
         problems: Type.Array(apocalypseWorldBasicListItemSchema)
     },

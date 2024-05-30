@@ -221,7 +221,7 @@ export declare const apocalypseWorld: {
                 barter: import("@sinclair/typebox").TString;
                 fortune: import("@sinclair/typebox").TString;
                 want: import("@sinclair/typebox").TString;
-                type: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+                types: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
                     name: import("@sinclair/typebox").TString;
                     enabled: import("@sinclair/typebox").TBoolean;
                 }>>;
@@ -475,7 +475,7 @@ export declare const apocalypseWorld: {
                 barter: string;
                 fortune: string;
                 want: string;
-                type: {
+                types: {
                     name: string;
                     enabled: false;
                 }[];

@@ -316,7 +316,7 @@ export default {
             barter: '',
             fortune: '',
             want: '',
-            type: [
+            types: [
                 { name: 'cult', enabled: false },
                 { name: 'family', enabled: false },
                 { name: 'students', enabled: false },

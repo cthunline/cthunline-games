@@ -190,7 +190,7 @@ declare const _default: {
             barter: string;
             fortune: string;
             want: string;
-            type: {
+            types: {
                 name: string;
                 enabled: false;
             }[];
