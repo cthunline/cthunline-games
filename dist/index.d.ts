@@ -171,7 +171,7 @@ export declare const apocalypseWorld: {
                 name: import("@sinclair/typebox").TString;
                 enabled: import("@sinclair/typebox").TBoolean;
             }>>;
-            armor: import("@sinclair/typebox").TString;
+            weaponsArmor: import("@sinclair/typebox").TString;
         }>;
         hardHolder: import("@sinclair/typebox").TObject<{
             moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
@@ -425,7 +425,7 @@ export declare const apocalypseWorld: {
                 name: string;
                 enabled: false;
             }[];
-            armor: string;
+            weaponsArmor: string;
         };
         hardHolder: {
             moves: {

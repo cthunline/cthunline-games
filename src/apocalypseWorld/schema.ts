@@ -289,7 +289,7 @@ export const apocalypseWorldCharacterSchema = Type.Object(
                 fuckOffBigGuns: Type.Array(apocalypseWorldBasicListItemSchema),
                 seriousGuns: Type.Array(apocalypseWorldBasicListItemSchema),
                 backupWeapons: Type.Array(apocalypseWorldBasicListItemSchema),
-                armor: Type.String()
+                weaponsArmor: Type.String()
             },
             {
                 additionalProperties: false

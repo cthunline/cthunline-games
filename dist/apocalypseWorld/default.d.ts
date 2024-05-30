@@ -140,7 +140,7 @@ declare const _default: {
             name: string;
             enabled: false;
         }[];
-        armor: string;
+        weaponsArmor: string;
     };
     hardHolder: {
         moves: {

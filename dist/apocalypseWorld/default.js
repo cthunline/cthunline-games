@@ -230,7 +230,7 @@ export default {
             { name: 'manyKnives', enabled: false },
             { name: 'grenades', enabled: false }
         ],
-        armor: ''
+        weaponsArmor: ''
     },
     hardHolder: {
         moves: [
