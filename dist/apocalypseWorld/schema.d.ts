@@ -394,6 +394,10 @@ export declare const apocalypseWorldCharacterSchema: import("@sinclair/typebox")
             name: import("@sinclair/typebox").TString;
             enabled: import("@sinclair/typebox").TBoolean;
         }>>;
+        workspace: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{
+            name: import("@sinclair/typebox").TString;
+            enabled: import("@sinclair/typebox").TBoolean;
+        }>>;
     }>;
     skinner: import("@sinclair/typebox").TObject<{
         moves: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TObject<{

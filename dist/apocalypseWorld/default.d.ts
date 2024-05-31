@@ -232,6 +232,10 @@ declare const _default: {
             name: string;
             enabled: false;
         }[];
+        workspace: {
+            name: string;
+            enabled: false;
+        }[];
     };
     skinner: {
         moves: {

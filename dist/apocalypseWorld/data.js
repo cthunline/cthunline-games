@@ -324,6 +324,20 @@ export default {
                 'lifeSupport',
                 'otherPlaybookMove',
                 'otherPlaybookMove'
+            ],
+            workspace: [
+                'garage',
+                'darkroom',
+                'growingEnvironment',
+                'skilledLabor',
+                'junkyard',
+                'truckVan',
+                'electronica',
+                'machiningTools',
+                'transmittersReceivers',
+                'provingRange',
+                'relicGoldenAge',
+                'boobyTraps'
             ]
         },
         skinner: {

@@ -330,7 +330,8 @@ export const apocalypseWorldCharacterSchema = Type.Object(
         savvyHead: Type.Object(
             {
                 moves: Type.Array(apocalypseWorldBasicListItemSchema),
-                improvements: Type.Array(apocalypseWorldImprovementSchema)
+                improvements: Type.Array(apocalypseWorldImprovementSchema),
+                workspace: Type.Array(apocalypseWorldBasicListItemSchema)
             },
             {
                 additionalProperties: false

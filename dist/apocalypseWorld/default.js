@@ -409,6 +409,20 @@ export default {
             { name: 'lifeSupport', enabled: false },
             { name: 'otherPlaybookMove', enabled: false },
             { name: 'otherPlaybookMove', enabled: false }
+        ],
+        workspace: [
+            { name: 'garage', enabled: false },
+            { name: 'darkroom', enabled: false },
+            { name: 'growingEnvironment', enabled: false },
+            { name: 'skilledLabor', enabled: false },
+            { name: 'junkyard', enabled: false },
+            { name: 'truckVan', enabled: false },
+            { name: 'electronica', enabled: false },
+            { name: 'machiningTools', enabled: false },
+            { name: 'transmittersReceivers', enabled: false },
+            { name: 'provingRange', enabled: false },
+            { name: 'relicGoldenAge', enabled: false },
+            { name: 'boobyTraps', enabled: false }
         ]
     },
     skinner: {

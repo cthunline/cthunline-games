@@ -54,6 +54,7 @@ declare const _default: {
         readonly savvyHead: {
             readonly moves: ["thingsSpeak", "bonefeel", "oftenerRight", "realityFrayingEdge", "spookyIntense", "deepInsights"];
             readonly improvements: ["increaseCoolMax2", "increaseHardMax2", "increaseSharpMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "gangLeadership", "lifeSupport", "otherPlaybookMove", "otherPlaybookMove"];
+            readonly workspace: ["garage", "darkroom", "growingEnvironment", "skilledLabor", "junkyard", "truckVan", "electronica", "machiningTools", "transmittersReceivers", "provingRange", "relicGoldenAge", "boobyTraps"];
         };
         readonly skinner: {
             readonly moves: ["breathtaking", "lost", "artfulGracious", "arrestingSkinner", "hypnotic"];

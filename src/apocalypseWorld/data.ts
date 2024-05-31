@@ -21,6 +21,7 @@ type ApocalypseWorldData = {
             fuckOffBigGuns?: string[];
             seriousGuns?: string[];
             backupWeapons?: string[];
+            workspace?: string[];
         }
     >;
 };
@@ -351,6 +352,20 @@ export default {
                 'lifeSupport',
                 'otherPlaybookMove',
                 'otherPlaybookMove'
+            ],
+            workspace: [
+                'garage',
+                'darkroom',
+                'growingEnvironment',
+                'skilledLabor',
+                'junkyard',
+                'truckVan',
+                'electronica',
+                'machiningTools',
+                'transmittersReceivers',
+                'provingRange',
+                'relicGoldenAge',
+                'boobyTraps'
             ]
         },
         skinner: {
