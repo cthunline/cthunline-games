@@ -1,4 +1,4 @@
-import { type ApocalypseWorldPlaybook } from './types.js';
+import type { ApocalypseWorldPlaybook } from './types.js';
 
 type ApocalypseWorldData = {
     stats: string[];

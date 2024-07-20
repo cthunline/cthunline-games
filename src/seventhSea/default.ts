@@ -1,4 +1,4 @@
-import { type SeventhSeaCharacter } from './types.js';
+import type { SeventhSeaCharacter } from './types.js';
 
 export default {
     biography: {

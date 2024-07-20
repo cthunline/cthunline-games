@@ -1,4 +1,4 @@
-import { type CoCCharacter } from './types.js';
+import type { CoCCharacter } from './types.js';
 
 const defaultCharacteristic = {
     regular: 0,

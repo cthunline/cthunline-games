@@ -1,4 +1,4 @@
-import { type WarhammerFantasyCharacter } from './types.js';
+import type { WarhammerFantasyCharacter } from './types.js';
 
 const defaultCharacteristic = {
     initial: 0,

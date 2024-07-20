@@ -1,24 +1,24 @@
-import { type Static } from '@sinclair/typebox';
+import type { Static } from '@sinclair/typebox';
 
-import {
-    type apocalypseWorldPlaybookSchema,
-    type apocalypseWorldBioSchema,
-    type apocalypseWorldStatSchema,
-    type apocalypseWorldStatsSchema,
-    type apocalypseWorldHxSchema,
-    type apocalypseWorldHarmSchema,
-    type apocalypseWorldImprovementSchema,
-    type apocalypseWorldExperienceSchema,
-    type apocalypseWorldBasicListItemSchema,
-    type apocalypseWorldDetailedListItemSchema,
-    type apocalypseWorldCharacterChopperGangSchema,
-    type apocalypseWorldCharacterChopperBikeSchema,
-    type apocalypseWorldCharacterDriverCarSchema,
-    type apocalypseWorldCharacterHardHolderHoldingStatsSchema,
-    type apocalypseWorldCharacterHardHolderGangSchema,
-    type apocalypseWorldCharacterHardHolderHoldingSchema,
-    type apocalypseWorldCharacterHocusFollowersSchema,
-    type apocalypseWorldCharacterSchema
+import type {
+    apocalypseWorldBasicListItemSchema,
+    apocalypseWorldBioSchema,
+    apocalypseWorldCharacterChopperBikeSchema,
+    apocalypseWorldCharacterChopperGangSchema,
+    apocalypseWorldCharacterDriverCarSchema,
+    apocalypseWorldCharacterHardHolderGangSchema,
+    apocalypseWorldCharacterHardHolderHoldingSchema,
+    apocalypseWorldCharacterHardHolderHoldingStatsSchema,
+    apocalypseWorldCharacterHocusFollowersSchema,
+    apocalypseWorldCharacterSchema,
+    apocalypseWorldDetailedListItemSchema,
+    apocalypseWorldExperienceSchema,
+    apocalypseWorldHarmSchema,
+    apocalypseWorldHxSchema,
+    apocalypseWorldImprovementSchema,
+    apocalypseWorldPlaybookSchema,
+    apocalypseWorldStatSchema,
+    apocalypseWorldStatsSchema
 } from './schema.js';
 
 export type ApocalypseWorldPlaybook = Static<

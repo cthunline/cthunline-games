@@ -1,6 +1,6 @@
-import {
-    type WarhammerFantasyBasicSkillName,
-    type WarhammerFantasyCharacteristicName
+import type {
+    WarhammerFantasyBasicSkillName,
+    WarhammerFantasyCharacteristicName
 } from './types.js';
 
 interface WarhammerFantasyData {

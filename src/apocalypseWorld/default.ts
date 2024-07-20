@@ -1,4 +1,4 @@
-import { type ApocalypseWorldCharacter } from './types.js';
+import type { ApocalypseWorldCharacter } from './types.js';
 
 export default {
     playbook: 'angel',

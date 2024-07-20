@@ -1,9 +1,9 @@
-import { type ApocalypseWorldCharacter } from './apocalypseWorld/types.js';
-import { type CoCCharacter } from './callOfCthulhu/types.js';
-import { type DnD5Character } from './dnd5/types.js';
-import { type SeventhSeaCharacter } from './seventhSea/types.js';
-import { type SWD6Character } from './starWarsD6/types.js';
-import { type WarhammerFantasyCharacter } from './warhammerFantasy/types.js';
+import type { ApocalypseWorldCharacter } from './apocalypseWorld/types.js';
+import type { CoCCharacter } from './callOfCthulhu/types.js';
+import type { DnD5Character } from './dnd5/types.js';
+import type { SeventhSeaCharacter } from './seventhSea/types.js';
+import type { SWD6Character } from './starWarsD6/types.js';
+import type { WarhammerFantasyCharacter } from './warhammerFantasy/types.js';
 export * from './apocalypseWorld/types.js';
 export * from './callOfCthulhu/types.js';
 export * from './dnd5/types.js';
