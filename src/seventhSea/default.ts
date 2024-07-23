@@ -1,6 +1,6 @@
 import type { SeventhSeaCharacter } from './types.js';
 
-export default {
+export const seventhSeaDefault: SeventhSeaCharacter = {
     biography: {
         name: '',
         concept: '',
@@ -46,4 +46,4 @@ export default {
     advantages: [],
     items: '',
     notes: ''
-} satisfies SeventhSeaCharacter;
+};

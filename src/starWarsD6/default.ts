@@ -5,7 +5,7 @@ const defaultAttribute = {
     skills: []
 };
 
-export default {
+export const swd6Default: SWD6Character = {
     biography: {
         name: '',
         occupation: '',
@@ -47,4 +47,4 @@ export default {
         quote: '',
         connections: ''
     }
-} satisfies SWD6Character;
+};

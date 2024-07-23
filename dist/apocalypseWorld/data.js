@@ -1,4 +1,4 @@
-export default {
+export const apocalypseWorldData = {
     stats: ['cool', 'hard', 'hot', 'sharp', 'weird'],
     commonImprovements: [
         'increaseAnyStat',

@@ -10,7 +10,7 @@ const defaultSkill = {
     proficient: false
 };
 
-export default {
+export const dnd5Default: DnD5Character = {
     biography: {
         name: '',
         class: '',
@@ -109,4 +109,4 @@ export default {
         cantrips: [],
         levels: []
     }
-} satisfies DnD5Character;
+};

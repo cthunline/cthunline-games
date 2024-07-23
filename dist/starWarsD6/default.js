@@ -2,7 +2,7 @@ const defaultAttribute = {
     value: '',
     skills: []
 };
-export default {
+export const swd6Default = {
     biography: {
         name: '',
         occupation: '',

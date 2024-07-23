@@ -1,6 +1,6 @@
 import type { ApocalypseWorldCharacter } from './types.js';
 
-export default {
+export const apocalypseWorldDefault: ApocalypseWorldCharacter = {
     playbook: 'angel',
     bio: {
         name: '',
@@ -463,4 +463,4 @@ export default {
             { name: 'pet', enabled: false }
         ]
     }
-} satisfies ApocalypseWorldCharacter;
+};

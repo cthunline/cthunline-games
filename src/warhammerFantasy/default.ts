@@ -11,7 +11,7 @@ const defaultBasicSkill = {
     skill: 0
 };
 
-export default {
+export const warhammerFantasyDefault: WarhammerFantasyCharacter = {
     biography: {
         name: '',
         species: '',
@@ -213,4 +213,4 @@ export default {
     spells: [],
     sin: 0,
     advantage: 0
-} satisfies WarhammerFantasyCharacter;
+};

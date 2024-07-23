@@ -288,95 +288,43 @@ export declare const apocalypseWorld: {
         }>;
     }>;
     default: {
-        playbook: "angel";
-        bio: {
-            name: string;
-            look: string;
-        };
-        stats: {
-            cool: {
-                value: string;
-                highlighted: false;
-            };
-            hard: {
-                value: string;
-                highlighted: false;
-            };
-            hot: {
-                value: string;
-                highlighted: false;
-            };
-            sharp: {
-                value: string;
-                highlighted: false;
-            };
-            weird: {
-                value: string;
-                highlighted: false;
-            };
-        };
-        hx: never[];
-        harm: {
-            countdown: number;
-            stabilized: false;
-            shattered: false;
-            crippled: false;
-            disfigured: false;
-            broken: false;
-        };
-        experience: {
-            value: number;
-            commonImprovements: never[];
-        };
-        otherMoves: never[];
-        hold: string;
-        gearAndBarter: string;
-        notes: string;
         angel: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             stock: string;
         };
         battleBabe: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             customWeapons: string;
         };
         brainer: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             brainerGear: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
         };
         chopper: {
-            moves: {
-                name: string;
-                enabled: false;
-            }[];
-            improvements: {
-                name: string;
-                enabled: false;
-            }[];
             gang: {
                 size: string;
                 harm: string;
@@ -384,13 +332,21 @@ export declare const apocalypseWorld: {
                 tags: string;
                 advantages: {
                     name: string;
-                    enabled: false;
+                    enabled: boolean;
                 }[];
                 problems: {
                     name: string;
-                    enabled: false;
+                    enabled: boolean;
                 }[];
             };
+            moves: {
+                name: string;
+                enabled: boolean;
+            }[];
+            improvements: {
+                name: string;
+                enabled: boolean;
+            }[];
             bike: {
                 strengths: string;
                 looks: string;
@@ -400,47 +356,62 @@ export declare const apocalypseWorld: {
         driver: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
-            cars: never[];
+            cars: {
+                armor: string;
+                tags: string;
+                looks: string;
+                frame: string;
+                power: string;
+                weak: string;
+            }[];
         };
         gunLugger: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             fuckOffBigGuns: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             seriousGuns: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             backupWeapons: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             weaponsArmor: string;
         };
         hardHolder: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             holding: {
+                advantages: {
+                    name: string;
+                    enabled: boolean;
+                }[];
+                problems: {
+                    name: string;
+                    enabled: boolean;
+                }[];
                 holdingStats: {
                     size: string;
                     surplus: string;
@@ -454,162 +425,162 @@ export declare const apocalypseWorld: {
                     armor: string;
                     tags: string;
                 };
-                advantages: {
-                    name: string;
-                    enabled: false;
-                }[];
-                problems: {
-                    name: string;
-                    enabled: false;
-                }[];
             };
         };
         hocus: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             followers: {
                 description: string;
-                surplus: string;
-                barter: string;
-                fortune: string;
-                want: string;
-                types: {
-                    name: string;
-                    enabled: false;
-                }[];
                 advantages: {
                     name: string;
-                    enabled: false;
+                    enabled: boolean;
                 }[];
                 problems: {
                     name: string;
-                    enabled: false;
+                    enabled: boolean;
+                }[];
+                surplus: string;
+                barter: string;
+                want: string;
+                fortune: string;
+                types: {
+                    name: string;
+                    enabled: boolean;
                 }[];
             };
         };
         operator: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             payingGigs: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             obligationGigs: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             crewContacts: string;
         };
         savvyHead: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             workspace: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
         };
         skinner: {
             moves: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             improvements: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             graciousWeapons: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
             luxeGear: {
                 name: string;
-                enabled: false;
+                enabled: boolean;
             }[];
         };
-    };
-    data: {
-        readonly stats: ["cool", "hard", "hot", "sharp", "weird"];
-        readonly commonImprovements: ["increaseAnyStat", "retireCharacter", "secondCharacter", "newCharacterType", "advanceBasicMoves", "advanceOtherBasicMoves"];
-        readonly playbooks: {
-            readonly angel: {
-                readonly moves: ["sixthSense", "infirmary", "professionalCompassion", "battlefieldGrace", "healingTouch", "touchedByDeath"];
-                readonly improvements: ["increaseSharpMax3", "increaseCoolMax2", "increaseHardMax2", "increaseHardMax2", "increaseWeirdMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "otherPlaybookMove", "otherPlaybookMove"];
+        harm: {
+            countdown: number;
+            stabilized: boolean;
+            shattered: boolean;
+            crippled: boolean;
+            disfigured: boolean;
+            broken: boolean;
+        };
+        playbook: "angel" | "battleBabe" | "brainer" | "chopper" | "driver" | "gunLugger" | "hardHolder" | "hocus" | "operator" | "savvyHead" | "skinner";
+        bio: {
+            name: string;
+            look: string;
+        };
+        stats: {
+            cool: {
+                value: string;
+                highlighted: boolean;
             };
-            readonly battleBabe: {
-                readonly moves: ["dangerousSexy", "iceCold", "merciless", "visionsOfDeath", "perfectInstincts", "impossibleReflexes"];
-                readonly improvements: ["increaseHardMax2", "increaseHotMax2", "increaseSharpMax2", "increaseWeirdMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "gangLeadership", "otherPlaybookMove", "otherPlaybookMove"];
+            hard: {
+                value: string;
+                highlighted: boolean;
             };
-            readonly brainer: {
-                readonly moves: ["unnaturalLustTransfixion", "casualBrainReceptivity", "preternaturalAtWillBrainAttunement", "deepBrainScan", "directBrainWhisperProjection", "inBrainPuppetStrings"];
-                readonly improvements: ["increaseCoolMax2", "increaseSharpMax2", "increaseHardMax2", "increaseHardMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly gear: ["implantSyringe", "brainRelay", "receptivityDrugs", "violationGlove", "painWaveProjector", "deepEarPlugs"];
+            hot: {
+                value: string;
+                highlighted: boolean;
             };
-            readonly chopper: {
-                readonly moves: ["packAlpha", "fuckingThieves"];
-                readonly improvements: ["increaseHardMax3", "increaseCoolMax2", "increaseSharpMax2", "increaseWeirdMax2", "increaseWeirdMax2", "gangOption", "twoGigsMoonlighting", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly advantages: ["medium", "wellArmed", "wellArmored", "wellDisciplined", "nomadic", "rich"];
-                readonly problems: ["breakdown", "grounded", "desertion", "obligation", "disease"];
+            sharp: {
+                value: string;
+                highlighted: boolean;
             };
-            readonly driver: {
-                readonly moves: ["noShitDriver", "goodInTheClinch", "weatherEye", "daredevil", "collector", "otherCarIsTank"];
-                readonly improvements: ["increaseCoolMax2", "increaseHardMax2", "increaseHotMax2", "increaseWeirdMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "garageCrew", "otherPlaybookMove", "otherPlaybookMove"];
-            };
-            readonly gunLugger: {
-                readonly moves: ["battleHardened", "fuckThisShit", "battlefieldInstincts", "insanoLikeDrano", "preparedForInevitable", "bloodcrazed", "notToBeFuckedWith"];
-                readonly improvements: ["increaseCoolMax2", "increaseSharpMax2", "increaseWeirdMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "holdingWealth", "gangPackAlpha", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly fuckOffBigGuns: ["silencedSniper", "mg", "assaultRifle", "grenadeLauncher"];
-                readonly seriousGuns: ["huntingRifle", "shotgun", "smg", "magnum", "grenadeTube", "apAmmo", "silencer"];
-                readonly backupWeapons: ["9mm", "bigAssKnife", "machete", "manyKnives", "grenades"];
-            };
-            readonly hardHolder: {
-                readonly moves: ["leadership", "wealth"];
-                readonly improvements: ["increaseHardMax3", "increaseWeirdMax2", "increaseCoolMax2", "increaseHotMax2", "increaseSharpMax2", "holdingOption", "holdingOption", "eraseHoldingOption", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly advantages: ["largePopulation", "smallPopulation", "lucrativeRaiding", "protectionTribute", "manufactory", "market", "largeGang", "wellDisciplinedGang", "goodArmory", "goodCompound"];
-                readonly problems: ["disease", "famine", "decadence", "holdingOwesTribute", "smallGang", "gangSavagery", "shitArmory", "shitCoumpound"];
-            };
-            readonly hocus: {
-                readonly moves: ["fortunes", "frenzy", "charismatic", "fuckingWacknut", "seeingSouls", "divineProtection"];
-                readonly improvements: ["increaseCoolMax2", "increaseHardMax2", "increaseSharpMax2", "newPlaybookMove", "newPlaybookMove", "followersOption", "followersOption", "holdingWealth", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly types: ["cult", "family", "students", "scene", "staff", "court"];
-                readonly advantages: ["dedicated", "fortune", "augury", "party", "insight", "hardWorking", "growth"];
-                readonly problems: ["fewFollowers", "desertion", "desperation", "stupor", "disease", "violence", "savagery"];
-            };
-            readonly operator: {
-                readonly moves: ["moonlighting", "easyToTrust", "eyeOnTheDoor", "opportunistic", "reputation"];
-                readonly improvements: ["increaseCoolMax3", "increaseHardMax2", "increaseSharpMax2", "newPlaybookMove", "newPlaybookMove", "gigCrew", "gigCrew", "removeObligationGig", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly payingGigs: ["bodyguarding", "surveillance", "raiding", "enforcement", "honestWork", "companionship", "deliveries", "infiltration", "scavenging", "brokeringDeals", "technicalWork", "fucking", "compoundDefense", "doingMurders"];
-                readonly obligationGigs: ["avoidingSomeone", "payingDebts", "revenge", "protectingSomeone", "pursuingLuxury", "maintainingHonor", "seekingAnswers"];
-            };
-            readonly savvyHead: {
-                readonly moves: ["thingsSpeak", "bonefeel", "oftenerRight", "realityFrayingEdge", "spookyIntense", "deepInsights"];
-                readonly improvements: ["increaseCoolMax2", "increaseHardMax2", "increaseSharpMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "gangLeadership", "lifeSupport", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly workspace: ["garage", "darkroom", "growingEnvironment", "skilledLabor", "junkyard", "truckVan", "electronica", "machiningTools", "transmittersReceivers", "provingRange", "relicGoldenAge", "boobyTraps"];
-            };
-            readonly skinner: {
-                readonly moves: ["breathtaking", "lost", "artfulGracious", "arrestingSkinner", "hypnotic"];
-                readonly improvements: ["increaseCoolMax2", "increaseCoolMax2", "increaseHardMax2", "increaseSharpMax2", "newPlaybookMove", "newPlaybookMove", "twoGigsMoonlighting", "followersFortunes", "otherPlaybookMove", "otherPlaybookMove"];
-                readonly graciousWeapons: ["sleevePistol", "ornateDagger", "hiddenKnives", "ornateSword", "antiqueHandgun"];
-                readonly luxeGear: ["antiqueCoins", "eyeglasses", "longCoat", "spectacularTattoos", "skinHairKit", "pet"];
+            weird: {
+                value: string;
+                highlighted: boolean;
             };
         };
+        hx: {
+            value: string;
+            character: string;
+        }[];
+        experience: {
+            value: number;
+            commonImprovements: {
+                name: string;
+                enabled: boolean;
+            }[];
+        };
+        otherMoves: {
+            enabled: boolean;
+            title: string;
+            description: string;
+        }[];
+        hold: string;
+        gearAndBarter: string;
+        notes: string;
+    };
+    data: {
+        stats: string[];
+        commonImprovements: string[];
+        playbooks: Record<import("./apocalypseWorld/types.js").ApocalypseWorldPlaybook, {
+            moves: string[];
+            improvements: string[];
+            gear?: string[];
+            advantages?: string[];
+            problems?: string[];
+            types?: string[];
+            payingGigs?: string[];
+            obligationGigs?: string[];
+            graciousWeapons?: string[];
+            luxeGear?: string[];
+            fuckOffBigGuns?: string[];
+            seriousGuns?: string[];
+            backupWeapons?: string[];
+            workspace?: string[];
+        }>;
     };
 };
 export declare const callOfCthulhu: {
@@ -731,88 +702,6 @@ export declare const callOfCthulhu: {
         }>;
     }>;
     default: {
-        biography: {
-            name: string;
-            birthPlace: string;
-            occupation: string;
-            residence: string;
-            age: number;
-        };
-        characteristics: {
-            strength: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-            constitution: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-            size: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-            dexterity: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-            appearance: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-            education: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-            intelligence: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-            power: {
-                regular: number;
-                half: number;
-                fifth: number;
-            };
-        };
-        points: {
-            hitPoints: {
-                current: number;
-                maximum: number;
-            };
-            magicPoints: {
-                current: number;
-                maximum: number;
-            };
-        };
-        luck: {
-            starting: number;
-            current: number;
-        };
-        sanity: {
-            starting: number;
-            current: number;
-            maximum: number;
-        };
-        status: {
-            temporaryInsanity: false;
-            indefiniteInsanity: false;
-            majorWound: false;
-            unconscious: false;
-            dying: false;
-        };
-        skills: never[];
-        combat: {
-            move: number;
-            build: string;
-            damageBonus: string;
-        };
-        weapons: never[];
         story: {
             story: string;
             personalDescription: string;
@@ -831,6 +720,103 @@ export declare const callOfCthulhu: {
             cash: string;
             assets: string;
         };
+        biography: {
+            name: string;
+            birthPlace: string;
+            occupation: string;
+            residence: string;
+            age: number;
+        };
+        characteristics: {
+            size: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+            power: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+            strength: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+            constitution: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+            dexterity: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+            appearance: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+            intelligence: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+            education: {
+                regular: number;
+                half: number;
+                fifth: number;
+            };
+        };
+        points: {
+            hitPoints: {
+                maximum: number;
+                current: number;
+            };
+            magicPoints: {
+                maximum: number;
+                current: number;
+            };
+        };
+        luck: {
+            current: number;
+            starting: number;
+        };
+        sanity: {
+            maximum: number;
+            current: number;
+            starting: number;
+        };
+        status: {
+            temporaryInsanity: boolean;
+            indefiniteInsanity: boolean;
+            majorWound: boolean;
+            unconscious: boolean;
+            dying: boolean;
+        };
+        skills: {
+            name: string;
+            regular: number;
+            half: number;
+            fifth: number;
+            base: string;
+            development: boolean;
+            developed: boolean;
+        }[];
+        combat: {
+            move: number;
+            build: string;
+            damageBonus: string;
+        };
+        weapons: {
+            name: string;
+            damage: string;
+            attacks: string;
+            range: string;
+            ammo: string;
+            malfunction: string;
+        }[];
     };
 };
 export declare const dnd5: {
@@ -1038,15 +1024,12 @@ export declare const dnd5: {
         }>;
     }>;
     default: {
-        biography: {
+        attacks: {
             name: string;
-            class: string;
-            level: number;
-            background: string;
-            race: string;
-            alignment: string;
-            description: string;
-        };
+            damage: string;
+            attackBonus: number;
+            type: string;
+        }[];
         story: {
             backstory: string;
             personalityTraits: string;
@@ -1055,65 +1038,20 @@ export declare const dnd5: {
             flaws: string;
             alliesAndOrganizations: string;
         };
-        statistics: {
-            experiencePoints: number;
-            inspiration: number;
-            proficiencyBonus: number;
-            passiveWisdom: number;
-        };
-        abilities: {
-            strength: {
-                modifier: number;
-                score: number;
-            };
-            dexterity: {
-                modifier: number;
-                score: number;
-            };
-            constitution: {
-                modifier: number;
-                score: number;
-            };
-            intelligence: {
-                modifier: number;
-                score: number;
-            };
-            wisdom: {
-                modifier: number;
-                score: number;
-            };
-            charisma: {
-                modifier: number;
-                score: number;
-            };
-        };
-        savingThrows: {
-            strength: {
-                modifier: number;
-                proficient: boolean;
-            };
-            dexterity: {
-                modifier: number;
-                proficient: boolean;
-            };
-            constitution: {
-                modifier: number;
-                proficient: boolean;
-            };
-            intelligence: {
-                modifier: number;
-                proficient: boolean;
-            };
-            wisdom: {
-                modifier: number;
-                proficient: boolean;
-            };
-            charisma: {
-                modifier: number;
-                proficient: boolean;
-            };
+        biography: {
+            name: string;
+            description: string;
+            class: string;
+            level: number;
+            background: string;
+            race: string;
+            alignment: string;
         };
         skills: {
+            insight: {
+                modifier: number;
+                proficient: boolean;
+            };
             acrobatics: {
                 modifier: number;
                 proficient: boolean;
@@ -1135,10 +1073,6 @@ export declare const dnd5: {
                 proficient: boolean;
             };
             history: {
-                modifier: number;
-                proficient: boolean;
-            };
-            insight: {
                 modifier: number;
                 proficient: boolean;
             };
@@ -1188,31 +1122,77 @@ export declare const dnd5: {
             };
         };
         combat: {
-            armorClass: number;
-            initiative: number;
-            speed: number;
             hitPoints: {
                 maximum: number;
                 current: number;
                 temporary: number;
             };
+            armorClass: number;
+            initiative: number;
+            speed: number;
             hitDice: string;
             deathSaves: {
                 successes: number;
                 failures: number;
             };
         };
-        attacks: never[];
-        equipment: {
-            money: {
-                copper: number;
-                silver: number;
-                electrum: number;
-                gold: number;
-                platinum: number;
+        statistics: {
+            experiencePoints: number;
+            inspiration: number;
+            proficiencyBonus: number;
+            passiveWisdom: number;
+        };
+        abilities: {
+            strength: {
+                modifier: number;
+                score: number;
             };
-            items: string;
-            treasure: string;
+            constitution: {
+                modifier: number;
+                score: number;
+            };
+            dexterity: {
+                modifier: number;
+                score: number;
+            };
+            intelligence: {
+                modifier: number;
+                score: number;
+            };
+            wisdom: {
+                modifier: number;
+                score: number;
+            };
+            charisma: {
+                modifier: number;
+                score: number;
+            };
+        };
+        savingThrows: {
+            strength: {
+                modifier: number;
+                proficient: boolean;
+            };
+            constitution: {
+                modifier: number;
+                proficient: boolean;
+            };
+            dexterity: {
+                modifier: number;
+                proficient: boolean;
+            };
+            intelligence: {
+                modifier: number;
+                proficient: boolean;
+            };
+            wisdom: {
+                modifier: number;
+                proficient: boolean;
+            };
+            charisma: {
+                modifier: number;
+                proficient: boolean;
+            };
         };
         features: {
             featuresAndTraits: string;
@@ -1223,8 +1203,27 @@ export declare const dnd5: {
             spellAbility: number;
             spellSaveDC: number;
             spellAttackBonus: number;
-            cantrips: never[];
-            levels: never[];
+            cantrips: string[];
+            levels: {
+                level: number;
+                slotsTotal: number;
+                slotsExpended: number;
+                spells: {
+                    name: string;
+                    prepared: boolean;
+                }[];
+            }[];
+        };
+        equipment: {
+            money: {
+                copper: number;
+                silver: number;
+                electrum: number;
+                gold: number;
+                platinum: number;
+            };
+            items: string;
+            treasure: string;
         };
     };
 };
@@ -1289,22 +1288,11 @@ export declare const seventhSea: {
         notes: import("@sinclair/typebox").TString;
     }>;
     default: {
-        biography: {
+        advantages: {
             name: string;
-            concept: string;
-            nation: string;
-            religion: string;
-            reputations: string;
-            wealth: number;
-        };
-        heroPoints: number;
-        arcana: {
-            name: string;
-            virtue: string;
-            hubris: string;
-        };
-        backgrounds: never[];
-        stories: never[];
+            description: string;
+        }[];
+        notes: string;
         traits: {
             brawn: number;
             finesse: number;
@@ -1312,9 +1300,17 @@ export declare const seventhSea: {
             wits: number;
             panache: number;
         };
+        biography: {
+            name: string;
+            wealth: number;
+            religion: string;
+            concept: string;
+            nation: string;
+            reputations: string;
+        };
         skills: {
-            aim: number;
             athletics: number;
+            aim: number;
             brawl: number;
             convince: number;
             empathy: number;
@@ -1330,10 +1326,25 @@ export declare const seventhSea: {
             warfare: number;
             weaponry: number;
         };
-        deathSpiral: number;
-        advantages: never[];
+        arcana: {
+            name: string;
+            virtue: string;
+            hubris: string;
+        };
         items: string;
-        notes: string;
+        heroPoints: number;
+        backgrounds: {
+            name: string;
+            description: string;
+            quirk: string;
+        }[];
+        stories: {
+            name: string;
+            goal: string;
+            reward: string;
+            steps: string[];
+        }[];
+        deathSpiral: number;
     };
 };
 export declare const starWarsD6: {
@@ -1424,64 +1435,89 @@ export declare const starWarsD6: {
         }>;
     }>;
     default: {
-        biography: {
-            name: string;
-            occupation: string;
-            species: string;
-            age: number;
-            height: string;
-            weight: string;
-            description: string;
-        };
-        attributes: {
-            dexterity: {
-                value: string;
-                skills: never[];
-            };
-            knowledge: {
-                value: string;
-                skills: never[];
-            };
-            mechanical: {
-                value: string;
-                skills: never[];
-            };
-            perception: {
-                value: string;
-                skills: never[];
-            };
-            strength: {
-                value: string;
-                skills: never[];
-            };
-            technical: {
-                value: string;
-                skills: never[];
-            };
-        };
-        abilities: never[];
-        statistics: {
-            move: number;
-            forceSensitive: false;
-            forcePoints: number;
-            darkSidePoints: number;
-            characterPoints: number;
-        };
-        woundStatus: {
-            stunned: false;
-            wounded: false;
-            doublyWounded: false;
-            incapacitated: false;
-            mortallyWounded: false;
-        };
-        weapons: never[];
         story: {
-            equipment: string;
             background: string;
+            equipment: string;
             personality: string;
             objectives: string;
             quote: string;
             connections: string;
+        };
+        biography: {
+            name: string;
+            description: string;
+            occupation: string;
+            age: number;
+            species: string;
+            height: string;
+            weight: string;
+        };
+        weapons: {
+            name: string;
+            damage: string;
+            ammo: string;
+            shortRange: string;
+            mediumRange: string;
+            longRange: string;
+        }[];
+        statistics: {
+            move: number;
+            forceSensitive: boolean;
+            forcePoints: number;
+            darkSidePoints: number;
+            characterPoints: number;
+        };
+        abilities: string[];
+        attributes: {
+            strength: {
+                value: string;
+                skills: {
+                    name: string;
+                    value: string;
+                }[];
+            };
+            dexterity: {
+                value: string;
+                skills: {
+                    name: string;
+                    value: string;
+                }[];
+            };
+            perception: {
+                value: string;
+                skills: {
+                    name: string;
+                    value: string;
+                }[];
+            };
+            knowledge: {
+                value: string;
+                skills: {
+                    name: string;
+                    value: string;
+                }[];
+            };
+            mechanical: {
+                value: string;
+                skills: {
+                    name: string;
+                    value: string;
+                }[];
+            };
+            technical: {
+                value: string;
+                skills: {
+                    name: string;
+                    value: string;
+                }[];
+            };
+        };
+        woundStatus: {
+            stunned: boolean;
+            wounded: boolean;
+            doublyWounded: boolean;
+            incapacitated: boolean;
+            mortallyWounded: boolean;
         };
     };
 };
@@ -1825,227 +1861,15 @@ export declare const warhammerFantasy: {
         advantage: import("@sinclair/typebox").TInteger;
     }>;
     default: {
-        biography: {
-            name: string;
-            species: string;
-            class: string;
-            career: string;
-            careerLevel: string;
-            careerPath: string;
-            status: string;
-            age: string;
-            height: string;
-            hair: string;
-            eyes: string;
-        };
-        characteristics: {
-            weaponSkill: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            ballisticSkill: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            strength: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            toughness: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            initiative: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            agility: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            dexterity: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            intelligence: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            willpower: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-            fellowship: {
-                initial: number;
-                advances: number;
-                current: number;
-            };
-        };
-        fate: {
-            fate: number;
-            fortune: number;
-        };
-        resilience: {
-            resilience: number;
-            resolve: number;
-            motivation: string;
-        };
         experience: {
             current: number;
             spent: number;
             total: number;
         };
-        movement: {
-            movement: number;
-            walk: number;
-            run: number;
-        };
-        basicSkills: {
-            art: {
-                advances: number;
-                skill: number;
-                characteristicName: "dexterity";
-            };
-            athletics: {
-                advances: number;
-                skill: number;
-                characteristicName: "agility";
-            };
-            bribery: {
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
-            charm: {
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
-            charmAnimal: {
-                advances: number;
-                skill: number;
-                characteristicName: "willpower";
-            };
-            climb: {
-                advances: number;
-                skill: number;
-                characteristicName: "strength";
-            };
-            cool: {
-                advances: number;
-                skill: number;
-                characteristicName: "willpower";
-            };
-            consumeAlcohol: {
-                advances: number;
-                skill: number;
-                characteristicName: "toughness";
-            };
-            drive: {
-                advances: number;
-                skill: number;
-                characteristicName: "agility";
-            };
-            endurance: {
-                advances: number;
-                skill: number;
-                characteristicName: "toughness";
-            };
-            entertain: {
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
-            gamble: {
-                advances: number;
-                skill: number;
-                characteristicName: "intelligence";
-            };
-            gossip: {
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
-            haggle: {
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
-            intimidate: {
-                advances: number;
-                skill: number;
-                characteristicName: "strength";
-            };
-            intuition: {
-                advances: number;
-                skill: number;
-                characteristicName: "initiative";
-            };
-            leadership: {
-                advances: number;
-                skill: number;
-                characteristicName: "fellowship";
-            };
-            meleeBasic: {
-                advances: number;
-                skill: number;
-                characteristicName: "weaponSkill";
-            };
-            melee: {
-                advances: number;
-                skill: number;
-                characteristicName: "weaponSkill";
-            };
-            navigation: {
-                advances: number;
-                skill: number;
-                characteristicName: "initiative";
-            };
-            dodge: {
-                advances: number;
-                skill: number;
-                characteristicName: "agility";
-            };
-            outdoorSurvival: {
-                advances: number;
-                skill: number;
-                characteristicName: "intelligence";
-            };
-            perception: {
-                advances: number;
-                skill: number;
-                characteristicName: "initiative";
-            };
-            ride: {
-                advances: number;
-                skill: number;
-                characteristicName: "agility";
-            };
-            row: {
-                advances: number;
-                skill: number;
-                characteristicName: "strength";
-            };
-            stealth: {
-                advances: number;
-                skill: number;
-                characteristicName: "agility";
-            };
-        };
-        otherSkills: never[];
-        talents: never[];
-        ambitions: {
-            shortTerm: string;
-            longTerm: string;
+        wealth: {
+            brassPennies: number;
+            silverShillings: number;
+            goldCrowns: number;
         };
         party: {
             name: string;
@@ -2053,7 +1877,119 @@ export declare const warhammerFantasy: {
             longTerm: string;
             members: string;
         };
-        armour: never[];
+        biography: {
+            name: string;
+            age: string;
+            status: string;
+            class: string;
+            species: string;
+            height: string;
+            career: string;
+            careerLevel: string;
+            careerPath: string;
+            hair: string;
+            eyes: string;
+        };
+        characteristics: {
+            strength: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            dexterity: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            intelligence: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            initiative: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            weaponSkill: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            ballisticSkill: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            toughness: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            agility: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            willpower: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+            fellowship: {
+                careerLevel?: number | undefined;
+                current: number;
+                initial: number;
+                advances: number;
+            };
+        };
+        weapons: {
+            name: string;
+            damage: string;
+            encumbrance: number;
+            qualities: string;
+            group: string;
+            rangeReach: string;
+        }[];
+        spells: {
+            name: string;
+            range: string;
+            castingNumber: number;
+            target: string;
+            duration: string;
+            effect: string;
+        }[];
+        fate: {
+            fortune: number;
+            fate: number;
+        };
+        resilience: {
+            resolve: number;
+            resilience: number;
+            motivation: string;
+        };
+        movement: {
+            movement: number;
+            walk: number;
+            run: number;
+        };
+        encumbrance: {
+            maximum: number;
+            weapons: number;
+            total: number;
+            armour: number;
+            trappings: number;
+            maximumBonus: number;
+        };
         armourPoints: {
             head: number;
             rightArm: number;
@@ -2063,66 +1999,208 @@ export declare const warhammerFantasy: {
             leftLeg: number;
             shield: number;
         };
-        trappings: never[];
+        armour: {
+            name: string;
+            locations: string;
+            encumbrance: number;
+            armourPoints: number;
+            qualities: string;
+        }[];
+        trappings: {
+            name: string;
+            encumbrance: number;
+        }[];
+        basicSkills: {
+            cool: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "willpower";
+                skill: number;
+            };
+            leadership: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "fellowship";
+                skill: number;
+            };
+            athletics: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "agility";
+                skill: number;
+            };
+            perception: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "initiative";
+                skill: number;
+            };
+            stealth: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "agility";
+                skill: number;
+            };
+            intimidate: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "strength";
+                skill: number;
+            };
+            ride: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "agility";
+                skill: number;
+            };
+            art: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "dexterity";
+                skill: number;
+            };
+            gossip: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "fellowship";
+                skill: number;
+            };
+            haggle: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "fellowship";
+                skill: number;
+            };
+            bribery: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "fellowship";
+                skill: number;
+            };
+            charm: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "fellowship";
+                skill: number;
+            };
+            intuition: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "initiative";
+                skill: number;
+            };
+            charmAnimal: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "willpower";
+                skill: number;
+            };
+            climb: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "strength";
+                skill: number;
+            };
+            meleeBasic: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "weaponSkill";
+                skill: number;
+            };
+            melee: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "weaponSkill";
+                skill: number;
+            };
+            consumeAlcohol: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "toughness";
+                skill: number;
+            };
+            navigation: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "initiative";
+                skill: number;
+            };
+            dodge: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "agility";
+                skill: number;
+            };
+            outdoorSurvival: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "intelligence";
+                skill: number;
+            };
+            drive: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "agility";
+                skill: number;
+            };
+            endurance: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "toughness";
+                skill: number;
+            };
+            entertain: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "fellowship";
+                skill: number;
+            };
+            row: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "strength";
+                skill: number;
+            };
+            gamble: {
+                careerLevel?: number | undefined;
+                advances: number;
+                characteristicName: "intelligence";
+                skill: number;
+            };
+        };
+        otherSkills: {
+            careerLevel?: number | undefined;
+            name: string;
+            advances: number;
+            characteristicName: "strength" | "dexterity" | "intelligence" | "initiative" | "weaponSkill" | "ballisticSkill" | "toughness" | "agility" | "willpower" | "fellowship";
+            skill: number;
+        }[];
+        talents: {
+            name: string;
+            description: string;
+            timesTaken: number;
+        }[];
+        ambitions: {
+            shortTerm: string;
+            longTerm: string;
+        };
         psychology: string;
         corruptionMutation: string;
-        wealth: {
-            brassPennies: number;
-            silverShillings: number;
-            goldCrowns: number;
-        };
-        encumbrance: {
-            weapons: number;
-            armour: number;
-            trappings: number;
-            total: number;
-            maximumBonus: number;
-            maximum: number;
-        };
         wounds: {
+            notes: string;
+            current: number;
+            total: number;
             strengthBonus: number;
             twiceToughnessBonus: number;
             willpowerBonus: number;
-            hardy: false;
-            total: number;
-            current: number;
-            notes: string;
+            hardy: boolean;
         };
-        weapons: never[];
-        spells: never[];
         sin: number;
         advantage: number;
     };
     data: {
-        characteristicNames: ("strength" | "dexterity" | "intelligence" | "initiative" | "weaponSkill" | "ballisticSkill" | "toughness" | "agility" | "willpower" | "fellowship")[];
-        basicSkillNames: ("cool" | "leadership" | "athletics" | "perception" | "stealth" | "intimidate" | "ride" | "art" | "gossip" | "haggle" | "bribery" | "charm" | "intuition" | "charmAnimal" | "climb" | "meleeBasic" | "melee" | "consumeAlcohol" | "navigation" | "dodge" | "outdoorSurvival" | "drive" | "endurance" | "entertain" | "row" | "gamble")[];
-        basicSkillCharacteristics: {
-            art: "dexterity";
-            gossip: "fellowship";
-            athletics: "agility";
-            haggle: "fellowship";
-            bribery: "fellowship";
-            intimidate: "strength";
-            charm: "fellowship";
-            intuition: "initiative";
-            charmAnimal: "willpower";
-            leadership: "fellowship";
-            climb: "strength";
-            meleeBasic: "weaponSkill";
-            cool: "willpower";
-            melee: "weaponSkill";
-            consumeAlcohol: "toughness";
-            navigation: "initiative";
-            dodge: "agility";
-            outdoorSurvival: "intelligence";
-            drive: "agility";
-            perception: "initiative";
-            endurance: "toughness";
-            ride: "agility";
-            entertain: "fellowship";
-            row: "strength";
-            gamble: "intelligence";
-            stealth: "agility";
-        };
+        characteristicNames: import("./warhammerFantasy/types.js").WarhammerFantasyCharacteristicName[];
+        basicSkillNames: import("./warhammerFantasy/types.js").WarhammerFantasyBasicSkillName[];
+        basicSkillCharacteristics: Record<import("./warhammerFantasy/types.js").WarhammerFantasyBasicSkillName, import("./warhammerFantasy/types.js").WarhammerFantasyCharacteristicName>;
     };
 };

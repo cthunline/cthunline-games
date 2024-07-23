@@ -26,7 +26,7 @@ type ApocalypseWorldData = {
     >;
 };
 
-export default {
+export const apocalypseWorldData: ApocalypseWorldData = {
     stats: ['cool', 'hard', 'hot', 'sharp', 'weird'],
     commonImprovements: [
         'increaseAnyStat',
@@ -405,4 +405,4 @@ export default {
             ]
         }
     }
-} as const satisfies ApocalypseWorldData;
+};

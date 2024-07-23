@@ -1,4 +1,4 @@
-export default {
+export const warhammerFantasyData = {
     characteristicNames: [
         'weaponSkill',
         'ballisticSkill',

@@ -3,7 +3,7 @@ const defaultCharacteristic = {
     half: 0,
     fifth: 0
 };
-export default {
+export const cocDefault = {
     biography: {
         name: '',
         birthPlace: '',

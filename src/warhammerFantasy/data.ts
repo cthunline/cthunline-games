@@ -3,16 +3,16 @@ import type {
     WarhammerFantasyCharacteristicName
 } from './types.js';
 
-interface WarhammerFantasyData {
+type WarhammerFantasyData = {
     characteristicNames: WarhammerFantasyCharacteristicName[];
     basicSkillNames: WarhammerFantasyBasicSkillName[];
     basicSkillCharacteristics: Record<
         WarhammerFantasyBasicSkillName,
         WarhammerFantasyCharacteristicName
     >;
-}
+};
 
-export default {
+export const warhammerFantasyData: WarhammerFantasyData = {
     characteristicNames: [
         'weaponSkill',
         'ballisticSkill',
@@ -81,4 +81,4 @@ export default {
         gamble: 'intelligence',
         stealth: 'agility'
     }
-} satisfies WarhammerFantasyData;
+};

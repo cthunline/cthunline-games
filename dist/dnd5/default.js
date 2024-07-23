@@ -6,7 +6,7 @@ const defaultSkill = {
     modifier: 0,
     proficient: false
 };
-export default {
+export const dnd5Default = {
     biography: {
         name: '',
         class: '',

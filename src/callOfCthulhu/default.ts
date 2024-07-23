@@ -6,7 +6,7 @@ const defaultCharacteristic = {
     fifth: 0
 };
 
-export default {
+export const cocDefault: CoCCharacter = {
     biography: {
         name: '',
         birthPlace: '',
@@ -75,4 +75,4 @@ export default {
         cash: '',
         assets: ''
     }
-} satisfies CoCCharacter;
+};

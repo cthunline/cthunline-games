@@ -1,4 +1,4 @@
-export default {
+export const apocalypseWorldDefault = {
     playbook: 'angel',
     bio: {
         name: '',

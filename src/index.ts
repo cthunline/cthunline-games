@@ -1,21 +1,21 @@
-import apocalypseWorldData from './apocalypseWorld/data.js';
-import apocalypseWorldDefault from './apocalypseWorld/default.js';
+import { apocalypseWorldData } from './apocalypseWorld/data.js';
+import { apocalypseWorldDefault } from './apocalypseWorld/default.js';
 import { apocalypseWorldCharacterSchema } from './apocalypseWorld/schema.js';
 
-import cocDefault from './callOfCthulhu/default.js';
+import { cocDefault } from './callOfCthulhu/default.js';
 import { cocCharacterSchema } from './callOfCthulhu/schema.js';
 
-import dnd5Default from './dnd5/default.js';
+import { dnd5Default } from './dnd5/default.js';
 import { dnd5CharacterSchema } from './dnd5/schema.js';
 
-import seventhSeaDefault from './seventhSea/default.js';
+import { seventhSeaDefault } from './seventhSea/default.js';
 import { seventhSeaCharacterSchema } from './seventhSea/schema.js';
 
-import swd6Default from './starWarsD6/default.js';
+import { swd6Default } from './starWarsD6/default.js';
 import { swd6CharacterSchema } from './starWarsD6/schema.js';
 
-import warhammerFantasyData from './warhammerFantasy/data.js';
-import warhammerFantasyDefault from './warhammerFantasy/default.js';
+import { warhammerFantasyData } from './warhammerFantasy/data.js';
+import { warhammerFantasyDefault } from './warhammerFantasy/default.js';
 import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema.js';
 
 import type { ApocalypseWorldCharacter } from './apocalypseWorld/types.js';
