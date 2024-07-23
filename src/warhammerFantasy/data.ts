@@ -12,7 +12,7 @@ type WarhammerFantasyData = {
     >;
 };
 
-export const warhammerFantasyData: WarhammerFantasyData = {
+export const warhammerFantasyData = {
     characteristicNames: [
         'weaponSkill',
         'ballisticSkill',
@@ -81,4 +81,4 @@ export const warhammerFantasyData: WarhammerFantasyData = {
         gamble: 'intelligence',
         stealth: 'agility'
     }
-};
+} as const satisfies WarhammerFantasyData;

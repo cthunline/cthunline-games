@@ -1,8 +1,32 @@
-import type { WarhammerFantasyBasicSkillName, WarhammerFantasyCharacteristicName } from './types.js';
-type WarhammerFantasyData = {
-    characteristicNames: WarhammerFantasyCharacteristicName[];
-    basicSkillNames: WarhammerFantasyBasicSkillName[];
-    basicSkillCharacteristics: Record<WarhammerFantasyBasicSkillName, WarhammerFantasyCharacteristicName>;
+export declare const warhammerFantasyData: {
+    readonly characteristicNames: ["weaponSkill", "ballisticSkill", "strength", "toughness", "initiative", "agility", "dexterity", "intelligence", "willpower", "fellowship"];
+    readonly basicSkillNames: ["art", "gossip", "athletics", "haggle", "bribery", "intimidate", "charm", "intuition", "charmAnimal", "leadership", "climb", "meleeBasic", "cool", "melee", "consumeAlcohol", "navigation", "dodge", "outdoorSurvival", "drive", "perception", "endurance", "ride", "entertain", "row", "gamble", "stealth"];
+    readonly basicSkillCharacteristics: {
+        readonly art: "dexterity";
+        readonly gossip: "fellowship";
+        readonly athletics: "agility";
+        readonly haggle: "fellowship";
+        readonly bribery: "fellowship";
+        readonly intimidate: "strength";
+        readonly charm: "fellowship";
+        readonly intuition: "initiative";
+        readonly charmAnimal: "willpower";
+        readonly leadership: "fellowship";
+        readonly climb: "strength";
+        readonly meleeBasic: "weaponSkill";
+        readonly cool: "willpower";
+        readonly melee: "weaponSkill";
+        readonly consumeAlcohol: "toughness";
+        readonly navigation: "initiative";
+        readonly dodge: "agility";
+        readonly outdoorSurvival: "intelligence";
+        readonly drive: "agility";
+        readonly perception: "initiative";
+        readonly endurance: "toughness";
+        readonly ride: "agility";
+        readonly entertain: "fellowship";
+        readonly row: "strength";
+        readonly gamble: "intelligence";
+        readonly stealth: "agility";
+    };
 };
-export declare const warhammerFantasyData: WarhammerFantasyData;
-export {};
