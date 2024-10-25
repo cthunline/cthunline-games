@@ -1,0 +1,25 @@
+steps:
+- name: install
+  image: node:20-alpine
+  pull: true
+  commands:
+  - npm i
+  when:
+    branch:
+    - master
+    event:
+    - push
+    - pull_request
+- name: lint
+  image: node:20-alpine
+  pull: true
+  commands:
+  - npm run lint
+  depends_on:
+  - install
+  when:
+    branch:
+    - master
+    event:
+    - push
+    - pull_request

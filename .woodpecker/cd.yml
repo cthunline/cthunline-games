@@ -1,0 +1,14 @@
+skip_clone: true
+
+steps:
+- name: npm  
+  image: plugins/npm:latest
+  pull: true
+  settings:
+    username:
+      from_secret: npm_user
+    token:
+      from_secret: npm_token
+  when:
+    event:
+    - tag
