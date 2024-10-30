@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "3.4.6",
+    "version": "3.4.7",
     "license": "AGPL-3.0-or-later",
     "homepage": "https://doc.cthunline.org/",
     "repository": {
@@ -17,11 +17,11 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "dependencies": {
-        "@sinclair/typebox": "^0.33.16"
+        "@sinclair/typebox": "^0.33.17"
     },
     "devDependencies": {
-        "@biomejs/biome": "^1.9.3",
-        "@tsconfig/recommended": "^1.0.7",
+        "@biomejs/biome": "^1.9.4",
+        "@tsconfig/recommended": "^1.0.8",
         "husky": "^9.1.6",
         "typescript": "^5.6.3"
     }
