@@ -1,5 +1,3 @@
-skip_clone: true
-
 steps:
 - name: npm  
   image: plugins/npm:latest
