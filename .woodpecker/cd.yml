@@ -1,4 +1,27 @@
+when:
+  event:
+  - tag
+
 steps:
+- name: install
+  image: node:22-alpine
+  pull: true
+  commands:
+  - npm i
+- name: lint
+  image: node:22-alpine
+  pull: true
+  commands:
+  - npm run lint
+  depends_on:
+  - install
+- name: build
+  image: node:22-alpine
+  pull: true
+  commands:
+  - npm run build
+  depends_on:
+  - lint
 - name: npm  
   image: plugins/npm:latest
   pull: true
@@ -7,6 +30,5 @@ steps:
       from_secret: npm_user
     token:
       from_secret: npm_token
-  when:
-    event:
-    - tag
+  depends_on:
+  - build

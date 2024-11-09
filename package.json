@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "3.4.9",
+    "version": "3.5.0",
     "license": "AGPL-3.0-or-later",
     "homepage": "https://doc.cthunline.org/",
     "repository": {
@@ -8,14 +8,15 @@
         "url": "https://github.com/cthunline/cthunline-games.git"
     },
     "type": "module",
+    "files": ["./dist", "./LICENSE", "./package.json", "./README.md"],
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "scripts": {
         "build": "tsc --build --clean tsconfig.json && tsc --project tsconfig.json",
         "prepare": "[ -d '.husky' ] && husky || true",
         "lint": "npx @biomejs/biome check --error-on-warnings && npx tsc --noEmit",
         "format": "npx @biomejs/biome check --write --error-on-warnings && npx tsc --noEmit"
     },
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
     "dependencies": {
         "@sinclair/typebox": "^0.33.21"
     },
