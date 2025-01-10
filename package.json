@@ -18,12 +18,12 @@
         "format": "npx @biomejs/biome check --write --error-on-warnings && npx tsc --noEmit"
     },
     "dependencies": {
-        "@sinclair/typebox": "^0.34.12"
+        "@sinclair/typebox": "^0.34.13"
     },
     "devDependencies": {
         "@biomejs/biome": "^1.9.4",
         "@tsconfig/recommended": "^1.0.8",
         "husky": "^9.1.7",
-        "typescript": "^5.7.2"
+        "typescript": "^5.7.3"
     }
 }
