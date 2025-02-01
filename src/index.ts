@@ -1,3 +1,6 @@
+import { alienDefault } from './alien/default.js';
+import { alienCharacterSchema } from './alien/schema.js';
+
 import { apocalypseWorldData } from './apocalypseWorld/data.js';
 import { apocalypseWorldDefault } from './apocalypseWorld/default.js';
 import { apocalypseWorldCharacterSchema } from './apocalypseWorld/schema.js';
@@ -18,6 +21,7 @@ import { warhammerFantasyData } from './warhammerFantasy/data.js';
 import { warhammerFantasyDefault } from './warhammerFantasy/default.js';
 import { warhammerFantasyCharacterSchema } from './warhammerFantasy/schema.js';
 
+import type { AlienCharacter } from './alien/types.js';
 import type { ApocalypseWorldCharacter } from './apocalypseWorld/types.js';
 import type { CoCCharacter } from './callOfCthulhu/types.js';
 import type { DnD5Character } from './dnd5/types.js';
@@ -25,6 +29,7 @@ import type { SeventhSeaCharacter } from './seventhSea/types.js';
 import type { SWD6Character } from './starWarsD6/types.js';
 import type { WarhammerFantasyCharacter } from './warhammerFantasy/types.js';
 
+export * from './alien/types.js';
 export * from './apocalypseWorld/types.js';
 export * from './callOfCthulhu/types.js';
 export * from './dnd5/types.js';
@@ -33,12 +38,18 @@ export * from './starWarsD6/types.js';
 export * from './warhammerFantasy/types.js';
 
 export type Character =
+    | AlienCharacter
     | ApocalypseWorldCharacter
     | CoCCharacter
     | DnD5Character
     | SeventhSeaCharacter
     | SWD6Character
     | WarhammerFantasyCharacter;
+
+export const alien = {
+    schema: alienCharacterSchema,
+    default: alienDefault
+};
 
 export const apocalypseWorld = {
     schema: apocalypseWorldCharacterSchema,
