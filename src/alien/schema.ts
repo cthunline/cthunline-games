@@ -125,7 +125,7 @@ export const alienStatusSchema = Type.Object(
         stressLevel: Type.Integer({ minimum: 0 }),
         health: Type.Integer({ minimum: 0 }),
         radiation: Type.Integer({ minimum: 0 }),
-        criticalInjuries: Type.Array(Type.String()),
+        criticalInjuries: Type.String(),
         conditions: alienConditionsSchema
     },
     {

@@ -50,7 +50,7 @@ export const alienDefault: AlienCharacter = {
         stressLevel: 0,
         health: 0,
         radiation: 0,
-        criticalInjuries: [],
+        criticalInjuries: '',
         conditions: {
             starving: false,
             dehydrated: false,
