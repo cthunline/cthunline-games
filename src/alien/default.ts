@@ -73,7 +73,7 @@ export const alienDefault: AlienCharacter = {
         encumbrance: 0,
         gear: '',
         signatureItem: '',
-        tinyItems: []
+        tinyItems: ''
     },
     experience: {
         experiencePoints: 0,
