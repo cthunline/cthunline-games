@@ -172,7 +172,7 @@ export const alienEquipmentSchema = Type.Object(
         armor: alienArmorSchema,
         encumbrance: Type.Integer({ minimum: 0 }),
         weapons: Type.Array(alienWeaponSchema),
-        gear: Type.Array(Type.String()),
+        gear: Type.String(),
         signatureItem: Type.String(),
         tinyItems: Type.Array(Type.String())
     },

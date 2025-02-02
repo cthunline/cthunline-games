@@ -71,7 +71,7 @@ export const alienDefault: AlienCharacter = {
         },
         weapons: [],
         encumbrance: 0,
-        gear: [],
+        gear: '',
         signatureItem: '',
         tinyItems: []
     },
