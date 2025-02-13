@@ -201,8 +201,7 @@ export const alienCharacterSchema = Type.Object(
         equipment: alienEquipmentSchema,
         experience: alienExperienceSchema,
         personalAgenda: Type.String(),
-        objectives: Type.String(),
-        notes: Type.String()
+        objectives: Type.String()
     },
     {
         additionalProperties: false

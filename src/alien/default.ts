@@ -79,6 +79,5 @@ export const alienDefault: AlienCharacter = {
         storyPoints: 0
     },
     personalAgenda: '',
-    objectives: '',
-    notes: ''
+    objectives: ''
 };
