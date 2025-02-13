@@ -1,6 +1,7 @@
 import type { Static } from '@sinclair/typebox';
 
 import type {
+    alienAgendaSchema,
     alienArmorSchema,
     alienAttributesSchema,
     alienBiographySchema,
@@ -25,6 +26,7 @@ export type AlienWeapon = Static<typeof alienWeaponSchema>;
 export type AlienEquipment = Static<typeof alienEquipmentSchema>;
 export type AlienExperience = Static<typeof alienExperienceSchema>;
 export type AlienCharacter = Static<typeof alienCharacterSchema>;
+export type AlienAgenda = Static<typeof alienAgendaSchema>;
 
 export type AlienAttribute = keyof AlienAttributes;
 export type AlienSkill = {

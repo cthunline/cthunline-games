@@ -190,6 +190,16 @@ export const alienExperienceSchema = Type.Object(
     }
 );
 
+export const alienAgendaSchema = Type.Object(
+    {
+        personalAgenda: Type.String(),
+        objectives: Type.String()
+    },
+    {
+        additionalProperties: false
+    }
+);
+
 export const alienCharacterSchema = Type.Object(
     {
         biography: alienBiographySchema,
@@ -200,8 +210,7 @@ export const alienCharacterSchema = Type.Object(
         consumables: alienConsumablesSchema,
         equipment: alienEquipmentSchema,
         experience: alienExperienceSchema,
-        personalAgenda: Type.String(),
-        objectives: Type.String()
+        agenda: alienAgendaSchema
     },
     {
         additionalProperties: false

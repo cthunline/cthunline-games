@@ -78,6 +78,8 @@ export const alienDefault: AlienCharacter = {
         experiencePoints: 0,
         storyPoints: 0
     },
-    personalAgenda: '',
-    objectives: ''
+    agenda: {
+        personalAgenda: '',
+        objectives: ''
+    }
 };
