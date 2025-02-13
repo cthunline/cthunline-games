@@ -4,8 +4,7 @@ export const alienDefault: AlienCharacter = {
     biography: {
         name: '',
         career: '',
-        appearance: '',
-        personalAgenda: ''
+        appearance: ''
     },
     relationships: {
         buddy: '',
@@ -79,6 +78,7 @@ export const alienDefault: AlienCharacter = {
         experiencePoints: 0,
         storyPoints: 0
     },
+    personalAgenda: '',
     objectives: '',
     notes: ''
 };

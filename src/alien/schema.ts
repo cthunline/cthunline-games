@@ -4,8 +4,7 @@ export const alienBiographySchema = Type.Object(
     {
         name: Type.String(),
         career: Type.String(),
-        appearance: Type.String(),
-        personalAgenda: Type.String()
+        appearance: Type.String()
     },
     {
         additionalProperties: false
@@ -201,6 +200,7 @@ export const alienCharacterSchema = Type.Object(
         consumables: alienConsumablesSchema,
         equipment: alienEquipmentSchema,
         experience: alienExperienceSchema,
+        personalAgenda: Type.String(),
         objectives: Type.String(),
         notes: Type.String()
     },
