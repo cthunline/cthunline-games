@@ -1,6 +1,6 @@
 {
     "name": "@cthunline/games",
-    "version": "3.6.4",
+    "version": "3.6.5",
     "license": "AGPL-3.0-or-later",
     "homepage": "https://doc.cthunline.org/",
     "repository": {
@@ -18,7 +18,7 @@
         "format": "npx @biomejs/biome check --write --error-on-warnings && npx tsc --noEmit"
     },
     "dependencies": {
-        "@sinclair/typebox": "^0.34.16"
+        "@sinclair/typebox": "^0.34.21"
     },
     "devDependencies": {
         "@biomejs/biome": "^1.9.4",

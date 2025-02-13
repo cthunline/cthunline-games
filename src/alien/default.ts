@@ -78,5 +78,7 @@ export const alienDefault: AlienCharacter = {
     experience: {
         experiencePoints: 0,
         storyPoints: 0
-    }
+    },
+    objectives: '',
+    notes: ''
 };
