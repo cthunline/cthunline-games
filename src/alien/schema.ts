@@ -97,6 +97,16 @@ export const alienAttributesSchema = Type.Object(
     }
 );
 
+export const alienTalentSchema = Type.Object(
+    {
+        name: Type.String(),
+        description: Type.String()
+    },
+    {
+        additionalProperties: false
+    }
+);
+
 export const alienRelationshipsSchema = Type.Object(
     {
         buddy: Type.String(),
@@ -205,7 +215,7 @@ export const alienCharacterSchema = Type.Object(
         biography: alienBiographySchema,
         relationships: alienRelationshipsSchema,
         attributes: alienAttributesSchema,
-        talents: Type.Array(Type.String()),
+        talents: Type.Array(alienTalentSchema),
         status: alienStatusSchema,
         consumables: alienConsumablesSchema,
         equipment: alienEquipmentSchema,
