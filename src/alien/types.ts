@@ -12,6 +12,7 @@ import type {
     alienExperienceSchema,
     alienRelationshipsSchema,
     alienStatusSchema,
+    alienTalentSchema,
     alienWeaponSchema
 } from './schema.js';
 
@@ -27,6 +28,7 @@ export type AlienEquipment = Static<typeof alienEquipmentSchema>;
 export type AlienExperience = Static<typeof alienExperienceSchema>;
 export type AlienCharacter = Static<typeof alienCharacterSchema>;
 export type AlienAgenda = Static<typeof alienAgendaSchema>;
+export type AlienTalent = Static<typeof alienTalentSchema>;
 
 export type AlienAttribute = keyof AlienAttributes;
 export type AlienSkill = {
