@@ -47,6 +47,7 @@ export const alienDefault: AlienCharacter = {
     talents: [],
     status: {
         stressLevel: 0,
+        maxHealth: 0,
         health: 0,
         radiation: 0,
         criticalInjuries: '',

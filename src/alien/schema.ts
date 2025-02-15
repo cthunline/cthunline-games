@@ -132,6 +132,7 @@ export const alienConditionsSchema = Type.Object(
 export const alienStatusSchema = Type.Object(
     {
         stressLevel: Type.Integer({ minimum: 0 }),
+        maxHealth: Type.Integer({ minimum: 0 }),
         health: Type.Integer(),
         radiation: Type.Integer({ minimum: 0 }),
         criticalInjuries: Type.String(),
