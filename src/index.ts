@@ -68,31 +68,38 @@ export type Character =
 
 const gamesData = {
     alien: {
+        name: 'Alien',
         schema: alienCharacterSchema,
         default: alienDefault
     },
     apocalypseWorld: {
+        name: 'Apocalypse World',
         schema: apocalypseWorldCharacterSchema,
         default: apocalypseWorldDefault,
         data: apocalypseWorldData
     },
     callOfCthulhu: {
+        name: 'Call of Cthulhu',
         schema: cocCharacterSchema,
         default: cocDefault
     },
     dnd5: {
+        name: 'Dungeons & Dragons 5E',
         schema: dnd5CharacterSchema,
         default: dnd5Default
     },
     seventhSea: {
+        name: '7th Sea',
         schema: seventhSeaCharacterSchema,
         default: seventhSeaDefault
     },
     starWarsD6: {
+        name: 'Star Wars D6',
         schema: swd6CharacterSchema,
         default: swd6Default
     },
     warhammerFantasy: {
+        name: 'Warhammer Fantasy',
         schema: warhammerFantasyCharacterSchema,
         default: warhammerFantasyDefault,
         data: warhammerFantasyData
@@ -100,6 +107,7 @@ const gamesData = {
 } as const satisfies Record<
     GameId,
     {
+        name: string;
         schema: TSchema;
         default: object;
         data?: object;
@@ -113,3 +121,7 @@ export const dnd5 = gamesData.dnd5;
 export const seventhSea = gamesData.seventhSea;
 export const starWarsD6 = gamesData.starWarsD6;
 export const warhammerFantasy = gamesData.warhammerFantasy;
+
+type GetGame = <T extends GameId>(gameId: T) => (typeof gamesData)[T];
+
+export const getGame: GetGame = (gameId) => gamesData[gameId];
