@@ -125,3 +125,6 @@ export const warhammerFantasy = gamesData.warhammerFantasy;
 type GetGame = <T extends GameId>(gameId: T) => (typeof gamesData)[T];
 
 export const getGame: GetGame = (gameId) => gamesData[gameId];
+
+const gameIdMap = new Map<string, true>(gameIds.map((gId) => [gId, true]));
+export const isGameId = (val: string): val is GameId => !!gameIdMap.get(val);
